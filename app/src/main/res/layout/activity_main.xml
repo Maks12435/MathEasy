@@ -33,7 +33,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="19dp"
             android:layout_marginTop="68dp"
-            android:text="EasyMath"
+            android:text="MathEasy"
             android:textColor="@color/white"
             android:textSize="42dp" />
 
