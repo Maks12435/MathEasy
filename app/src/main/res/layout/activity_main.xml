@@ -46,7 +46,6 @@
             android:contentDescription="none"
             android:drawableTop="@drawable/menu" />
 
-
     </RelativeLayout>
 
     <RelativeLayout

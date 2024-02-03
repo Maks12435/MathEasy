@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bg">#F5F5F5</color>
     <color name="bg_header">#001A2E</color>
+    <color name="border">#DCDCDC</color>
 </resources>
