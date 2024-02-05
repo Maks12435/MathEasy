@@ -4,21 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
+    android:background="@color/white"
     tools:context=".ProfileActivity">
 
     <RelativeLayout
         android:id="@+id/header_profile"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:background="@color/bg_header">
+        android:layout_height="280dp"
+        android:background="@drawable/gradient_background">
+
 
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="361dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp"
+        app:srcCompat="@drawable/smooth" />
 
     <RelativeLayout
         android:id="@+id/main_profile_block"
         android:layout_width="match_parent"
-        android:layout_height="540dp"
+        android:layout_height="400dp"
         android:layout_below="@+id/header_profile"
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="40dp"
@@ -30,15 +39,16 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/bg_header">
+        android:background="@color/pink">
 
         <ImageButton
             android:id="@+id/imageButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/bg_header"
+            android:backgroundTint="@color/pink"
             android:contentDescription="@string/app_name"
+            android:onClick="GoBack"
             android:src="@drawable/home"
             tools:src="@drawable/home" />
 
@@ -47,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/bg_header"
+            android:backgroundTint="@color/pink"
             android:contentDescription="@string/app_name"
             android:src="@drawable/book"
             tools:src="@drawable/book" />
@@ -57,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/bg_header"
+            android:backgroundTint="@color/pink"
             android:contentDescription="@string/app_name"
             android:src="@drawable/stat"
             tools:src="@drawable/stat" />
@@ -67,7 +77,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/bg_header"
+            android:backgroundTint="@color/pink"
             android:contentDescription="@string/app_name"
             android:src="@drawable/profile"
             tools:src="@drawable/profile" />

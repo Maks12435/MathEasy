@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="280dp"
-        android:background="@color/bg_header">
+        android:layout_height="320dp"
+        android:background="@drawable/gradient_background">
 
         <TextView
             android:id="@+id/sub_main_text"
@@ -20,7 +20,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="19dp"
-            android:layout_marginTop="124dp"
+            android:layout_marginTop="114dp"
             android:text="Платформа для обучения математики, состоящяя из несклоких разделов математики с понятным графическим интерфейсом и анализом ващих достижении"
             android:textColor="@color/white"
             android:textSize="16dp" />
@@ -31,56 +31,131 @@
             android:layout_height="60dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="19dp"
-            android:layout_marginTop="68dp"
-            android:text="MathEasy"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="58dp"
+            android:text="EasyMath"
             android:textColor="@color/white"
             android:textSize="42dp" />
 
         <Button
             android:id="@+id/menu"
-            android:layout_marginLeft="6dp"
+            android:layout_marginLeft="10dp"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:backgroundTint="@color/bg_header"
+            android:backgroundTint="@color/pink"
             android:contentDescription="none"
             android:drawableTop="@drawable/menu" />
 
     </RelativeLayout>
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="361dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="105dp"
+        app:srcCompat="@drawable/smooth" />
+
     <RelativeLayout
         android:id="@+id/main_block"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="500dp"
         android:layout_below="@+id/header"
         android:layout_marginHorizontal="15dp"
-        android:layout_marginTop="-50dp"
+        android:layout_marginTop="-100dp"
         android:background="@drawable/backgrounds"
-        android:elevation="6dp">
+        android:elevation="2dp">
 
         <RelativeLayout
-            android:id="@+id/main_block_inside"
+            android:id="@+id/submain_block"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="100dp"
             android:background="@drawable/backgrounds"
-            android:elevation="5dp">
+            android:elevation="2dp">
 
         </RelativeLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/submain_block"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:text="IT IS NOT A CONTRADICTION IT IS JUST LIKE A PREPOSITION" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:text="IT IS NOT A CONTRADICTION IT IS JUST LIKE A PREPOSITION" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:text="IT IS NOT A CONTRADICTION IT IS JUST LIKE A PREPOSITION" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:text="IT IS NOT A CONTRADICTION IT IS JUST LIKE A PREPOSITION" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:text="IT IS NOT A CONTRADICTION IT IS JUST LIKE A PREPOSITION" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:text="IT IS NOT A CONTRADICTION IT IS JUST LIKE A PREPOSITION" />
+
+        </LinearLayout>
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/bg_header">
+        android:background="@color/pink">
 
         <ImageButton
             android:id="@+id/imageButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/bg_header"
+            android:backgroundTint="@color/pink"
             android:contentDescription="@string/app_name"
             android:src="@drawable/home"
             tools:src="@drawable/home" />
@@ -90,7 +165,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/bg_header"
+            android:backgroundTint="@color/pink"
             android:contentDescription="@string/app_name"
             android:src="@drawable/book"
             tools:src="@drawable/book" />
@@ -100,7 +175,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/bg_header"
+            android:backgroundTint="@color/pink"
             android:contentDescription="@string/app_name"
             android:src="@drawable/stat"
             tools:src="@drawable/stat" />
@@ -110,8 +185,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/bg_header"
+            android:backgroundTint="@color/pink"
             android:contentDescription="@string/app_name"
+            android:onClick="startProfileActivity"
             android:src="@drawable/profile"
             tools:src="@drawable/profile" />
 
