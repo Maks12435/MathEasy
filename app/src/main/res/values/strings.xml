@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">EasyMath</string>
+    <string name="open">Open</string>
+    <string name="close">Open</string>
 </resources>
