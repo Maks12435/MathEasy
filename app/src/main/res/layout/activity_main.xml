@@ -7,23 +7,24 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
+
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="320dp"
+        android:layout_height="360dp"
         android:background="@drawable/gradient_background">
 
         <TextView
             android:id="@+id/sub_main_text"
-            android:layout_width="353dp"
-            android:layout_height="wrap_content"
+            android:layout_width="318dp"
+            android:layout_height="95dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="19dp"
-            android:layout_marginTop="114dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="148dp"
             android:text="Платформа для обучения математики, состоящяя из несклоких разделов математики с понятным графическим интерфейсом и анализом ващих достижении"
             android:textColor="@color/white"
-            android:textSize="16dp" />
+            android:textSize="14dp" />
 
         <TextView
             android:id="@+id/main_text"
@@ -31,117 +32,33 @@
             android:layout_height="60dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="58dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="87dp"
             android:text="EasyMath"
             android:textColor="@color/white"
-            android:textSize="42dp" />
+            android:textSize="40dp"
+            android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/menu"
-            android:layout_marginLeft="10dp"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:backgroundTint="@color/pink"
-            android:contentDescription="none"
-            android:drawableTop="@drawable/menu" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonDrawerLayout"
+            android:contentDescription="@string/close"
+            android:src="@drawable/menu"
+            android:padding="10dp"
+            android:background="@color/pink"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="361dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="105dp"
-        app:srcCompat="@drawable/smooth" />
 
     <RelativeLayout
         android:id="@+id/main_block"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:layout_below="@+id/header"
-        android:layout_marginHorizontal="15dp"
-        android:layout_marginTop="-100dp"
-        android:background="@drawable/backgrounds"
-        android:elevation="2dp">
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/backgrounds">
 
-        <RelativeLayout
-            android:id="@+id/submain_block"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@drawable/backgrounds"
-            android:elevation="2dp">
-
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/submain_block"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="match_parent"
-                android:layout_margin="8dp"
-                android:layout_height="50dp"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:textSize="10sp"
-                android:text="IT IS NOT A CONTRADICTION IT IS JUST LIKE A PREPOSITION" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_margin="8dp"
-                android:layout_height="50dp"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:textSize="10sp"
-                android:text="IT IS NOT A CONTRADICTION IT IS JUST LIKE A PREPOSITION" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="match_parent"
-                android:layout_margin="8dp"
-                android:layout_height="50dp"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:textSize="10sp"
-                android:text="IT IS NOT A CONTRADICTION IT IS JUST LIKE A PREPOSITION" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_margin="8dp"
-                android:layout_height="50dp"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:textSize="10sp"
-                android:text="IT IS NOT A CONTRADICTION IT IS JUST LIKE A PREPOSITION" />
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="match_parent"
-                android:layout_margin="8dp"
-                android:layout_height="50dp"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:textSize="10sp"
-                android:text="IT IS NOT A CONTRADICTION IT IS JUST LIKE A PREPOSITION" />
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="match_parent"
-                android:layout_margin="8dp"
-                android:layout_height="50dp"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:textSize="10sp"
-                android:text="IT IS NOT A CONTRADICTION IT IS JUST LIKE A PREPOSITION" />
-
-        </LinearLayout>
     </RelativeLayout>
 
     <LinearLayout
