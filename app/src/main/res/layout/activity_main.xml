@@ -1,113 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".MainActivity">
 
-
     <RelativeLayout
-        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="360dp"
-        android:background="@drawable/gradient_background">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/sub_main_text"
-            android:layout_width="318dp"
-            android:layout_height="95dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="148dp"
-            android:text="Платформа для обучения математики, состоящяя из несклоких разделов математики с понятным графическим интерфейсом и анализом ващих достижении"
-            android:textColor="@color/white"
-            android:textSize="14dp" />
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:background="@drawable/gradient_background">
 
-        <TextView
-            android:id="@+id/main_text"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="87dp"
-            android:text="EasyMath"
-            android:textColor="@color/white"
-            android:textSize="40dp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/sub_main_text"
+                android:layout_width="318dp"
+                android:layout_height="95dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="148dp"
+                android:text="Платформа для обучения математики, состоящяя из несклоких разделов математики с понятным графическим интерфейсом и анализом ващих достижении"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonDrawerLayout"
-            android:contentDescription="@string/close"
-            android:src="@drawable/menu"
-            android:padding="10dp"
-            android:background="@color/pink"
-            tools:ignore="TouchTargetSizeCheck" />
+            <TextView
+                android:id="@+id/main_text"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="87dp"
+                android:text="EasyMath"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/buttonDrawerLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="351dp"
+                android:background="@color/pink"
+                android:contentDescription="@string/close"
+                android:padding="10dp"
+                android:src="@drawable/menu"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_block"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_below="@id/header"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/backgrounds">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/pink">
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pink"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/home"
+                tools:src="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pink"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/book"
+                tools:src="@drawable/book" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pink"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/stat"
+                tools:src="@drawable/stat" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pink"
+                android:contentDescription="@string/app_name"
+                android:onClick="startProfileActivity"
+                android:src="@drawable/profile"
+                tools:src="@drawable/profile" />
+
+        </LinearLayout>
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/main_block"
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_below="@+id/header"
-        android:layout_marginTop="-50dp"
-        android:background="@drawable/backgrounds">
+    <!-- Боковое меню -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu" />
 
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/pink">
-
-        <ImageButton
-            android:id="@+id/imageButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="@color/pink"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/home"
-            tools:src="@drawable/home" />
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="@color/pink"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/book"
-            tools:src="@drawable/book" />
-
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="@color/pink"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/stat"
-            tools:src="@drawable/stat" />
-
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="@color/pink"
-            android:contentDescription="@string/app_name"
-            android:onClick="startProfileActivity"
-            android:src="@drawable/profile"
-            tools:src="@drawable/profile" />
-
-    </LinearLayout>
-
-</RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

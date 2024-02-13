@@ -20,7 +20,4 @@
         app:headerLayout="@layout/header"
         app:menu="@menu/main_menu" />
 
-
-
-
 </androidx.drawerlayout.widget.DrawerLayout>
