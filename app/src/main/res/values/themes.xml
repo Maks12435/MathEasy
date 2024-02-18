@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.EasyMath" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:statusBarColor">@color/pink</item>
+        <item name="android:statusBarColor">#C00C6A</item>
     </style>
 
     <style name="Theme.EasyMath" parent="Base.Theme.EasyMath" />

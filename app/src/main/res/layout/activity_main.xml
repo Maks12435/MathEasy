@@ -18,7 +18,7 @@
             android:layout_height="360dp"
             android:background="@drawable/gradient_background"
             tools:ignore="ExtraText">
-            >
+
 
             <TextView
                 android:id="@+id/sub_main_text"
@@ -85,8 +85,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/gradient_background"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/home"
-                tools:src="@drawable/home" />
+                tools:src="@drawable/home"
+                android:src="@drawable/home"/>
 
             <ImageButton
                 android:id="@+id/imageButton2"
