@@ -22,6 +22,9 @@
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@drawable/gradient_background" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <activity
             android:name=".ProfileActivity"

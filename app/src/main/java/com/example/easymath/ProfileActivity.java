@@ -20,40 +20,10 @@ import com.google.android.material.navigation.NavigationView;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    DrawerLayout drawerLayout;
-    ImageButton buttonDrawerLayout;
-    NavigationView navigationView;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        drawerLayout = findViewById(R.id.drawer_layout);
-        buttonDrawerLayout = findViewById(R.id.buttonDrawerLayout);
-        navigationView = findViewById(R.id.nav_view);
-
-        buttonDrawerLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                drawerLayout.open();
-            }
-        });
-
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int itemId = item.getItemId();
-
-                if (itemId == R.id.nav_lessons) {
-                    Toast.makeText(ProfileActivity.this, "Menu clicked", Toast.LENGTH_SHORT).show();
-                }
-
-                drawerLayout.close();
-
-                return false;
-            }
-        });
     }
 
     public void GoBack(View v){

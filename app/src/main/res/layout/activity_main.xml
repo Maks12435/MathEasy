@@ -5,18 +5,20 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background">
 
         <RelativeLayout
             android:id="@+id/header"
             android:layout_width="match_parent"
             android:layout_height="360dp"
-            android:background="@drawable/gradient_background">
+            android:background="@drawable/gradient_background"
+            tools:ignore="ExtraText">
+            >
 
             <TextView
                 android:id="@+id/sub_main_text"
@@ -47,16 +49,17 @@
             <ImageButton
                 android:id="@+id/buttonDrawerLayout"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="351dp"
-                android:background="@color/pink"
+                android:background="@drawable/img"
                 android:contentDescription="@string/close"
                 android:padding="10dp"
                 android:src="@drawable/menu"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck"
+                tools:visibility="visible" />
 
         </RelativeLayout>
 
@@ -67,7 +70,6 @@
             android:layout_below="@id/header"
             android:layout_marginTop="-50dp"
             android:background="@drawable/backgrounds">
-
         </RelativeLayout>
 
         <LinearLayout
@@ -79,9 +81,9 @@
             <ImageButton
                 android:id="@+id/imageButton1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="@color/pink"
+                android:background="@drawable/gradient_background"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/home"
                 tools:src="@drawable/home" />
@@ -89,9 +91,9 @@
             <ImageButton
                 android:id="@+id/imageButton2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="@color/pink"
+                android:background="@drawable/gradient_background"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/book"
                 tools:src="@drawable/book" />
@@ -99,19 +101,19 @@
             <ImageButton
                 android:id="@+id/imageButton3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="@color/pink"
+                android:background="@drawable/gradient_background"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/stat"
-                tools:src="@drawable/stat" />
+                android:src="@drawable/icons8_statistics_48"
+                tools:src="@drawable/icons8_statistics_48" />
 
             <ImageButton
                 android:id="@+id/imageButton4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="@color/pink"
+                android:background="@drawable/gradient_background"
                 android:contentDescription="@string/app_name"
                 android:onClick="startProfileActivity"
                 android:src="@drawable/profile"
@@ -121,7 +123,6 @@
 
     </RelativeLayout>
 
-    <!-- Боковое меню -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
