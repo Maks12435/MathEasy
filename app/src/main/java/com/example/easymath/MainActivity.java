@@ -53,7 +53,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startProfileActivity(View v){
-        Intent intent = new Intent(this, ProfileActivity.class);
+        Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+        startActivity(intent);
+    }
+
+    public void startCourseActivity(View v){
+        Intent intent = new Intent(MainActivity.this, Topic1.class);
         startActivity(intent);
     }
 }

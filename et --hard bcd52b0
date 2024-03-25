@@ -1,0 +1,11 @@
+[33mbcd52b0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD
+[33mbcd52b0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{1}: commit: Login SigUp pages
+[33m5d339cc[m HEAD@{2}: commit: Login SigUp pages
+[33m74bfeb4[m HEAD@{3}: pull: Fast-forward
+[33m236c1d0[m HEAD@{4}: pull: Fast-forward
+[33m3467237[m HEAD@{5}: reset: moving to 346723702045cd91c7f280fecdf25b145360db67
+[33m3467237[m HEAD@{6}: commit: hhh
+[33m9347277[m HEAD@{7}: pull: Fast-forward
+[33m298c202[m HEAD@{8}: Branch: renamed refs/heads/master to refs/heads/main
+[33m298c202[m HEAD@{10}: commit: first commit
+[33mfbe253f[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{11}: commit (initial): Initial commit

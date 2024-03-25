@@ -4,4 +4,16 @@
     <string name="close">Open</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="topic101">Степень числа – это результат многократного умножения числа на себя. </string>
+    <string name="topic102">3 · 3 · 3 · 3 · 3=3^5</string>
+    <string name="topic103">Здесь an обозначают как «степень». a- основание степени, n- показатель степени. an можно прочитать: «a в n-й степени» или «а в степени n».
+Определение степени числа выполняется умножением.
+</string>
+    <string name="topic104">3^5=3 · 3 · 3 · 3 · 3 = 243</string>
+    <string name="topic105">Вторую степень числа называют квадратом, а третью степень – кубом этого числа.</string>
+    <string name="topic106">Отрицательное число с четным показателем является положительным числом, так как произведение четного числа отрицательных множителей положительно.</string>
+    <string name="topic107">-32=-3-3=9;</string>
+    <string name="topic108">Отрицательное число с нечетным показателем является отрицательным числом, так как произведение нечетного числа отрицательных множителей отрицательно.</string>
+    <string name="topic109">-23=-2-2-2=-8;</string>
+    <string name="topic110"></string>
 </resources>
