@@ -29,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
         buttonDrawerLayout = findViewById(R.id.buttonDrawerLayout);
         navigationView = findViewById(R.id.nav_view);
 
+        String role = getIntent().getStringExtra("role");
+
+        if ("teacher".equals(role)) {
+            ImageButton teacherButton = findViewById(R.id.imageButton5);
+            ImageButton statButton = findViewById(R.id.imageButton3);
+            teacherButton.setVisibility(View.VISIBLE);
+            statButton.setVisibility(View.GONE);
+        }
+
         buttonDrawerLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,8 +61,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void startProfileActivity(View v){
+    public void startProfileActivity(View v) {
         Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
 

@@ -15,7 +15,7 @@
         <RelativeLayout
             android:id="@+id/header"
             android:layout_width="match_parent"
-            android:layout_height="360dp"
+            android:layout_height="320dp"
             android:background="@drawable/gradient_background"
             tools:ignore="ExtraText">
 
@@ -107,7 +107,19 @@
                 android:background="@drawable/gradient_background"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/icons8_statistics_48"
-                tools:src="@drawable/icons8_statistics_48" />
+                tools:src="@drawable/icons8_statistics_48"
+                android:visibility="visible"/>
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/gradient_background"
+                android:contentDescription="@string/app_name"
+                android:onClick="startTeacherActivity"
+                android:src="@drawable/table"
+                android:visibility="gone" />
 
             <ImageButton
                 android:id="@+id/imageButton4"

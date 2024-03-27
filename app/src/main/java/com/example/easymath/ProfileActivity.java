@@ -20,7 +20,7 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         Intent intent = getIntent();
-        if (intent != null) {
+        if (intent != null && intent.hasExtra("name") && intent.hasExtra("sName") && intent.hasExtra("email")) {
             String name = intent.getStringExtra("name");
             String sName = intent.getStringExtra("sName");
             String email = intent.getStringExtra("email");
@@ -32,6 +32,8 @@ public class ProfileActivity extends AppCompatActivity {
             } else {
                 Toast.makeText(ProfileActivity.this, "Error", Toast.LENGTH_SHORT).show();
             }
+        } else {
+            Toast.makeText(ProfileActivity.this, "No data provided", Toast.LENGTH_SHORT).show();
         }
     }
 

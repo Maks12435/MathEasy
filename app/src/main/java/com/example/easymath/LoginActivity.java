@@ -31,14 +31,15 @@ public class LoginActivity extends AppCompatActivity {
                     if (checkCredentials) {
                         String name = databaseHelper.getUserName(email);
                         String sName = databaseHelper.getUserSurname(email);
+                        String role = databaseHelper.getUserRole(email);
 
-                        // Открываем MainActivity
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         intent.putExtra("name", name);
                         intent.putExtra("sName", sName);
                         intent.putExtra("email", email);
+                        intent.putExtra("role", role);
                         startActivity(intent);
-                        finish(); // Закрываем LoginActivity
+                        finish();
                     } else {
                         Toast.makeText(LoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
                     }
