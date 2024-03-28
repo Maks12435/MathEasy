@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@drawable/gradient_background">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="139dp"
+            android:layout_height="53dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="250dp"
+            android:layout_marginBottom="97dp"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="330dp"
+            android:layout_marginBottom="25dp"
+            app:srcCompat="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="100dp"
+            android:text="Hello,"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignStart="@id/greeting"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="118dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profileInfoContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="16dp"
+        tools:ignore="ExtraText">">
+
+        <LinearLayout
+            android:id="@+id/profileInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/usernameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:text="Username"
+                android:textColor="@color/border"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border" />
+
+            <TextView
+                android:id="@+id/emailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:text="Email"
+                android:layout_marginTop="14dp"
+                android:textColor="@color/border"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border" />
+
+            <TextView
+                android:id="@+id/phoneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:text="Phone"
+                android:layout_marginTop="14dp"
+                android:textColor="@color/border"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+77782122312"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border" />
+
+            <TextView
+                android:id="@+id/genderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:text="Gender"
+                android:layout_marginTop="14dp"
+                android:textColor="@color/border"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border" />
+
+            <TextView
+                android:id="@+id/dateOfBirthLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:text="Date of Birth"
+                android:layout_marginTop="14dp"
+                android:textColor="@color/border"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="10/4/1999"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_background">
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_background"
+            android:contentDescription="@string/app_name"
+            android:onClick="BackToMain"
+            android:src="@drawable/home"
+            tools:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_background"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/book"
+            tools:src="@drawable/book" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_background"
+            android:contentDescription="@string/app_name"
+            android:fontFamily="sans-serif-medium"
+            tools:src="@drawable/table"
+            android:src="@drawable/table"
+            android:onClick="GoToStudents"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/anotherLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayout"
+        android:layout_marginBottom="500dp"
+        android:background="@drawable/gradient_background"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</RelativeLayout>

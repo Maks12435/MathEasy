@@ -27,21 +27,47 @@ public class LoginActivity extends AppCompatActivity {
                 if (email.equals("") || password.equals("")) {
                     Toast.makeText(LoginActivity.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
                 } else {
-                    Boolean checkCredentials = databaseHelper.checkEmailPassword(email, password);
-                    if (checkCredentials) {
-                        String name = databaseHelper.getUserName(email);
-                        String sName = databaseHelper.getUserSurname(email);
-                        String role = databaseHelper.getUserRole(email);
 
-                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                        intent.putExtra("name", name);
-                        intent.putExtra("sName", sName);
-                        intent.putExtra("email", email);
-                        intent.putExtra("role", role);
+                    String role = databaseHelper.getUserRole(email);
+                    Intent intent;
+
+                    if ("student".equals(role)) {
+                        Boolean checkCredentials = databaseHelper.checkEmailPassword(email, password);
+
+                        if (checkCredentials) {
+                            String name = databaseHelper.getUserName(email);
+                            String sName = databaseHelper.getUserSurname(email);
+
+                            intent = new Intent(LoginActivity.this, MainActivity.class);
+                            intent.putExtra("name", name);
+                            intent.putExtra("sName", sName);
+                            intent.putExtra("email", email);
+                            startActivity(intent);
+                            finish();
+
+                        } else {
+                            Toast.makeText(LoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                        }
+
+                    } else if ("teacher".equals(role)) {
+                        intent = new Intent(LoginActivity.this, TeacherActivity.class);
                         startActivity(intent);
                         finish();
+
                     } else {
-                        Toast.makeText(LoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                        Boolean checkCredentials = databaseHelper.checkEmailPassword(email, password);
+
+                        if (checkCredentials) {
+                            String name = databaseHelper.getUserName(email);
+                            String sName = databaseHelper.getUserSurname(email);
+
+                            intent = new Intent(LoginActivity.this, MainActivity.class);
+                            intent.putExtra("name", name);
+                            intent.putExtra("sName", sName);
+                            intent.putExtra("email", email);
+                            startActivity(intent);
+                            finish();
+                        }
                     }
                 }
             }

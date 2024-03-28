@@ -13,6 +13,12 @@
         android:theme="@style/Theme.EasyMath"
         tools:targetApi="31">
         <activity
+            android:name=".StudentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherActivity"
+            android:exported="false" />
+        <activity
             android:name=".Topic1"
             android:exported="false" />
         <activity

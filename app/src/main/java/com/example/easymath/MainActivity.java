@@ -29,15 +29,6 @@ public class MainActivity extends AppCompatActivity {
         buttonDrawerLayout = findViewById(R.id.buttonDrawerLayout);
         navigationView = findViewById(R.id.nav_view);
 
-        String role = getIntent().getStringExtra("role");
-
-        if ("teacher".equals(role)) {
-            ImageButton teacherButton = findViewById(R.id.imageButton5);
-            ImageButton statButton = findViewById(R.id.imageButton3);
-            teacherButton.setVisibility(View.VISIBLE);
-            statButton.setVisibility(View.GONE);
-        }
-
         buttonDrawerLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
