@@ -27,7 +27,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="43dp"
-                android:text="Тема 1"
+                android:text="Тема 2"
                 android:textColor="@color/white"
                 android:textSize="28dp"
                 android:textStyle="bold"/>
@@ -40,7 +40,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="93dp"
-                android:text="Понятие степени с натуральным показателем"
+                android:text="Одночлены и его стандартный вид"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
@@ -67,22 +67,24 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="22dp"
-                android:text="@string/topic101"
+                android:text="@string/topic201"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling" />
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="wrap_content"
+                android:layout_width="375dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textView5"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_gravity="center"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="22dp"
                 android:gravity="center"
                 android:layout_marginTop="12dp"
-                android:text="@string/topic102"
+                android:text="@string/topic202"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling" />
@@ -97,7 +99,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="18dp"
-                android:text="@string/topic103"
+                android:text="@string/topic203"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling" />
@@ -112,7 +114,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_marginTop="12dp"
-                android:text="@string/topic104"
+                android:text="@string/topic204"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling" />
@@ -127,7 +129,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="18dp"
-                android:text="@string/topic105"
+                android:text="@string/topic205"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling" />
@@ -290,7 +292,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="162dp"
                     android:backgroundTint="@color/pink"
-                    android:onClick="startTopicActivity"
+                    android:onClick="NextChapter"
                     android:text="Следующяя тема"
                     android:textColor="@color/white"
                     android:textSize="12dp" />

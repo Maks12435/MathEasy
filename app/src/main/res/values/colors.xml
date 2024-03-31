@@ -6,4 +6,7 @@
     <color name="bg_header">#015D52</color>
     <color name="border">#A5A5A5</color>
     <color name="pink">#EE0055</color>
+    <color name="correct_answer">#c2ff9b</color> <!-- Зеленый -->
+    <color name="wrong_answer">#ffbbb2</color> <!-- Красный -->
+
 </resources>

@@ -6,21 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Topic1 extends AppCompatActivity {
+public class Topic2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_topic1);
+        setContentView(R.layout.activity_topic2);
     }
 
     public void startTestActivity(View v){
-        Intent intent = new Intent(Topic1.this, Test1Activity.class);
-        startActivity(intent);
-    }
-
-    public void startTopicActivity(View v){
-        Intent intent = new Intent(Topic1.this, Topic2.class);
+        Intent intent = new Intent(Topic2.this, Test2Activity.class);
         startActivity(intent);
     }
 }

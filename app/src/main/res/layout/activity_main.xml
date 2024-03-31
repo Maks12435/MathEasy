@@ -27,7 +27,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="148dp"
-                android:text="Платформа для обучения математики, состоящяя из несклоких разделов математики с понятным графическим интерфейсом и анализом ващих достижении"
+                android:text="Платформа для обучения математики, состоящяя из нескольких разделов математики с понятным графическим интерфейсом и анализом ваших достижений"
                 android:textColor="@color/white"
                 android:textSize="14dp"
                 tools:ignore="TextSizeCheck" />
@@ -269,7 +269,8 @@
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/icons8_statistics_48"
                 tools:src="@drawable/icons8_statistics_48"
-                android:visibility="visible"/>
+                android:visibility="visible"
+                android:onClick="startStats"/>
 
             <ImageButton
                 android:id="@+id/imageButton5"

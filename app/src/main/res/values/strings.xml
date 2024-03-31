@@ -1,19 +1,129 @@
 <resources>
     <string name="app_name">EasyMath</string>
     <string name="open">Open</string>
+    <string name="correct_answers">Correct Answers: %1$d</string>
     <string name="close">Open</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="topic101">Степень числа – это результат многократного умножения числа на себя. </string>
-    <string name="topic102">3 · 3 · 3 · 3 · 3=3^5</string>
+    <string name="topic102">3 · 3 · 3 · 3 · 3 = 3<sup><small>5</small></sup></string>
     <string name="topic103">Здесь an обозначают как «степень». a- основание степени, n- показатель степени. an можно прочитать: «a в n-й степени» или «а в степени n».
 Определение степени числа выполняется умножением.
 </string>
-    <string name="topic104">3^5=3 · 3 · 3 · 3 · 3 = 243</string>
+    <string name="topic104">3<sup><small>5</small></sup> = 3 · 3 · 3 · 3 · 3 = 243</string>
     <string name="topic105">Вторую степень числа называют квадратом, а третью степень – кубом этого числа.</string>
     <string name="topic106">Отрицательное число с четным показателем является положительным числом, так как произведение четного числа отрицательных множителей положительно.</string>
-    <string name="topic107">-32=-3-3=9;</string>
+    <string name="topic107">-3<sup><small>2</small></sup> = (-3) · (-3) = 9;</string>
     <string name="topic108">Отрицательное число с нечетным показателем является отрицательным числом, так как произведение нечетного числа отрицательных множителей отрицательно.</string>
-    <string name="topic109">-23=-2-2-2=-8;</string>
-    <string name="topic110"></string>
+    <string name="topic109">-2<sup><small>3</small></sup> = (-2) · (-2) · (-2) = -8;</string>
+    <string name="topic110">) Первая степень любого числа равна этому же числу: a<sup><small>1</small></sup> = a.</string>
+    <string name="topic111">2) Любое число в нулевой степени равно 1: a<sup><small>0</small></sup> = 1, a ≠ 0.</string>
+    <string name="topic112">\n3) Любая степень числа 0 равно нулю. 0<sup><small>n</small></sup> = 0, n ≠ 0.</string>
+    <string name="topic113">\n4) Любая степень числа 1 равна 1. 1<sup><small>n</small></sup> = 1. </string>
+    <string name="test1q1">1. Запишите степень в виде произведения: 6<sup><small>5</small></sup></string>
+    <string name="test1q1o1">5∙5∙5∙5∙5∙5</string>
+    <string name="test1q1o2">6∙6∙6∙6∙6</string>
+    <string name="test1q1o3">6∙6∙6∙6∙6∙6</string>
+    <string name="test1q1o4">5∙5∙5∙5∙5</string>
+    <string name="test1q2">2. Укажите основание степени: 12<sup><small>7</small></sup></string>
+    <string name="test1q2o1">7</string>
+    <string name="test1q2o2">2</string>
+    <string name="test1q2o3">12</string>
+    <string name="test1q2o4">21</string>
+    <string name="test1q3">3. Возведите смешанное число в степень и найдите значение: (2 2&#8260;3)<sup><small>3</small></sup></string>
+    <string name="test1q3o1">8 8&#8260;27</string>
+    <string name="test1q3o2">24&#8260;9</string>
+    <string name="test1q3o3">64&#8260;9</string>
+    <string name="test1q3o4">512&#8260;27</string>
+    <string name="test1q4">4. Запишите произведение в виде степени:
+                               (-0,8)∙(-0,8)∙(-0,8)∙(-0,8)∙(-0,8)</string>
+    <string name="test1q4o1">(-0,8)<sup><small>5</small></sup></string>
+    <string name="test1q4o2">(0,8)<sup><small>5</small></sup></string>
+    <string name="test1q4o3">(0,8)<sup><small>4</small></sup></string>
+    <string name="test1q4o4">(-5)<sup><small>0.8</small></sup></string>
+    <string name="test1q5">5. Запишите произведение в виде степени:\n(a-b)(a-b)(a-b)(a-b)</string>
+    <string name="test1q5o1">(a-b)<sup><small>4</small></sup></string>
+    <string name="test1q5o2">a<sup><small>4</small></sup> - b<sup><small>4</small></sup></string>
+    <string name="test1q5o3">(a<sup><small>4</small></sup> - b<sup><small>4</small></sup>)<sup><small>4</small></sup></string>
+    <string name="test1q5o4">(a-b)(a-b)<sup><small>4</small></sup></string>
+    <string name="test1q6">6. Вычислите степень: (-0,9)<sup><small>3</small></sup></string>
+    <string name="test1q6o1">0,729</string>
+    <string name="test1q6o2">-0,729</string>
+    <string name="test1q6o3">0,27</string>
+    <string name="test1q6o4">-0,27</string>
+    <string name="test1q7">7. Вычислите степень: -5<sup><small>4</small></sup></string>
+    <string name="test1q7o1">625</string>
+    <string name="test1q7o2">-125</string>
+    <string name="test1q7o3">125</string>
+    <string name="test1q7o4">-625</string>
+    <string name="test1q8">8.Вычислите: (9∙5&#8260;12)<sup><small>2</small></sup> </string>
+    <string name="test1q8o1">45&#8260;144</string>
+    <string name="test1q8o2">625&#8260;144</string>
+    <string name="test1q8o3">225&#8260;16</string>
+    <string name="test1q8o4">300&#8260;24</string>
+    <string name="test1q9">9. Вычислите: -2,5∙2<sup><small>6</small></sup></string>
+    <string name="test1q9o1">160</string>
+    <string name="test1q9o2">-160</string>
+    <string name="test1q9o3">80</string>
+    <string name="test1q9o4">-80</string>
+    <string name="test1q10">10. Найдите значение выражения: -a<sup><small>3</small></sup> - 3a<sup><small>2</small></sup> + 2, где a=-3</string>
+    <string name="test1q10o1">2</string>
+    <string name="test1q10o2">-54</string>
+    <string name="test1q10o3">54</string>
+    <string name="test1q10o4">-2</string>
+    <string name="topic201">Выражения, которые составлены из чисел, переменных и их степеней при помощи действия умножения, называются <b>одночленами</b>.</string>
+    <string name="topic202">Например, 5a; abba; 2x<sup><small>3</small></sup>(-3a)<sup><small>2</small></sup>cx; -7;3<sup><small>4</small></sup>; x; y<sup><small>5</small></sup> - одночлены.</string>
+    <string name="topic203">Упростите одночлен 2x<sup><small>3</small></sup>(-3a)<sup><small>2</small></sup>cx с помощью переместительного и сочетательного законов умножения:</string>
+    <string name="topic204">2x<sup><small>3</small></sup>(-3a)<sup><small>2</small></sup>cx = 2(-3)x<sup><small>3</small></sup>a<sup><small>2</small></sup>cx = -6a<sup><small>2</small></sup>cx<sup><small>4</small></sup></string>
+    <string name="topic205">Такой вид одночлена, где на первом месте стоит числовой множитель, а за ним – переменные и их степени, называют <b>стандартным видом одночлена</b>.</string>
+    <string name="test2q1">1. Найдите одночлен из указанных выражений: </string>
+    <string name="test2q1o1">x<sup><small>2</small></sup> + x</string>
+    <string name="test2q1o2">3, 4x<sup><small>2</small></sup>y</string>
+    <string name="test2q1o3">2(x + y)<sup><small>2</small></sup></string>
+    <string name="test2q1o4">ab&#8260;a+b</string>
+    <string name="test2q2">2. Запишите одночлен в стандартном виде: 0,5m∙4n</string>
+    <string name="test2q2o1">4,5mn</string>
+    <string name="test2q2o2">0,9mn</string>
+    <string name="test2q2o3">2mn</string>
+    <string name="test2q2o4">1,5mn</string>
+    <string name="test2q3">3. Запишите одночлен в стандартном виде, и найдите его коэффициент: 2&#8260;3m<sup><small>2</small></sup>n∙4,5n<sup><small>3</small></sup></string>
+    <string name="test2q3o1">3</string>
+    <string name="test2q3o2">9</string>
+    <string name="test2q3o3">4</string>
+    <string name="test2q3o4">0,5</string>
+    <string name="test2q4">4. Найдите значение одночлена: -0,125y<sup><small>4</small></sup>, если y = -2</string>
+    <string name="test2q4o1">2</string>
+    <string name="test2q4o2">1</string>
+    <string name="test2q4o3">-2</string>
+    <string name="test2q4o4">-1</string>
+    <string name="test2q5">5. Определите степень одночлена: -xy∙2y<sup><small>3</small></sup>x<sup><small>4</small></sup></string>
+    <string name="test2q5o1">7</string>
+    <string name="test2q5o2">8</string>
+    <string name="test2q5o3">12></string>
+    <string name="test2q5o4">9</string>
+    <string name="test2q6">6. Запишите одночлен в стандартном виде: 0,12x∙(-0,3)y∙100y<sup><small>3</small></sup>x<sup><small>3</small></sup>y</string>
+    <string name="test2q6o1">-36x<sup><small>4</small></sup>y<sup><small>4</small></sup></string>
+    <string name="test2q6o2">3,6x<sup><small>4</small></sup>y<sup><small>6</small></sup></string>
+    <string name="test2q6o3">36x<sup><small>5</small></sup>y<sup><small>4</small></sup></string>
+    <string name="test2q6o4">-3,6x<sup><small>4</small></sup>y<sup><small>5</small></sup></string>
+    <string name="test2q7">7. Определите коэффициент одночлена: -9bc<sup><small>3</small></sup>∙(-y<sup><small>4</small></sup>)∙1 2&#8260;3xb</string>
+    <string name="test2q7o1">-6</string>
+    <string name="test2q7o2">15</string>
+    <string name="test2q7o3">18</string>
+    <string name="test2q7o4">-27</string>
+    <string name="test2q8">8. Найдите значение одночлена: x<sup><small>4</small></sup>y<sup><small>2</small></sup> , где x = -1, y = -0,5</string>
+    <string name="test2q8o1">0,25</string>
+    <string name="test2q8o2">0,5</string>
+    <string name="test2q8o3">2</string>
+    <string name="test2q8o4">1</string>
+    <string name="test2q9">9. Определите степень одночлена: –x<sup><small>n</small></sup>y<sup><small>n</small></sup></string>
+    <string name="test2q9o1">n</string>
+    <string name="test2q9o2">0</string>
+    <string name="test2q9o3">-1</string>
+    <string name="test2q9o4">2n</string>
+    <string name="test2q10">10. Запишите одночлен в стандартном виде: 1&#8260;2t∙2t<sup><small>3</small></sup>∙1&#8260;3 z<sup><small>5</small></sup>∙33t<sup><small>4</small></sup></string>
+    <string name="test2q10o1">22t<sup><small>4</small></sup>z<sup><small>9</small></sup></string>
+    <string name="test2q10o2">5,5t<sup><small>9</small></sup>z<sup><small>5</small></sup></string>
+    <string name="test2q10o3">11t<sup><small>8</small></sup>z<sup><small>5</small></sup></string>
+    <string name="test2q10o4">66t<sup><small>7</small></sup>z<sup><small>9</small></sup></string>
 </resources>

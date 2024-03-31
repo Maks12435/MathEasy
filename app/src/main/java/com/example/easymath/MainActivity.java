@@ -64,4 +64,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, Topic1.class);
         startActivity(intent);
     }
+
+    public void startStats(View v) {
+        Intent intent = new Intent(MainActivity.this, statsActivity.class);
+        startActivity(intent);
+    }
 }
