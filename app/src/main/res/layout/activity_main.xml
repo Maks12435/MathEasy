@@ -7,6 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="style=&quot;@style/SCREEN&quot;" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,7 +22,7 @@
             android:id="@+id/header"
             android:layout_width="match_parent"
             android:layout_height="320dp"
-            android:background="@drawable/gradient_background"
+            style="@style/SCREEN"
             tools:ignore="ExtraText">
 
             <TextView
@@ -47,13 +53,13 @@
 
             <ImageButton
                 android:id="@+id/buttonDrawerLayout"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_width="34dp"
+                android:layout_height="37dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="351dp"
-                android:background="@drawable/img"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="349dp"
+                style="@style/BUTTON"
                 android:contentDescription="@string/close"
                 android:padding="10dp"
                 android:src="@drawable/menu"
@@ -244,7 +250,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/gradient_background"
+                style="@style/SCREEN"
                 android:contentDescription="@string/app_name"
                 tools:src="@drawable/home"
                 android:src="@drawable/home"/>
@@ -254,7 +260,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/gradient_background"
+                style="@style/SCREEN"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/book"
                 android:onClick="startCourseActivity"
@@ -265,7 +271,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/gradient_background"
+                style="@style/SCREEN"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/icons8_statistics_48"
                 tools:src="@drawable/icons8_statistics_48"
@@ -273,22 +279,11 @@
                 android:onClick="startStats"/>
 
             <ImageButton
-                android:id="@+id/imageButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/gradient_background"
-                android:contentDescription="@string/app_name"
-                android:onClick="startTeacherActivity"
-                android:src="@drawable/table"
-                android:visibility="gone" />
-
-            <ImageButton
                 android:id="@+id/imageButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/gradient_background"
+                style="@style/SCREEN"
                 android:contentDescription="@string/app_name"
                 android:onClick="startProfileActivity"
                 android:src="@drawable/profile"

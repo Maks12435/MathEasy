@@ -22,5 +22,4 @@
             android:icon="@drawable/stat"
             android:title="Stats" />
 
-
 </menu>

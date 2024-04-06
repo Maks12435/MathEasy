@@ -50,9 +50,22 @@ public class LoginActivity extends AppCompatActivity {
                         }
 
                     } else if ("teacher".equals(role)) {
-                        intent = new Intent(LoginActivity.this, TeacherActivity.class);
-                        startActivity(intent);
-                        finish();
+                        Boolean checkCredentials = databaseHelper.checkEmailPassword(email, password);
+
+                        if (checkCredentials) {
+                            String name = databaseHelper.getUserName(email);
+                            String sName = databaseHelper.getUserSurname(email);
+
+                            intent = new Intent(LoginActivity.this, TeacherActivity.class);
+                            intent.putExtra("name", name);
+                            intent.putExtra("sName", sName);
+                            intent.putExtra("email", email);
+                            startActivity(intent);
+                            finish();
+
+                        } else {
+                            Toast.makeText(LoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                        }
 
                     } else {
                         Boolean checkCredentials = databaseHelper.checkEmailPassword(email, password);

@@ -1,17 +1,27 @@
 package com.example.easymath;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.DatePicker;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
+import java.util.Calendar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.easymath.databinding.ActivityProfileContentBinding;
 
+import java.util.Calendar;
+
 
 public class ProfileActivity extends AppCompatActivity {
 
+    TextView tvSelectedDate;
     ActivityProfileContentBinding binding;
 
     @Override
@@ -19,6 +29,8 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityProfileContentBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        tvSelectedDate = findViewById(R.id.tvSelectedDate);
 
         Intent intent = getIntent();
         String name = intent.getStringExtra("name");
@@ -34,6 +46,52 @@ public class ProfileActivity extends AppCompatActivity {
 
             Toast.makeText(ProfileActivity.this, "Error", Toast.LENGTH_SHORT).show();
         }
+
+        Spinner genderSpinner = findViewById(R.id.genderSpinner);
+        Spinner departmentSpinner = findViewById(R.id.departmentSpinner);
+        String[] genders = {"Мужчина", "Женщина"};
+        String[] departments = {"Младшие классы", "Высшие курсы"};
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, genders);
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, departments);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        genderSpinner.setAdapter(adapter);
+        departmentSpinner.setAdapter(adapter1);
+        genderSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String selectedGender = (String) parent.getItemAtPosition(position);
+
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+    }
+
+    public void showDatePickerDialog(View v) {
+        final Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH);
+        int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
+
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this,
+                new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                        // Обработка выбора даты
+                        String birthday = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year;
+                        tvSelectedDate.setText("Дата рождения: " + birthday);
+                        Toast.makeText(ProfileActivity.this, "Дата рождения: " + birthday, Toast.LENGTH_SHORT).show();
+                    }
+                }, year, month, dayOfMonth);
+
+        datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
+
+        datePickerDialog.show();
     }
 
     public void BackToMain(View v) {

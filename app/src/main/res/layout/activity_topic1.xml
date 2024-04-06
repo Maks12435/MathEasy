@@ -16,7 +16,7 @@
             android:id="@+id/header"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@drawable/gradient_background"
+            style="@style/SCREEN"
             android:orientation="vertical">
 
             <TextView
@@ -278,7 +278,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_below="@+id/textView18"
-                android:background="@drawable/gradient_background"
+                style="@style/SCREEN"
                 android:layout_marginTop="40dp"
                 android:layout_alignParentBottom="true">
 
@@ -289,7 +289,7 @@
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="162dp"
-                    android:backgroundTint="@color/pink"
+                    style="@style/BUTTONTOPIC"
                     android:onClick="startTopicActivity"
                     android:text="Следующяя тема"
                     android:textColor="@color/white"
@@ -301,7 +301,7 @@
                     android:layout_height="50dp"
                     android:layout_marginEnd="40dp"
                     android:layout_marginTop="20dp"
-                    android:backgroundTint="@color/pink"
+                    style="@style/BUTTONTOPIC"
                     android:onClick="startTestActivity"
                     android:text="Начать Тест"
                     android:textColor="@color/white"

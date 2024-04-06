@@ -2,6 +2,27 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.EasyMath" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor">#C00C6A</item>
+        <item name="colorPrimaryVariant">@color/bg</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+
+    </style>
+
+    <style name="SCREEN">
+        <item name="android:background">@drawable/gradient_background</item>
+    </style>
+
+    <style name="BUTTON">
+        <item name="android:background">@drawable/img</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BUTTONTOPIC">
+        <item name="android:backgroundTint">@color/pink</item>
     </style>
 
     <style name="Theme.EasyMath" parent="Base.Theme.EasyMath" />

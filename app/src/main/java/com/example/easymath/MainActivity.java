@@ -1,17 +1,16 @@
 package com.example.easymath;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
+import androidx.appcompat.app.AppCompatDelegate;
+
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -42,9 +41,14 @@ public class MainActivity extends AppCompatActivity {
                 int itemId = item.getItemId();
 
                 if (itemId == R.id.nav_lessons) {
-                    Toast.makeText(MainActivity.this, "Menu clicked", Toast.LENGTH_SHORT).show();
+                    setNightMode();
+                    return true;
                 }
 
+                else if (itemId == R.id.nav_tests) {
+                    setLightMode();
+                    return true;
+                }
                 drawerLayout.close();
 
                 return false;
@@ -68,5 +72,15 @@ public class MainActivity extends AppCompatActivity {
     public void startStats(View v) {
         Intent intent = new Intent(MainActivity.this, statsActivity.class);
         startActivity(intent);
+    }
+
+    private void setNightMode() {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        recreate();
+    }
+
+    private void setLightMode() {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        recreate();
     }
 }
