@@ -37,7 +37,7 @@ public class Test1Activity extends AppCompatActivity {
             R.id.textView6q, R.id.textView7q, R.id.textView8q, R.id.textView9q, R.id.textView10q};
 
     private boolean testCompleted = false;
-    private int correctAnswersCount = 0;
+    private int correctAnswersCount1 = 0;
     private boolean answersChecked = false;
     private boolean submitButtonClicked = false;
     private TextView correctAnswersCounter;
@@ -97,8 +97,14 @@ public class Test1Activity extends AppCompatActivity {
     }
 
     private void updateCorrectAnswersCounter() {
+        // Вычисляем процент правильных ответов
+        double percentage = (double) correctAnswersCount1 / correctAnswers.length * 100;
+
+        // Форматируем строку с процентом правильных ответов
+        String percentageText = String.format("Правильных ответов: %.2f%%", percentage);
+
         // Обновляем текст счетчика правильных ответов
-        correctAnswersCounter.setText(getString(R.string.correct_answers, correctAnswersCount));
+        correctAnswersCounter.setText(percentageText);
     }
 
     @Override
@@ -115,36 +121,50 @@ public class Test1Activity extends AppCompatActivity {
     }
 
     private void checkAnswers() {
-        correctAnswersCount = 0;
+        correctAnswersCount1 = 0;
+        boolean allQuestionsAnswered = true;
 
+        // Проверяем, были ли отвечены все вопросы
+        for (int i = 0; i < correctAnswers.length; i++) {
+            RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
+            int selectedRadioButtonId = questionRadioGroup.getCheckedRadioButtonId();
+
+            // Если хотя бы для одного вопроса не выбран ответ, устанавливаем флаг в false и выходим из цикла
+            if (selectedRadioButtonId == -1) {
+                allQuestionsAnswered = false;
+                break;
+            }
+        }
+
+        // Если не все вопросы отвечены, выходим из метода
+        if (!allQuestionsAnswered) {
+            Toast.makeText(this, "Ответьте на все вопросы перед проверкой.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Если все вопросы отвечены, продолжаем с проверкой ответов
         for (int i = 0; i < correctAnswers.length; i++) {
             RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
             int selectedRadioButtonId = questionRadioGroup.getCheckedRadioButtonId();
             RadioButton selectedRadioButton = findViewById(selectedRadioButtonId);
-
-            if (!questionRadioGroup.isEnabled()) { // Проверить, были ли ответы уже проверены
-                continue; // Пропустить проверку, если ответы уже были проверены
-            }
 
             if (selectedRadioButton != null) {
                 String selectedOption = getResources().getResourceEntryName(selectedRadioButtonId);
 
                 if (selectedOption.equals(correctAnswers[i])) {
                     selectedRadioButton.setBackgroundColor(ContextCompat.getColor(this, R.color.correct_answer));
-                    correctAnswersCount++;
+                    correctAnswersCount1++;
                 } else {
                     selectedRadioButton.setBackgroundColor(ContextCompat.getColor(this, R.color.wrong_answer));
                 }
                 disableRadioGroup(questionRadioGroup); // Отключить RadioGroup после выбора ответа
-            } else {
-                Toast.makeText(this, "Выберите ответ на вопрос " + (i + 1), Toast.LENGTH_SHORT).show();
-                return;
             }
-
         }
 
+        // Обновляем счетчик правильных ответов
         updateCorrectAnswersCounter();
     }
+
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -155,7 +175,7 @@ public class Test1Activity extends AppCompatActivity {
 
     private void restoreInstanceState(Bundle savedInstanceState) {
         testCompleted = savedInstanceState.getBoolean("answers_checked", false);
-        correctAnswersCount = savedInstanceState.getInt("correct_answers_count", 0);
+        correctAnswersCount1 = savedInstanceState.getInt("correct_answers_count", 0);
         answersChecked = savedInstanceState.getBoolean("answers_checked", false);
         submitButtonClicked = savedInstanceState.getBoolean("submit_button_clicked", false);
         if (testCompleted) {
@@ -174,7 +194,7 @@ public class Test1Activity extends AppCompatActivity {
     private void loadTestState() {
         // Загружаем состояние теста из SharedPreferences
         testCompleted = sharedPreferences.getBoolean("test_completed", false);
-        correctAnswersCount = sharedPreferences.getInt("correct_answers_count", 0);
+        correctAnswersCount1 = sharedPreferences.getInt("correct_answers_count", 0);
         answersChecked = sharedPreferences.getBoolean("answers_checked", false);
         submitButtonClicked = sharedPreferences.getBoolean("submit_button_clicked", false);
 
@@ -205,7 +225,7 @@ public class Test1Activity extends AppCompatActivity {
         editor.putBoolean("test_completed", testCompleted);
 
         // Сохраняем количество правильных ответов
-        editor.putInt("correct_answers_count", correctAnswersCount);
+        editor.putInt("correct_answers_count", correctAnswersCount1);
 
         // Сохраняем флаг, были ли ответы уже проверены
         editor.putBoolean("answers_checked", answersChecked);
@@ -236,7 +256,7 @@ public class Test1Activity extends AppCompatActivity {
 
     public void restartTest() {
         // Сбрасываем переменные состояния теста
-        correctAnswersCount = 0;
+        correctAnswersCount1 = 0;
         testCompleted = false;
         answersChecked = false;
         submitButtonClicked = false;

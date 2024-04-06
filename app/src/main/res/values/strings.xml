@@ -76,6 +76,13 @@
     <string name="topic203">Упростите одночлен 2x<sup><small>3</small></sup>(-3a)<sup><small>2</small></sup>cx с помощью переместительного и сочетательного законов умножения:</string>
     <string name="topic204">2x<sup><small>3</small></sup>(-3a)<sup><small>2</small></sup>cx = 2(-3)x<sup><small>3</small></sup>a<sup><small>2</small></sup>cx = -6a<sup><small>2</small></sup>cx<sup><small>4</small></sup></string>
     <string name="topic205">Такой вид одночлена, где на первом месте стоит числовой множитель, а за ним – переменные и их степени, называют <b>стандартным видом одночлена</b>.</string>
+    <string name="topic206">Числовой множитель одночлена, записанного в стандартном виде, называют <b>коэффициентом одночлена</b>.</string>
+    <string name="topic207">Сумму показателей степеней всех переменных, входящих в состав одночлена, называют <b>степенью одночлена</b>.</string>
+    <string name="topic208"><b>Пример 1.</b> Перемножим одночлены -3a<sup><small>2</small></sup>b<sup><small>3</small></sup>c и 5a<sup><small>3</small></sup>bc<sup><small>2</small></sup>d</string>
+    <string name="topic209">-3a<sup><small>2</small></sup>b<sup><small>3</small></sup>c ∙ 5a<sup><small>3</small></sup>bc<sup><small>2</small></sup>d = -15a<sup><small>5</small></sup>b<sup><small>4</small></sup>c<sup><small>3</small></sup>d</string>
+    <string name="topic210"><b>Пример 2.</b> Возведите одночлен 2a<sup><small>2</small></sup>y<sup><small>3</small></sup>z в четвертую степень.</string>
+    <string name="topic211">(2a<sup><small>2</small></sup>y<sup><small>3</small></sup>z)<sup><small>4</small></sup> = 2<sup><small>4</small></sup>(a<sup><small>2</small></sup>)<sup><small>4</small></sup>(y<sup><small>3</small></sup>)<sup><small>4</small></sup>z<sup><small>4</small></sup> = 16a<sup><small>8</small></sup>y<sup><small>12</small></sup>z<sup><small>4</small></sup></string>
+    <string name="topic212">Сумму показателей степеней всех переменных, входящих в состав одночлена, называют <b>степенью одночлена</b>.</string>
     <string name="test2q1">1. Найдите одночлен из указанных выражений: </string>
     <string name="test2q1o1">x<sup><small>2</small></sup> + x</string>
     <string name="test2q1o2">3, 4x<sup><small>2</small></sup>y</string>

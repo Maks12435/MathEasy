@@ -97,8 +97,14 @@ public class Test2Activity extends AppCompatActivity {
     }
 
     private void updateCorrectAnswersCounter() {
+        // Вычисляем процент правильных ответов
+        double percentage = (double) correctAnswersCount2 / correctAnswers.length * 100;
+
+        // Форматируем строку с процентом правильных ответов
+        String percentageText = String.format("Правильных ответов: %.2f%%", percentage);
+
         // Обновляем текст счетчика правильных ответов
-        correctAnswersCounter2.setText(getString(R.string.correct_answers, correctAnswersCount2));
+        correctAnswersCounter2.setText(percentageText);
     }
 
     @Override
@@ -116,15 +122,31 @@ public class Test2Activity extends AppCompatActivity {
 
     private void checkAnswers() {
         correctAnswersCount2 = 0;
+        boolean allQuestionsAnswered = true;
 
+        // Проверяем, были ли отвечены все вопросы
+        for (int i = 0; i < correctAnswers.length; i++) {
+            RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
+            int selectedRadioButtonId = questionRadioGroup.getCheckedRadioButtonId();
+
+            // Если хотя бы для одного вопроса не выбран ответ, устанавливаем флаг в false и выходим из цикла
+            if (selectedRadioButtonId == -1) {
+                allQuestionsAnswered = false;
+                break;
+            }
+        }
+
+        // Если не все вопросы отвечены, выходим из метода
+        if (!allQuestionsAnswered) {
+            Toast.makeText(this, "Ответьте на все вопросы перед проверкой.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Если все вопросы отвечены, продолжаем с проверкой ответов
         for (int i = 0; i < correctAnswers.length; i++) {
             RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
             int selectedRadioButtonId = questionRadioGroup.getCheckedRadioButtonId();
             RadioButton selectedRadioButton = findViewById(selectedRadioButtonId);
-
-            if (!questionRadioGroup.isEnabled()) { // Проверить, были ли ответы уже проверены
-                continue; // Пропустить проверку, если ответы уже были проверены
-            }
 
             if (selectedRadioButton != null) {
                 String selectedOption = getResources().getResourceEntryName(selectedRadioButtonId);
@@ -136,15 +158,13 @@ public class Test2Activity extends AppCompatActivity {
                     selectedRadioButton.setBackgroundColor(ContextCompat.getColor(this, R.color.wrong_answer));
                 }
                 disableRadioGroup(questionRadioGroup); // Отключить RadioGroup после выбора ответа
-            } else {
-                Toast.makeText(this, "Выберите ответ на вопрос " + (i + 1), Toast.LENGTH_SHORT).show();
-                return;
             }
-
         }
 
+        // Обновляем счетчик правильных ответов
         updateCorrectAnswersCounter();
     }
+
 
     @Override
     protected void onSaveInstanceState(Bundle outState2) {
