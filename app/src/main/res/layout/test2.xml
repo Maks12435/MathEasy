@@ -11,11 +11,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Question 1 -->
         <RelativeLayout
             android:id="@+id/header"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@drawable/gradient_background">
+            style="@style/SCREEN">
 
 
             <ImageButton
@@ -48,7 +49,6 @@
 
         </RelativeLayout>
 
-        <!-- Question 1 -->
         <RelativeLayout
             android:id="@+id/textbox1"
             android:layout_width="386dp"
@@ -616,7 +616,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="16dp"
-            android:text="Correct Answers: 0"
+            android:text="Правильных ответов: 0"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 
@@ -628,7 +628,7 @@
             android:layout_below="@+id/textView18"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="100dp"
-            android:background="@drawable/gradient_background">
+            style="@style/SCREEN">
 
             <Button
                 android:id="@+id/submit_button"
@@ -638,7 +638,7 @@
                 android:layout_marginStart="225dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
-                android:backgroundTint="@color/pink"
+                style="@style/BUTTONTOPIC"
                 android:text="Отправить"
                 android:textColor="@color/white"
                 android:textSize="12dp" />
@@ -650,7 +650,7 @@
                 android:layout_marginStart="55dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
-                android:backgroundTint="@color/pink"
+                style="@style/BUTTONTOPIC"
                 android:text="Пройти тест заново"
                 android:textColor="@color/white"
                 android:textSize="12dp" />

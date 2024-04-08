@@ -8,15 +8,17 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    public static final String databaseName = "Sign.db";
+    public static final String databaseName = "MM.db";
 
     public DatabaseHelper(@Nullable Context context) {
-        super(context, "Sign.db", null, 1);
+        super(context, "MM.db", null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase MyDatabase) {
+
         createTableUsers(MyDatabase);
+        createTableTestResults(MyDatabase);
     }
 
     @Override
@@ -27,6 +29,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private void createTableUsers(SQLiteDatabase MyDatabase) {
         MyDatabase.execSQL("create Table users(name TEXT, sName TEXT, email TEXT primary key, password TEXT)");
+    }
+
+    private void createTableTestResults(SQLiteDatabase MyDatabase) {
+        MyDatabase.execSQL("create Table test_results(email TEXT primary key, correct_answers_count1 INTEGER, correct_answers_count2 INTEGER DEFAULT NULL, correct_answers_count3 INTEGER DEFAULT NULL, correct_answers_count4 INTEGER DEFAULT NULL, correct_answers_count5 INTEGER DEFAULT NULL)");
     }
 
     public Boolean insertData(String name, String sName, String email, String password) {
@@ -90,5 +96,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             role = "unknown";
         }
         return role;
+    }
+
+    public Boolean insertTestResult(String email, int correctAnswersCount) {
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("email", email);
+        contentValues.put("correct_answers_count1", correctAnswersCount);
+        long result = MyDatabase.insert("test_results", null, contentValues);
+        MyDatabase.close();
+        return result != -1;
+    }
+
+    public Boolean updateTestResult2(String email, int correctAnswersCount2) {
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("correct_answers_count2", correctAnswersCount2);
+        int result = MyDatabase.update("test_results", contentValues, "email = ?", new String[]{email});
+        MyDatabase.close();
+        return result != -1;
     }
 }

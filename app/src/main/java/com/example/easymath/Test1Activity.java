@@ -43,10 +43,16 @@ public class Test1Activity extends AppCompatActivity {
     private TextView correctAnswersCounter;
     private SharedPreferences sharedPreferences;
 
+    String email;
+    DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test1);
+        databaseHelper = new DatabaseHelper(this);
+
+        Intent intent = getIntent();;
+        email = intent.getStringExtra("email");
 
         Button restartButton = findViewById(R.id.restart_button);
         restartButton.setOnClickListener(new View.OnClickListener() {
@@ -160,10 +166,12 @@ public class Test1Activity extends AppCompatActivity {
                 disableRadioGroup(questionRadioGroup); // Отключить RadioGroup после выбора ответа
             }
         }
+        databaseHelper.insertTestResult(email, correctAnswersCount1);
 
-        // Обновляем счетчик правильных ответов
         updateCorrectAnswersCounter();
+
     }
+
 
 
     @Override
@@ -255,18 +263,16 @@ public class Test1Activity extends AppCompatActivity {
     }
 
     public void restartTest() {
-        // Сбрасываем переменные состояния теста
+
         correctAnswersCount1 = 0;
         testCompleted = false;
         answersChecked = false;
         submitButtonClicked = false;
 
-        // Очищаем сохраненное состояние теста из SharedPreferences
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.clear();
         editor.apply();
 
-        // Сбрасываем отображение выбранных ответов и счетчика правильных ответов
         for (int radioGroupId : questionRadioGroupIds) {
             RadioGroup radioGroup = findViewById(radioGroupId);
             radioGroup.clearCheck();
@@ -284,4 +290,5 @@ public class Test1Activity extends AppCompatActivity {
         // Обновляем счетчик правильных ответов
         updateCorrectAnswersCounter();
     }
+
 }

@@ -1,16 +1,15 @@
 package com.example.easymath;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import androidx.appcompat.app.AppCompatDelegate;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -66,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void startCourseActivity(View v){
         Intent intent = new Intent(MainActivity.this, Topic1.class);
+        intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
 
