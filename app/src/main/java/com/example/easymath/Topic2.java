@@ -16,6 +16,7 @@ public class Topic2 extends AppCompatActivity {
 
     public void startTest2Activity(View v) {
         Intent intent = new Intent(Topic2.this, Test2Activity.class);
+        intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
 

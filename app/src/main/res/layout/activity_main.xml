@@ -182,7 +182,7 @@
                 android:layout_marginStart="70dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="14dp"
-                android:text="КВАДРАТ СУММЫ И РАЗНОСТИ ДВУХ ВЫРАЖЕНИЙ"
+                android:text="ПОНЯТИЕ КВАДРАТНОГО КОРНЯ"
                 android:textColor="@color/black"
                 android:gravity="start|center_vertical"/>
 

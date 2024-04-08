@@ -43,11 +43,16 @@ public class Test2Activity extends AppCompatActivity {
     private TextView correctAnswersCounter2;
     private SharedPreferences sharedPreferences2;
 
+    String email;
+    DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test2);
+        databaseHelper = new DatabaseHelper(this);
 
+        Intent intent = getIntent();;
+        email = intent.getStringExtra("email");
         Button restartButton = findViewById(R.id.restart_button);
         restartButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -160,8 +165,8 @@ public class Test2Activity extends AppCompatActivity {
                 disableRadioGroup(questionRadioGroup); // Отключить RadioGroup после выбора ответа
             }
         }
+        databaseHelper.updateTestResult2(email, correctAnswersCount2);
 
-        // Обновляем счетчик правильных ответов
         updateCorrectAnswersCounter();
     }
 

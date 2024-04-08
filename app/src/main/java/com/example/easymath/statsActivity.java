@@ -1,30 +1,37 @@
 package com.example.easymath;
 
+import android.annotation.SuppressLint;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import com.example.easymath.databinding.ActivityStatsBinding;
 
 public class statsActivity extends AppCompatActivity {
 
+    ActivityStatsBinding binding;
+    DatabaseHelper dbHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stats);
+        binding = ActivityStatsBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        // Получите данные от другой активити
-        Intent intent = getIntent();
-        int correctAnswersCount = intent.getIntExtra("correct_answers_count", 0);
-        int totalQuestions = intent.getIntExtra("total_questions", 0);
+        dbHelper = new DatabaseHelper(this);
 
-        // Создайте TextView для отображения статистики
-        LinearLayout layout = findViewById(R.id.stats_layout);
-        TextView textView = new TextView(this);
-        textView.setText("Правильных ответов: " + correctAnswersCount + "/" + totalQuestions);
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT correct_answers_count1, correct_answers_count2 FROM test_results", null);
 
-        // Добавьте TextView в LinearLayout
-        layout.addView(textView);
+        if (cursor != null && cursor.moveToFirst()) {
+            @SuppressLint("Range") String grade1 = cursor.getString(cursor.getColumnIndex("correct_answers_count1"));
+            @SuppressLint("Range") String grade2 = cursor.getString(cursor.getColumnIndex("correct_answers_count2"));
+
+            binding.g1.setText(grade1);
+            binding.g2.setText(grade2);
+
+            cursor.close();
+        }
     }
 }
