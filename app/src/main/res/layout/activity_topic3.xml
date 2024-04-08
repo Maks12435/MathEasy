@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:id="@+id/drawer_layout"
     android:layout_height="match_parent"
-    tools:context=".Topic2">
+    tools:context=".Topic3">
 
     <RelativeLayout
         android:id="@+id/all"
@@ -26,7 +26,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="43dp"
-                android:text="Тема 2"
+                android:text="Тема 3"
                 android:textColor="@color/white"
                 android:textSize="28dp"
                 android:textStyle="bold"/>
@@ -39,7 +39,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="93dp"
-                android:text="Одночлены и его стандартный вид"
+                android:text="Умножение многочлена на многочлен"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
@@ -66,7 +66,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="22dp"
-                android:text="@string/topic201"
+                android:text="@string/topic301"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -83,7 +83,7 @@
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="22dp"
                 android:gravity="center"
-                android:text="@string/topic202"
+                android:text="@string/topic302"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -98,7 +98,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="18dp"
-                android:text="@string/topic203"
+                android:text="@string/topic303"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -113,7 +113,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="12dp"
                 android:gravity="center"
-                android:text="@string/topic204"
+                android:text="@string/topic304"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -128,81 +128,25 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="18dp"
-                android:text="@string/topic205"
+                android:text="@string/topic305"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
-            <RelativeLayout
-                android:id="@+id/textbox1"
-                android:layout_width="386dp"
-                android:layout_height="160dp"
-                android:layout_below="@+id/textView9"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="12dp"
-                android:background="@drawable/textback"
-                android:elevation="8dp">
 
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="184dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginEnd="207dp"
-                    android:text="Примечание: "
-                    android:textSize="14dp"
-                    android:textStyle="bold"
-                    tools:ignore="TextSizeCheck" />
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="332dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView10"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="35dp"
-                    android:layout_marginEnd="59dp"
-                    android:text="@string/topic206"
-                    android:textSize="12dp"
-                    tools:ignore="TextSizeCheck" />
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="400dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/textView11"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="95dp"
-                    android:layout_marginEnd="57dp"
-                    android:text="@string/topic207"
-                    android:textSize="12dp"
-                    tools:ignore="TextSizeCheck" />
-            </RelativeLayout>
 
             <TextView
                 android:id="@+id/textView15"
                 android:layout_width="373dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textbox1"
+                android:layout_below="@+id/textView9"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="18dp"
-                android:text="@string/topic208"
+                android:gravity="center"
+                android:text="@string/topic306"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -216,8 +160,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="12dp"
-                android:gravity="center"
-                android:text="@string/topic209"
+                android:layout_marginStart="20dp"
+                android:text="@string/topic307"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -232,7 +176,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="18dp"
-                android:text="@string/topic210"
+                android:text="@string/topic308"
+                android:gravity="center"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -245,45 +190,123 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="18dp"
                 android:layout_marginTop="12dp"
                 android:gravity="center"
-                android:text="@string/topic211"
+                android:text="@string/topic309"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                tools:ignore="NotSibling,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView18"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="@string/topic310"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
             <RelativeLayout
+                android:id="@+id/textbox1"
+                android:layout_width="386dp"
+                android:layout_height="160dp"
+                android:layout_below="@+id/textView19"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="12dp"
+                android:background="@color/white"
+                android:elevation="8dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="184dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="18dp"
+                    android:text="@string/topic311"
+                    android:textSize="14dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="332dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView10"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="18dp"
+                    android:text="@string/topic312"
+                    android:textSize="14dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView11"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginEnd="18dp"
+                    android:text="@string/topic313"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    tools:ignore="TextSizeCheck" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:id="@+id/footer"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:layout_below="@+id/textView18"
+                android:layout_below="@+id/textbox1"
                 android:background="@drawable/gradient_background"
                 android:layout_marginTop="40dp"
                 android:layout_alignParentBottom="true">
 
                 <Button
-                    android:id="@+id/buttonNext2"
+                    android:id="@+id/buttonNext"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="162dp"
-                    style="@style/BUTTONTOPIC"
-                    android:onClick="startTopic2Activity"
+                    android:backgroundTint="@color/pink"
                     android:text="Следующяя тема"
+                    android:onClick="startTopic3Activity"
                     android:textColor="@color/white"
                     android:textSize="12dp"
                     tools:ignore="TextSizeCheck" />
 
                 <Button
-                    android:id="@+id/buttonTest2"
-                    style="@style/BUTTONTOPIC"
+                    android:id="@+id/buttonTest"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="40dp"
-                    android:onClick="startTest2Activity"
+                    android:backgroundTint="@color/pink"
+                    android:onClick="startTest3Activity"
                     android:text="Начать Тест"
                     android:textColor="@color/white"
                     android:textSize="12dp"

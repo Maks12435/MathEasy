@@ -82,7 +82,19 @@
     <string name="topic209">-3a<sup><small>2</small></sup>b<sup><small>3</small></sup>c ∙ 5a<sup><small>3</small></sup>bc<sup><small>2</small></sup>d = -15a<sup><small>5</small></sup>b<sup><small>4</small></sup>c<sup><small>3</small></sup>d</string>
     <string name="topic210"><b>Пример 2.</b> Возведите одночлен 2a<sup><small>2</small></sup>y<sup><small>3</small></sup>z в четвертую степень.</string>
     <string name="topic211">(2a<sup><small>2</small></sup>y<sup><small>3</small></sup>z)<sup><small>4</small></sup> = 2<sup><small>4</small></sup>(a<sup><small>2</small></sup>)<sup><small>4</small></sup>(y<sup><small>3</small></sup>)<sup><small>4</small></sup>z<sup><small>4</small></sup> = 16a<sup><small>8</small></sup>y<sup><small>12</small></sup>z<sup><small>4</small></sup></string>
-    <string name="topic212">Сумму показателей степеней всех переменных, входящих в состав одночлена, называют <b>степенью одночлена</b>.</string>
+    <string name="topic301">Предположим, что требуется перемножить многочлены: m - n и a + b - c. Составим произведение этих многочленов:</string>
+    <string name="topic302">(m - n)(a + b - c)</string>
+    <string name="topic303">Обозначим двучлен m-n буквой x и по правилу умножения одночлена на многочлен преобразуем произведение:</string>
+    <string name="topic304">(m - n)(a + b - c) = x(a + b - c) = xa + xb - xc</string>
+    <string name="topic305">В выражении xa + xb - xc подставим вместо x двучлен m - n и снова применим правило умножения одночлена на многочлен:</string>
+    <string name="topic306">xa + xb - xc = m - na + m - nb - m - nc = ma - na + mb - nb - mc + nc</string>
+    <string name="topic307">Итак,</string>
+    <string name="topic308">m - na + b - c = ma - na + mb - nb - mn + nc</string>
+    <string name="topic309">Мы видим, что последнее выражение получилось после того, как каждый член многочлена m - n умножили на каждый член многочлена a + b - c. Отсюда получаем правило, данное ниже.</string>
+    <string name="topic310"><b>Чтобы умножить многочлен на многочлен, нужно каждый член одного многочлена умножить на каждый член другого многочлена, а полученные произведения сложить.</b></string>
+    <string name="topic311"><b>Пример</b>: Упростим выражение 5x<sup><small>3</small></sup> + (y<sup><small>2</small></sup>+5x)(xy-x<sup><small>2</small></sup>)</string>
+    <string name="topic312"><b>Решение</b>. Сначала надо перемножить двучлены y<sup><small>2</small></sup> + 5x и xy - x<sup><small></small></sup>, а затем привести подобные члены.</string>
+    <string name="topic313">5x<sup>3</sup> + (y<sup>2</sup>+5x)(xy-x<sup>2</sup>) = 5x<sup>3</sup> + y<sup>2</sup> ∙ xy - y<sup>2</sup>x<sup>2</sup> + 5x ∙ xy - 5x ∙ x<sup>2</sup> = 5x<sup>3</sup> + xy<sup>3</sup> - y<sup>2</sup> + 5x<sup>2</sup>y - 5x<sup>3</sup> = xy<sup>3</sup> - y<sup>2</sup>x<sup>2</sup> + 5x<sup>2</sup>y</string>
     <string name="test2q1">1. Найдите одночлен из указанных выражений: </string>
     <string name="test2q1o1">x<sup><small>2</small></sup> + x</string>
     <string name="test2q1o2">3, 4x<sup><small>2</small></sup>y</string>
@@ -106,7 +118,7 @@
     <string name="test2q5">5. Определите степень одночлена: -xy∙2y<sup><small>3</small></sup>x<sup><small>4</small></sup></string>
     <string name="test2q5o1">7</string>
     <string name="test2q5o2">8</string>
-    <string name="test2q5o3">12></string>
+    <string name="test2q5o3">12</string>
     <string name="test2q5o4">9</string>
     <string name="test2q6">6. Запишите одночлен в стандартном виде: 0,12x∙(-0,3)y∙100y<sup><small>3</small></sup>x<sup><small>3</small></sup>y</string>
     <string name="test2q6o1">-36x<sup><small>4</small></sup>y<sup><small>4</small></sup></string>
@@ -133,4 +145,130 @@
     <string name="test2q10o2">5,5t<sup><small>9</small></sup>z<sup><small>5</small></sup></string>
     <string name="test2q10o3">11t<sup><small>8</small></sup>z<sup><small>5</small></sup></string>
     <string name="test2q10o4">66t<sup><small>7</small></sup>z<sup><small>9</small></sup></string>
+    <string name="test3q1">1. Выполните умножение: 2x(x<sup><small>2</small></sup> - 7x - 3)</string>
+    <string name="test3q1o1">2x<sup><small>3</small></sup> - 7x<sup><small>2</small></sup> - 3</string>
+    <string name="test3q1o2">2x<sup><small>4</small></sup> - 7x<sup><small>2</small></sup> + 6</string>
+    <string name="test3q1o3">2x<sup><small>3</small></sup> - 14x<sup><small>2</small></sup> - 6x</string>
+    <string name="test3q1o4">2x<sup><small>2</small></sup> - 14x - 6x</string>
+    <string name="test3q2">2. Выполните умножение: 2&#8260;3 x<sup><small>2</small></sup>y(15x - 0.9y + 6)</string>
+    <string name="test3q2o1">15x<sup><small>3</small></sup>y - 0,4x<sup><small>2</small></sup>y<sup><small>2</small></sup> + 6x<sup><small>2</small></sup>y</string>
+    <string name="test3q2o2">8x<sup><small>2</small></sup>y - 0,6x<sup><small>3</small></sup>y<sup><small>2</small></sup> + 8x<sup><small>2</small></sup>y</string>
+    <string name="test3q2o3">10x<sup><small>3</small></sup>y - 0,6x<sup><small>2</small></sup>y<sup><small>2</small></sup> + 4x<sup><small>2</small></sup>y</string>
+    <string name="test3q2o4">12x<sup><small>2</small></sup>y - 0,4x<sup><small>2</small></sup>y<sup><small>2</small></sup> + 6xy<sup><small>2</small></sup></string>
+    <string name="test3q3">3. Упростите: 14(7x-1) - 7(14x+1)</string>
+    <string name="test3q3o1">-21</string>
+    <string name="test3q3o2">0</string>
+    <string name="test3q3o3">14</string>
+    <string name="test3q3o4">1</string>
+    <string name="test3q4">4. Упростите выражение: -2 + 3(3c-2) - 2(c-1)</string>
+    <string name="test3q4o1">11c - 10</string>
+    <string name="test3q4o2">7c - 6</string>
+    <string name="test3q4o3">11c - 6</string>
+    <string name="test3q4o4">7c - 10</string>
+    <string name="test3q5">5. Упростив выражение, найдите его значение: 25a - 43a - 1 + 75 - 2a, где a = 11</string>
+    <string name="test3q5o1">50</string>
+    <string name="test3q5o2">-50</string>
+    <string name="test3q5o3">-28</string>
+    <string name="test3q5o4">28</string>
+    <string name="test3q6">6. Вынесите общий множитель за скобки: 12x<sup><small>2</small></sup>y - 48xy<sup><small>2</small></sup></string>
+    <string name="test3q6o1">4xy(8x-44y)</string>
+    <string name="test3q6o2">12xy(x-4y)</string>
+    <string name="test3q6o3">12xy(x-36y)</string>
+    <string name="test3q6o4">3xy(4y-16x)</string>
+    <string name="test3q7">7. Разложите на множители: a<sup><small>4</small></sup> + a<sup><small>5</small></sup> - a<sup><small>8</small></sup></string>
+    <string name="test3q7o1">a<sup><small>4</small></sup>(0 + a<sup><small>2</small></sup> - a<sup><small>4</small></sup>)</string>
+    <string name="test3q7o2">a<sup><small>4</small></sup>(a<sup><small>2</small></sup> - a<sup><small>4</small></sup>)</string>
+    <string name="test3q7o3">a<sup><small>4</small></sup>(a - a<sup><small>4</small></sup>)</string>
+    <string name="test3q7o4">a<sup><small>4</small></sup>(1 + a - a<sup><small>4</small></sup>)</string>
+    <string name="test3q8">8. Решите уравнение: y<sup><small>2</small></sup> + 0,7y = 0</string>
+    <string name="test3q8o1">-0,7; 0</string>
+    <string name="test3q8o2">0; 0,7</string>
+    <string name="test3q8o3">0; 0,3</string>
+    <string name="test3q8o4">-0,3; 0</string>
+    <string name="test3q9">9. Вынесите общий множитель за скобки: 4ax<sup><small>3</small></sup> + 8a<sup><small>2</small></sup>x<sup><small>2</small></sup> - 12a<sup><small>3</small></sup>x</string>
+    <string name="test3q9o1">4a<sup><small>2</small></sup>x<sup><small>2</small></sup>(x + 8 - 12a)</string>
+    <string name="test3q9o2">12ax(x<sup><small>2</small></sup> + 4ax - a<sup><small>2</small></sup>)</string>
+    <string name="test3q9o3">4ax(x<sup><small>2</small></sup> + 2ax - 3a<sup><small>2</small></sup>)</string>
+    <string name="test3q9o4">12ax(8x<sup><small>2</small></sup> + 4ax - a<sup><small>2</small></sup>)</string>
+    <string name="test3q10">10. Разложите на множители: m<sup><small>2</small></sup> - 2m<sup><small>3</small></sup> - m<sup><small>4</small></sup></string>
+    <string name="test3q10o1">m<sup><small>4</small></sup>(m<sup><small>2</small></sup> - 2m - 1)</string>
+    <string name="test3q10o2">m<sup><small>2</small></sup>(1 - 2m - m<sup><small>2</small></sup>)</string>
+    <string name="test3q10o3">m<sup><small>3</small></sup>(m - 2 - m<sup><small>2</small></sup>)</string>
+    <string name="test3q10o4">m(m - 2m<sup><small>2</small></sup> - m<sup><small>4</small></sup>)</string>
+    <string name="topic401"><b>Формулы сокращённого умножения</b> многочленов — часто встречающиеся случаи умножения многочленов. Одно из них квадрат суммы и разности.</string>
+    <string name="topic402">(a + b)<sup><small>2</small></sup> = a<sup><small>2</small></sup> + 2ab + b<sup><small>2</small></sup></string>
+    <string name="topic403">К примеру, (7x + 2)<sup><small>2</small></sup> можно приравнять к трёхчлену 49x<sup><small>2</small></sup> + 28x + 4</string>
+    <string name="topic404">Или, наоборот, трёхчлен 4x<sup><small>2</small></sup> - 12x + 9 можно представить в виде (2x - 3)<sup><small>2</small></sup></string>
+    <string name="topic405">Применение квадрата суммы или разности:</string>
+    <string name="topic406">101<sup><small>2</small></sup> = (100 + 1)<sup><small>2</small></sup> = 10000 + 200 + 1 = 10201</string>
+    <string name="topic407">98<sup><small>2</small></sup> = (100 - 2)<sup><small>2</small></sup> = 10000 - 400 + 4 = 9604</string>
+    <string name="topic408"><b>Разность квадратов двух выражений</b></string>
+    <string name="topic409">a<sup><small>2</small></sup> - b<sup><small>2</small></sup> = (a - b)(a + b)</string>
+    <string name="topic410">К примеру, 9x<sup><small>2</small></sup> - 16 можно разложить на множители (3x-4)(3x+4)</string>
+    <string name="topic411">Или, наоборот, из множителей 5-2x5+2x можно получить 25-4x<sup><small>2</small></sup></string>
+    <string name="topic412">Применение разности квадратов в вычислении:</string>
+    <string name="topic413">49<sup><small>2</small></sup> - 38<sup><small>2</small></sup> = (49 - 38)(49 + 38) = 11 ∙ 87 = 957</string>
+    <string name="topic414"><b>Сумма и разность кубов двух выражений</b></string>
+    <string name="topic415"><b>Формулы сокращённого умножения</b> многочленов — часто встречающиеся случаи умножения многочленов. Одно из них сумма и разность кубов.</string>
+    <string name="topic416">a<sup><small>3</small></sup> - b<sup><small>3</small></sup> = (a - b)(a<sup><small>2</small></sup> + ab + b<sup><small>2</small></sup>)</string>
+    <string name="topic417">a<sup><small>3</small></sup> + b<sup><small>3</small></sup> = (a + b)(a<sup><small>2</small></sup> - ab + b<sup><small>2</small></sup>)</string>
+    <string name="topic418">К примеру, 8x<sup><small>3</small></sup> - 27 можно разложить на множители (2x - 3)(4x<sup><small>2</small></sup> + 6x + 9)</string>
+    <string name="topic419">Или, наоборот, из множителей (5 - 2x)(25 + 10x + 4x<sup><small>2</small></sup>) можно получить 125 - 8x<sup><small>3</small></sup></string>
+    <string name="topic420"><b>Куб суммы и разности двух выражений</b></string>
+    <string name="topic421">(a - b)<sup><small>3</small></sup> = a<sup><small>3</small></sup> - 3a<sup><small>2</small></sup>b + 3ab<sup><small>2</small></sup> - b<sup><small>3</small></sup></string>
+    <string name="topic422">(a + b)<sup><small>3</small></sup> = a<sup><small>3</small></sup> + 3a<sup><small>2</small></sup>b + 3ab<sup><small>2</small></sup> + b<sup><small>3</small></sup></string>
+    <string name="topic423">К примеру, (2x + 3)<sup><small>2</small></sup> можно записать в виде многочлена 8x<sup><small>3</small></sup> + 36x<sup><small>2</small></sup> + 54 + 27</string>
+    <string name="topic424">Или, наоборот, из многочлена 125a<sup><small>3</small></sup> - 150a<sup><small>2</small></sup>b + 60ab<sup><small>2</small></sup> - 8b<sup><small>3</small></sup> можно получить (5a - 2b)<sup><small>3</small></sup></string>
+    <string name="topic425"><b>Формулы сокращённого умножения</b> многочленов — часто встречающиеся случаи умножения многочленов. Одно из них куб суммы и разности.</string>
+    <string name="test4q1">1. Запишите в виде многочлена: (2 + t)<sup><small>3</small></sup></string>
+    <string name="test4q1o1">6 + 4t + 6t<sup>2</sup> + t<sup>3</sup></string>
+    <string name="test4q1o2">8 + 4t + 3t<sup><small>2</small></sup> + t<sup><small>3</small></sup></string>
+    <string name="test4q1o3">8 + 12t + 6t<sup><small>2</small></sup> + t<sup><small>3</small></sup></string>
+    <string name="test4q1o4">6 + 12t + 3t<sup><small>2</small></sup> + t<sup><small>3</small></sup></string>
+    <string name="test4q2">2. Запишите в виде многочлена: (-n + 3m)<sup><small>3</small></sup></string>
+    <string name="test4q2o1">9m<sup><small>3</small></sup> - 18m<sup><small>2</small></sup>n + 18mn<sup><small>2</small></sup> - n<sup><small>3</small></sup></string>
+    <string name="test4q2o2">18m<sup><small>3</small></sup> - 27m<sup><small>2</small></sup>n + 18mn<sup><small>2</small></sup> - n<sup><small>3</small></sup></string>
+    <string name="test4q2o3">9m<sup><small>3</small></sup> - 9m<sup><small>2</small></sup>n + 27mn<sup><small>2</small></sup> - n<sup><small>3</small></sup></string>
+    <string name="test4q2o4">27m<sup><small>3</small></sup> - 27m<sup><small>2</small></sup>n + 9mn<sup><small>2</small></sup> - n<sup><small>3</small></sup></string>
+    <string name="test4q3">3. Запишите в виде многочлена: (5x<sup><small>2</small></sup> - 4c)<sup><small>3</small></sup></string>
+    <string name="test4q3o1">125x<sup><small>6</small></sup> - 300c<sup><small>4</small></sup> + 240c<sup><small>2</small></sup>x<sup><small>2</small></sup> - 64c<sup><small>3</small></sup></string>
+    <string name="test4q3o2">15x<sup><small>6</small></sup> - 100c<sup><small>4</small></sup> + 120c<sup><small>2</small></sup>x<sup><small>2</small></sup> - 12c<sup><small>3</small></sup></string>
+    <string name="test4q3o3">125x<sup><small>6</small></sup> - 150c<sup><small>2</small></sup>x<sup><small>2</small></sup> + 240cx<sup><small>4</small></sup> - 64c<sup><small>3</small></sup></string>
+    <string name="test4q3o4">15x<sup><small>6</small></sup> - 120cx<sup><small>4</small></sup> + 240c<sup><small>2</small></sup>x<sup><small>2</small></sup> - 12c<sup><small>3</small></sup></string>
+    <string name="test4q4">4. Запишите в виде многочлена: (1&#8260;3a - 1&#8260;5b)<sup><small>3</small></sup></string>
+    <string name="test4q4o1">1&#8260;9a<sup><small>3</small></sup> - 1&#8260;12a<sup><small>3</small></sup>b + 2&#8260;15ab<sup><small>3</small></sup> - 1&#8260;125b<sup><small>3</small></sup></string>
+    <string name="test4q4o2">1&#8260;27a<sup><small>3</small></sup> - 1&#8260;15a<sup><small>2</small></sup>b + 1&#8260;25ab<sup><small>2</small></sup> - 1&#8260;125b<sup><small>3</small></sup></string>
+    <string name="test4q4o3">1&#8260;27a<sup><small>3</small></sup> - 1&#8260;15ab<sup><small>2</small></sup> + 1&#8260;25a<sup><small>2</small></sup>b - 1&#8260;15b<sup><small>3</small></sup></string>
+    <string name="test4q4o4">1&#8260;9a<sup><small>3</small></sup> - 1&#8260;12a<sup><small>2</small></sup>b + 1&#8260;27ab<sup><small>2</small></sup> - 1&#8260;15b<sup><small>3</small></sup></string>
+    <string name="test4q5">5. Укажите многочлен в виде куба двучлена: 125p<sup><small>3</small></sup> - 75p<sup><small>2</small></sup>q + 15pq<sup><small>2</small></sup> - q<sup><small>3</small></sup></string>
+    <string name="test4q5o1">(5p + q)<sup><small>3</small></sup></string>
+    <string name="test4q5o2">(25p - q)<sup><small>3</small></sup></string>
+    <string name="test4q5o3">(5p - q)<sup><small>3</small></sup></string>
+    <string name="test4q5o4">(5p + 25q)<sup><small>3</small></sup></string>
+    <string name="test4q6">6. Упростите выражение: (a - 2b)<sup><small>3</small></sup> + 6ab(a - 2b)</string>
+    <string name="test4q6o1">a<sup><small>3</small></sup> + 4b<sup><small>3</small></sup> - 4ab</string>
+    <string name="test4q6o2">a<sup><small>3</small></sup> + 4b<sup><small>3</small></sup></string>
+    <string name="test4q6o3">a<sup><small>3</small></sup> + 2a<sup><small>2</small></sup>b - 8b<sup><small>3</small></sup></string>
+    <string name="test4q6o4">a<sup><small>3</small></sup> - 8b<sup><small>3</small></sup></string>
+    <string name="test4q7">7. Запишите выражение в стандартном виде многочлена: (x<sup><small>2</small></sup> - y<sup><small>2</small></sup>)<sup><small>3</small></sup></string>
+    <string name="test4q7o1">a<sup><small>3</small></sup> + 4b<sup><small>3</small></sup> - 4ab</string>
+    <string name="test4q7o2">a<sup><small>3</small></sup> + 4b<sup><small>3</small></sup></string>
+    <string name="test4q7o3">a<sup><small>3</small></sup> + 2a<sup><small>2</small></sup>b - 8b<sup><small>3</small></sup></string>
+    <string name="test4q7o4">a<sup><small>3</small></sup> - 8b<sup><small>3</small></sup></string>
+    <string name="test4q8">8. Решите уравнение: a<sup><small>3</small></sup> - (a - 3)<sup><small>3</small></sup> = 54 + 9a<sup><small>2</small></sup></string>
+    <string name="test4q8o1">1</string>
+    <string name="test4q8o2">-1</string>
+    <string name="test4q8o3">0</string>
+    <string name="test4q8o4">2</string>
+    <string name="test4q9">9. Запишите выражение в стандартном виде многочлена: z<sup><small>2</small></sup>(9 - z) – (3 - z)<sup><small>3</small></sup></string>
+    <string name="test4q9o1">z<sup><small>3</small></sup> - 27z + 27</string>
+    <string name="test4q9o2">z<sup><small>2</small></sup> + 27</string>
+    <string name="test4q9o3">27z - 27</string>
+    <string name="test4q9o4">z - 27</string>
+    <string name="test4q10">Разложите на множители: 27a<sup><small>3</small></sup> - b<sup><small>3</small></sup></string>
+    <string name="test4q10o1">(3a - b)(9a<sup><small>2</small></sup> - 3ab - b<sup><small>2</small></sup>)</string>
+    <string name="test4q10o2">(3a - b)(9a<sup><small>2</small></sup> + 3ab + b<sup><small>2</small></sup>)</string>
+    <string name="test4q10o3">(9a - b)(81a<sup><small>2</small></sup> + 9ab + b<sup><small>2</small></sup>)</string>
+    <string name="test4q10o4">(9a - b)(18a<sup><small>2</small></sup> + 3ab + b<sup><small>2</small></sup>)</string>
+
 </resources>

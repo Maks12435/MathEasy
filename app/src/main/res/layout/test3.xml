@@ -15,7 +15,7 @@
             android:id="@+id/header"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@drawable/gradient_background">
+            style="@style/SCREEN">
 
 
             <ImageButton
@@ -29,7 +29,6 @@
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/close"
                 android:padding="10dp"
-                android:onClick="BackTopic2"
                 android:src="@drawable/icons8_back_50"
                 tools:ignore="TouchTargetSizeCheck"
                 tools:visibility="visible" />
@@ -42,7 +41,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="160dp"
                 android:layout_marginTop="10dp"
-                android:text="Тест 2"
+                android:text="Тест 3"
                 android:textColor="@color/white"
                 android:textSize="28dp"
                 android:textStyle="bold" />
@@ -68,7 +67,7 @@
                 android:id="@+id/textView1q"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/test2q1"
+                android:text="@string/test3q1"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -82,26 +81,26 @@
                     android:id="@+id/option1a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q1o1" />
+                    android:text="@string/test3q1o1" />
 
                 <RadioButton
                     android:id="@+id/option1b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:tag="correct"
-                    android:text="@string/test2q1o2" />
+                    android:text="@string/test3q1o2" />
 
                 <RadioButton
                     android:id="@+id/option1c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q1o3" />
+                    android:text="@string/test3q1o3" />
 
                 <RadioButton
                     android:id="@+id/option1d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q1o4" />
+                    android:text="@string/test3q1o4" />
 
             </RadioGroup>
         </RelativeLayout>
@@ -125,7 +124,7 @@
                 android:id="@+id/textView2q"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/test2q2"
+                android:text="@string/test3q2"
                 android:textColor="#0B0B0B"
                 android:visibility="visible" />
 
@@ -140,25 +139,25 @@
                     android:id="@+id/option2a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q2o1" />
+                    android:text="@string/test3q2o1" />
 
                 <RadioButton
                     android:id="@+id/option2b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q2o2" />
+                    android:text="@string/test3q2o2" />
 
                 <RadioButton
                     android:id="@+id/option2c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q2o3" />
+                    android:text="@string/test3q2o3" />
 
                 <RadioButton
                     android:id="@+id/option2d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q2o4" />
+                    android:text="@string/test3q2o4" />
             </RadioGroup>
         </RelativeLayout>
 
@@ -180,7 +179,7 @@
                 android:id="@+id/textView3q"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/test2q3"
+                android:text="@string/test3q3"
                 android:textColor="#0B0B0B"
                 android:visibility="visible" />
 
@@ -196,25 +195,25 @@
                     android:id="@+id/option3a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q3o1" />
+                    android:text="@string/test3q3o1" />
 
                 <RadioButton
                     android:id="@+id/option3b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q3o2" />
+                    android:text="@string/test3q3o2" />
 
                 <RadioButton
                     android:id="@+id/option3c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q3o3" />
+                    android:text="@string/test3q3o3" />
 
                 <RadioButton
                     android:id="@+id/option3d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q3o4" />
+                    android:text="@string/test3q3o4" />
             </RadioGroup>
         </RelativeLayout>
 
@@ -236,7 +235,7 @@
                 android:id="@+id/textView4q"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/test2q4"
+                android:text="@string/test3q4"
                 android:textColor="#0B0B0B"
                 android:visibility="visible" />
 
@@ -252,25 +251,25 @@
                     android:id="@+id/option4a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q4o1" />
+                    android:text="@string/test3q4o1" />
 
                 <RadioButton
                     android:id="@+id/option4b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q4o2" />
+                    android:text="@string/test3q4o2" />
 
                 <RadioButton
                     android:id="@+id/option4c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q4o3" />
+                    android:text="@string/test3q4o3" />
 
                 <RadioButton
                     android:id="@+id/option4d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q4o4" />
+                    android:text="@string/test3q4o4" />
             </RadioGroup>
         </RelativeLayout>
 
@@ -292,7 +291,7 @@
                 android:id="@+id/textView5q"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/test2q5"
+                android:text="@string/test3q5"
                 android:textColor="#0B0B0B"
                 android:visibility="visible" />
 
@@ -308,25 +307,25 @@
                     android:id="@+id/option5a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q5o1" />
+                    android:text="@string/test3q5o1" />
 
                 <RadioButton
                     android:id="@+id/option5b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q5o2" />
+                    android:text="@string/test3q5o2" />
 
                 <RadioButton
                     android:id="@+id/option5c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q5o3" />
+                    android:text="@string/test3q5o3" />
 
                 <RadioButton
                     android:id="@+id/option5d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q5o4" />
+                    android:text="@string/test3q5o4" />
             </RadioGroup>
         </RelativeLayout>
 
@@ -348,7 +347,7 @@
                 android:id="@+id/textView6q"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/test2q6"
+                android:text="@string/test3q6"
                 android:textColor="#0B0B0B"
                 android:visibility="visible" />
 
@@ -364,25 +363,25 @@
                     android:id="@+id/option6a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q6o1" />
+                    android:text="@string/test3q6o1" />
 
                 <RadioButton
                     android:id="@+id/option6b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q6o2" />
+                    android:text="@string/test3q6o2" />
 
                 <RadioButton
                     android:id="@+id/option6c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q6o3" />
+                    android:text="@string/test3q6o3" />
 
                 <RadioButton
                     android:id="@+id/option6d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q6o4" />
+                    android:text="@string/test3q6o4" />
             </RadioGroup>
         </RelativeLayout>
 
@@ -404,7 +403,7 @@
                 android:id="@+id/textView7q"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/test2q7"
+                android:text="@string/test3q7"
                 android:textColor="#0B0B0B"
                 android:visibility="visible" />
 
@@ -420,25 +419,25 @@
                     android:id="@+id/option7a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q7o1" />
+                    android:text="@string/test3q7o1" />
 
                 <RadioButton
                     android:id="@+id/option7b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q7o2" />
+                    android:text="@string/test3q7o2" />
 
                 <RadioButton
                     android:id="@+id/option7c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q7o3" />
+                    android:text="@string/test3q7o3" />
 
                 <RadioButton
                     android:id="@+id/option7d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q7o4" />
+                    android:text="@string/test3q7o4" />
             </RadioGroup>
         </RelativeLayout>
 
@@ -460,7 +459,7 @@
                 android:id="@+id/textView8q"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/test2q8"
+                android:text="@string/test3q8"
                 android:textColor="#0B0B0B"
                 android:visibility="visible" />
 
@@ -476,25 +475,25 @@
                     android:id="@+id/option8a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q8o1" />
+                    android:text="@string/test3q8o1" />
 
                 <RadioButton
                     android:id="@+id/option8b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q8o2" />
+                    android:text="@string/test3q8o2" />
 
                 <RadioButton
                     android:id="@+id/option8c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q8o3" />
+                    android:text="@string/test3q8o3" />
 
                 <RadioButton
                     android:id="@+id/option8d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q8o4" />
+                    android:text="@string/test3q8o4" />
             </RadioGroup>
         </RelativeLayout>
 
@@ -516,7 +515,7 @@
                 android:id="@+id/textView9q"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/test2q9"
+                android:text="@string/test3q9"
                 android:textColor="#0B0B0B"
                 android:visibility="visible" />
 
@@ -532,25 +531,25 @@
                     android:id="@+id/option9a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q9o1" />
+                    android:text="@string/test3q9o1" />
 
                 <RadioButton
                     android:id="@+id/option9b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q9o2" />
+                    android:text="@string/test3q9o2" />
 
                 <RadioButton
                     android:id="@+id/option9c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q9o3" />
+                    android:text="@string/test3q9o3" />
 
                 <RadioButton
                     android:id="@+id/option9d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q9o4" />
+                    android:text="@string/test3q9o4" />
             </RadioGroup>
         </RelativeLayout>
 
@@ -572,7 +571,7 @@
                 android:id="@+id/textView10q"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/test2q10"
+                android:text="@string/test3q10"
                 android:textColor="#0B0B0B"
                 android:visibility="visible" />
 
@@ -588,25 +587,25 @@
                     android:id="@+id/option10a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q10o1" />
+                    android:text="@string/test3q10o1" />
 
                 <RadioButton
                     android:id="@+id/option10b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q10o2" />
+                    android:text="@string/test3q10o2" />
 
                 <RadioButton
                     android:id="@+id/option10c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q10o3" />
+                    android:text="@string/test3q10o3" />
 
                 <RadioButton
                     android:id="@+id/option10d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/test2q10o4" />
+                    android:text="@string/test3q10o4" />
             </RadioGroup>
         </RelativeLayout>
 
@@ -617,7 +616,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="16dp"
-            android:text="Correct Answers: 0"
+            android:text="Правильных ответов: 0"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 
@@ -629,7 +628,7 @@
             android:layout_below="@+id/textView18"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="100dp"
-            android:background="@drawable/gradient_background">
+            style="@style/SCREEN">
 
             <Button
                 android:id="@+id/submit_button"
@@ -639,7 +638,7 @@
                 android:layout_marginStart="225dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
-                android:backgroundTint="@color/pink"
+                style="@style/BUTTONTOPIC"
                 android:text="Отправить"
                 android:textColor="@color/white"
                 android:textSize="12dp" />
@@ -651,7 +650,7 @@
                 android:layout_marginStart="55dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
-                android:backgroundTint="@color/pink"
+                style="@style/BUTTONTOPIC"
                 android:text="Пройти тест заново"
                 android:textColor="@color/white"
                 android:textSize="12dp" />
