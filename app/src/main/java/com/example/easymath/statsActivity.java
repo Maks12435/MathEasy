@@ -1,9 +1,11 @@
 package com.example.easymath;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -33,5 +35,29 @@ public class statsActivity extends AppCompatActivity {
 
             cursor.close();
         }
+    }
+
+    public void BackToMainStats(View v) {
+        Intent intent = new Intent(statsActivity.this, MainActivity.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
+        startActivity(intent);
+    }
+
+    public void startTopicActivityStats(View v) {
+        Intent intent = new Intent(statsActivity.this, Topic1.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
+        startActivity(intent);
+    }
+
+    public void startProfileActivityStats(View v) {
+        Intent intent = new Intent(statsActivity.this, ProfileActivity.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
+        startActivity(intent);
     }
 }

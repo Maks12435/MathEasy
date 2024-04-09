@@ -18,4 +18,9 @@ public class Topic4 extends AppCompatActivity {
         Intent intent = new Intent(Topic4.this, Test4Activity.class);
         startActivity(intent);
     }
+
+    public void startTopic4Activity(View v){
+        Intent intent = new Intent(Topic4.this, Topic5.class);
+        startActivity(intent);
+    }
 }
