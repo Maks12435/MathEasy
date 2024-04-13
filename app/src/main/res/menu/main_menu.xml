@@ -13,13 +13,14 @@
             android:title="Tests" />
 
         <item
-            android:id="@+id/nav_home2"
-            android:icon="@drawable/icons8_leaderboard_32"
-            android:title="Leaderboard" />
-
-        <item
             android:id="@+id/stat"
             android:icon="@drawable/stat"
             android:title="Stats" />
+
+        <item
+            android:id="@+id/theme"
+            android:icon="@drawable/icons8_moon_symbol_48"
+            android:title="Night mode" />
+
 
 </menu>

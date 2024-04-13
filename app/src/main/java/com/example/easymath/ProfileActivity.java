@@ -100,4 +100,20 @@ public class ProfileActivity extends AppCompatActivity {
         intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
+
+    public void startTopicActivityProfile(View v) {
+        Intent intent = new Intent(ProfileActivity.this, Topic1.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
+        startActivity(intent);
+    }
+    public void startStatsProfile(View v) {
+        Intent intent = new Intent(ProfileActivity.this, statsActivity.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
+        startActivity(intent);
+    }
+
 }

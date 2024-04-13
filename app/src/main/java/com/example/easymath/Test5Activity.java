@@ -16,7 +16,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-public class Test3Activity extends AppCompatActivity {
+public class Test5Activity extends AppCompatActivity {
     private String[] correctAnswers = {"option1b", "option2c", "option3d", "option4a", "option5a", "option6b", "option7d", "option8c", "option9b", "option10a"};
     private int[] questionRadioGroupIds = {R.id.question1Options, R.id.question2Options, R.id.question3Options, R.id.question4Options, R.id.question5Options,
             R.id.question6Options, R.id.question7Options, R.id.question8Options, R.id.question9Options, R.id.question10Options};
@@ -33,19 +33,19 @@ public class Test3Activity extends AppCompatActivity {
             {R.id.option10a, R.id.option10b, R.id.option10c, R.id.option10d}
     };
 
-    private boolean testCompleted3 = false;
-    private int correctAnswersCount3 = 0;
-    private boolean answersChecked3 = false;
-    private boolean submitButtonClicked3 = false;
-    private TextView correctAnswersCounter3;
-    private SharedPreferences sharedPreferences3;
+    private boolean testCompleted5 = false;
+    private int correctAnswersCount5 = 0;
+    private boolean answersChecked5 = false;
+    private boolean submitButtonClicked5 = false;
+    private TextView correctAnswersCounter5;
+    private SharedPreferences sharedPreferences5;
 
     String email;
     DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test3);
+        setContentView(R.layout.test5);
 
         databaseHelper = new DatabaseHelper(this);
 
@@ -60,16 +60,16 @@ public class Test3Activity extends AppCompatActivity {
             }
         });
 
-        correctAnswersCounter3 = findViewById(R.id.correct_answers_counter);
+        correctAnswersCounter5 = findViewById(R.id.correct_answers_counter);
 
-        sharedPreferences3 = getSharedPreferences("TestState", Context.MODE_PRIVATE);
+        sharedPreferences5 = getSharedPreferences("TestState5", Context.MODE_PRIVATE);
 
         // Load the state if available
         if (savedInstanceState == null) {
             loadTestState();
         } else {
             restoreInstanceState(savedInstanceState);
-            submitButtonClicked3 = savedInstanceState.getBoolean("submit_button_clicked", false);
+            submitButtonClicked5 = savedInstanceState.getBoolean("submit_button_clicked", false);
         }
 
         Button submitButton = findViewById(R.id.submit_button);
@@ -77,8 +77,8 @@ public class Test3Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 checkAnswers();
-                answersChecked3 = true;
-                submitButtonClicked3 = true;
+                answersChecked5 = true;
+                submitButtonClicked5 = true;
             }
         });
 
@@ -86,9 +86,9 @@ public class Test3Activity extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                submitButtonClicked3 = true;
+                submitButtonClicked5 = true;
                 saveTestState();
-                Intent intent = new Intent(Test3Activity.this, Topic3.class);
+                Intent intent = new Intent(Test5Activity.this, Topic5.class);
                 intent.putExtra("email", getIntent().getStringExtra("email"));
                 intent.putExtra("name", getIntent().getStringExtra("name"));
                 intent.putExtra("sName", getIntent().getStringExtra("sName"));
@@ -101,23 +101,23 @@ public class Test3Activity extends AppCompatActivity {
     }
 
     private void updateCorrectAnswersCounter() {
-        double percentage = (double) correctAnswersCount3 / correctAnswers.length * 100;
+        double percentage = (double) correctAnswersCount5 / correctAnswers.length * 100;
         String percentageText = String.format("Правильных ответов: %.2f%%", percentage);
-        correctAnswersCounter3.setText(percentageText);
+        correctAnswersCounter5.setText(percentageText);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        if (submitButtonClicked3) {
+        if (submitButtonClicked5) {
             Button submitButton = findViewById(R.id.submit_button);
             submitButton.performClick();
-            submitButtonClicked3 = false; // Resetting the flag after performing click action
+            submitButtonClicked5 = false; // Resetting the flag after performing click action
         }
     }
 
     private void checkAnswers() {
-        correctAnswersCount3 = 0;
+        correctAnswersCount5 = 0;
         boolean allQuestionsAnswered = true;
 
         for (int i = 0; i < correctAnswers.length; i++) {
@@ -145,7 +145,7 @@ public class Test3Activity extends AppCompatActivity {
 
                 if (selectedOption.equals(correctAnswers[i])) {
                     selectedRadioButton.setBackgroundColor(ContextCompat.getColor(this, R.color.correct_answer));
-                    correctAnswersCount3++;
+                    correctAnswersCount5++;
                 } else {
                     selectedRadioButton.setBackgroundColor(ContextCompat.getColor(this, R.color.wrong_answer));
                 }
@@ -153,8 +153,7 @@ public class Test3Activity extends AppCompatActivity {
             }
         }
 
-        databaseHelper.updateTestResult3(email, correctAnswersCount3);
-
+        databaseHelper.updateTestResult5(email, correctAnswersCount5);
         updateCorrectAnswersCounter();
     }
 
@@ -162,20 +161,20 @@ public class Test3Activity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         saveTestState();
-        outState.putBoolean("submit_button_clicked", submitButtonClicked3);
+        outState.putBoolean("submit_button_clicked", submitButtonClicked5);
     }
 
     private void restoreInstanceState(Bundle savedInstanceState) {
-        testCompleted3 = savedInstanceState.getBoolean("answers_checked", false);
-        correctAnswersCount3 = savedInstanceState.getInt("correct_answers_count", 0);
-        answersChecked3 = savedInstanceState.getBoolean("answers_checked", false);
-        submitButtonClicked3 = savedInstanceState.getBoolean("submit_button_clicked", false);
-        if (testCompleted3) {
+        testCompleted5 = savedInstanceState.getBoolean("answers_checked", false);
+        correctAnswersCount5 = savedInstanceState.getInt("correct_answers_count", 0);
+        answersChecked5 = savedInstanceState.getBoolean("answers_checked", false);
+        submitButtonClicked5 = savedInstanceState.getBoolean("submit_button_clicked", false);
+        if (testCompleted5) {
             disableAllRadioGroups();
         }
 
         for (int i = 0; i < questionRadioGroupIds.length; i++) {
-            int selectedRadioButtonId = savedInstanceState.getInt("selected_radio_button_" + i);
+            int selectedRadioButtonId = savedInstanceState.getInt("selected_radio_button_5" + i);
             if (selectedRadioButtonId != -1) {
                 RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
                 questionRadioGroup.check(selectedRadioButtonId);
@@ -184,17 +183,17 @@ public class Test3Activity extends AppCompatActivity {
     }
 
     private void loadTestState() {
-        testCompleted3 = sharedPreferences3.getBoolean("test_completed3", false);
-        correctAnswersCount3 = sharedPreferences3.getInt("correct_answers_count3", 0);
-        answersChecked3 = sharedPreferences3.getBoolean("answers_checked3", false);
-        submitButtonClicked3 = sharedPreferences3.getBoolean("submit_button_clicked3", false);
+        testCompleted5 = sharedPreferences5.getBoolean("test_completed5", false);
+        correctAnswersCount5 = sharedPreferences5.getInt("correct_answers_count5", 0);
+        answersChecked5 = sharedPreferences5.getBoolean("answers_checked5", false);
+        submitButtonClicked5 = sharedPreferences5.getBoolean("submit_button_clicked5", false);
 
-        if (testCompleted3) {
+        if (testCompleted5) {
             disableAllRadioGroups();
         }
 
         for (int i = 0; i < questionRadioGroupIds.length; i++) {
-            int selectedRadioButtonId = sharedPreferences3.getInt("selected_radio_button_3" + i, -1);
+            int selectedRadioButtonId = sharedPreferences5.getInt("selected_radio_button_5" + i, -1);
             if (selectedRadioButtonId != -1) {
                 RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
                 questionRadioGroup.check(selectedRadioButtonId);
@@ -203,17 +202,17 @@ public class Test3Activity extends AppCompatActivity {
     }
 
     private void saveTestState() {
-        SharedPreferences.Editor editor = sharedPreferences3.edit();
+        SharedPreferences.Editor editor = sharedPreferences5.edit();
 
         for (int i = 0; i < questionRadioGroupIds.length; i++) {
             RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
-            editor.putInt("selected_radio_button_3" + i, questionRadioGroup.getCheckedRadioButtonId());
+            editor.putInt("selected_radio_button_5" + i, questionRadioGroup.getCheckedRadioButtonId());
         }
 
-        editor.putBoolean("test_completed3", testCompleted3);
-        editor.putInt("correct_answers_count3", correctAnswersCount3);
-        editor.putBoolean("answers_checked3", answersChecked3);
-        editor.putBoolean("submit_button_clicked3", submitButtonClicked3);
+        editor.putBoolean("test_completed5", testCompleted5);
+        editor.putInt("correct_answers_count5", correctAnswersCount5);
+        editor.putBoolean("answers_checked5", answersChecked5);
+        editor.putBoolean("submit_button_clicked5", submitButtonClicked5);
 
         editor.apply();
     }
@@ -238,12 +237,12 @@ public class Test3Activity extends AppCompatActivity {
     }
 
     public void restartTest() {
-        correctAnswersCount3 = 0;
-        testCompleted3 = false;
-        answersChecked3 = false;
-        submitButtonClicked3 = false;
+        correctAnswersCount5 = 0;
+        testCompleted5 = false;
+        answersChecked5 = false;
+        submitButtonClicked5 = false;
 
-        SharedPreferences.Editor editor = sharedPreferences3.edit();
+        SharedPreferences.Editor editor = sharedPreferences5.edit();
         editor.clear();
         editor.apply();
 

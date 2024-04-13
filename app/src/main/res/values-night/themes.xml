@@ -24,5 +24,13 @@
         <item name="android:backgroundTint">@color/gray</item>
     </style>
 
+    <style name="TEST_RADIO">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TEST_RELATIVE">
+        <item name="android:background">#CFCFCF</item>
+    </style>
+
     <style name="Theme.EasyMath" parent="Base.Theme.EasyMath" />
 </resources>

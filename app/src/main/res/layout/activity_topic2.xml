@@ -15,7 +15,7 @@
             android:id="@+id/header"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@drawable/gradient_background"
+            style="@style/SCREEN"
             android:orientation="vertical">
 
             <TextView
@@ -257,7 +257,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_below="@+id/textView18"
-                android:background="@drawable/gradient_background"
+                style="@style/SCREEN"
                 android:layout_marginTop="40dp"
                 android:layout_alignParentBottom="true">
 

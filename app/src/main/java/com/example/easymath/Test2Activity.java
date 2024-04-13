@@ -93,6 +93,9 @@ public class Test2Activity extends AppCompatActivity {
                 submitButtonClicked2 = true;
                 saveTestState(); // Сохраняем состояние теста перед переходом на другую активность
                 Intent intent = new Intent(Test2Activity.this, Topic2.class);
+                intent.putExtra("email", getIntent().getStringExtra("email"));
+                intent.putExtra("name", getIntent().getStringExtra("name"));
+                intent.putExtra("sName", getIntent().getStringExtra("sName"));
                 startActivity(intent);
                 finish(); // Завершаем текущую активность при переходе на следующую
             }

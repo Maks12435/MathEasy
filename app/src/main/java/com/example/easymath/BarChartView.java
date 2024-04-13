@@ -10,7 +10,7 @@ import android.view.View;
 public class BarChartView extends View {
     private Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private float[] data;
-    private String[] labels = {"Label1", "Label2", "Label3", "Label4"};
+    private String[] labels;
 
     public BarChartView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -29,7 +29,7 @@ public class BarChartView extends View {
         int height = getHeight();
 
         float columnWidth = width / (float) data.length;
-        float maxDataValue = getMax(data);
+        float maxDataValue = 10;
         float columnMaxHeight = height * 0.9f;
 
         paint.setColor(Color.rgb(238, 0, 85));
@@ -52,15 +52,5 @@ public class BarChartView extends View {
             paint.setColor(Color.rgb(238, 0, 85));
             canvas.drawText(labels[i], (left + right) / 2, height - 10, paint);
         }
-    }
-
-    private float getMax(float[] array) {
-        float max = Float.MIN_VALUE;
-        for (float value : array) {
-            if (value > max) {
-                max = value;
-            }
-        }
-        return max;
     }
 }

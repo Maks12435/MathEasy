@@ -16,7 +16,7 @@
     <string name="topic107">-3<sup><small>2</small></sup> = (-3) · (-3) = 9;</string>
     <string name="topic108">Отрицательное число с нечетным показателем является отрицательным числом, так как произведение нечетного числа отрицательных множителей отрицательно.</string>
     <string name="topic109">-2<sup><small>3</small></sup> = (-2) · (-2) · (-2) = -8;</string>
-    <string name="topic110">) Первая степень любого числа равна этому же числу: a<sup><small>1</small></sup> = a.</string>
+    <string name="topic110">1) Первая степень любого числа равна этому же числу: a<sup><small>1</small></sup> = a.</string>
     <string name="topic111">2) Любое число в нулевой степени равно 1: a<sup><small>0</small></sup> = 1, a ≠ 0.</string>
     <string name="topic112">\n3) Любая степень числа 0 равно нулю. 0<sup><small>n</small></sup> = 0, n ≠ 0.</string>
     <string name="topic113">\n4) Любая степень числа 1 равна 1. 1<sup><small>n</small></sup> = 1. </string>
@@ -270,5 +270,70 @@
     <string name="test4q10o2">(3a - b)(9a<sup><small>2</small></sup> + 3ab + b<sup><small>2</small></sup>)</string>
     <string name="test4q10o3">(9a - b)(81a<sup><small>2</small></sup> + 9ab + b<sup><small>2</small></sup>)</string>
     <string name="test4q10o4">(9a - b)(18a<sup><small>2</small></sup> + 3ab + b<sup><small>2</small></sup>)</string>
-
+    <string name="topic501"><b>Квадратным корнем числа а называют</b> число х, квадратом которого является число а. </string>
+    <string name="topic502">Арифметическим квадратным корнем из числа a называется неотрицательное число, квадрат которого равен данному числу a. Обозначается как √a, здесь √ – знак арифметического квадратного корня. √a читается как: «арифметический квадратный корень из a».</string>
+    <string name="topic503">Из определения арифметического квадратного корня следует, что:</string>
+    <string name="topic504">1. Только если а ≥ 0, выражение a имеет смысл, и областью определения является числовой промежуток  [0; + ∞).</string>
+    <string name="topic505">2. Неравенство a ≥ 0  имеет смысл для любого неотрицательного а, это значит, что значением арифметического квадратного корня могут быть только неотрицательные числа.</string>
+    <string name="topic506">3. Равенство (√a)<sup><small>2</small></sup> = a имеет смысл для любого неотрицательного а, это значит, что квадрат квадратного корня равен числу под корнем. Не обязательно употреблять слово «арифметический».</string>
+    <string name="topic507">Метод нахождения квадратного корня из числа называется <b>извлечением числа под квадратный корень</b>.
+                            Чтобы определить, является ли b арифметическим квадратным корнем из a, нужно проследить, чтобы выполнились нижеперечисленные условия:</string>
+    <string name="topic508">b ≥ 0,</string>
+    <string name="topic509">b<sup><small>2</small></sup> = a</string>
+    <string name="topic510">Пример:</string>
+    <string name="topic511">√81 = 9, потому что 9 > 0 и 9² = 81</string>
+    <string name="topic512">√0 = 0, потому что 0 неотрицательное число и 0² = 0</string>
+    <string name="topic513">√(25/64) = 5/8, потому что 5/8 > 0 и (5/8)² = 25/64</string>
+    <string name="topic514">Числа √a и -√a называют <b>противоположными корнями</b></string>
+    <string name="topic515">Например, уравнение x² = 64 имеет два корня: x1 = √64 = 8 и x2 = -√64 = -8</string>
+    <string name="test5q1">1. Найдите значение данного корня: √121</string>
+    <string name="test5q1o1">12</string>
+    <string name="test5q1o2">14</string>
+    <string name="test5q1o3">11</string>
+    <string name="test5q1o4">13</string>
+    <string name="test5q2">2. Найдите значение данного выражения: √81 - √225</string>
+    <string name="test5q2o1">24</string>
+    <string name="test5q2o2">12</string>
+    <string name="test5q2o3">-12</string>
+    <string name="test5q2o4">-6</string>
+    <string name="test5q3">3. Найдите значение выражения: (√49)<sup><small>2</small></sup></string>
+    <string name="test5q3o1">49</string>
+    <string name="test5q3o2">7</string>
+    <string name="test5q3o3">14</string>
+    <string name="test5q3o4">21</string>
+    <string name="test5q4">4. Найдите значение выражения: (√51)<sup><small>2</small></sup> - (√35)<sup><small>2</small></sup></string>
+    <string name="test5q4o1">4</string>
+    <string name="test5q4o2">16</string>
+    <string name="test5q4o3">32</string>
+    <string name="test5q4o4">24</string>
+    <string name="test5q5">5. 29 + √144</string>
+    <string name="test5q5o1">41</string>
+    <string name="test5q5o2">40</string>
+    <string name="test5q5o3">42</string>
+    <string name="test5q5o4">43</string>
+    <string name="test5q6">6. Вычислите: √0,09 + √1,96</string>
+    <string name="test5q6o1">1,43</string>
+    <string name="test5q6o2">4,4</string>
+    <string name="test5q6o3">1,7</string>
+    <string name="test5q6o4">0,44</string>
+    <string name="test5q7">7. √(<sup><small>289</small></sup>/<sub><small>400</small></sub>) + √(<sup><small>16</small></sup>/<sub><small>100</small></sub>)</string>
+    <string name="test5q7o1">0,8</string>
+    <string name="test5q7o2">1,25</string>
+    <string name="test5q7o3">2,5</string>
+    <string name="test5q7o4">0,75</string>
+    <string name="test5q8">8. √x = 18</string>
+    <string name="test5q8o1">361</string>
+    <string name="test5q8o2">81</string>
+    <string name="test5q8o3">9</string>
+    <string name="test5q8o4">324</string>
+    <string name="test5q9">9. При каких значениях x данное выражение имеет значение: √11x</string>
+    <string name="test5q9o1">x ≥ 0</string>
+    <string name="test5q9o2">x ≥ 11</string>
+    <string name="test5q9o3">x ≥ -11</string>
+    <string name="test5q9o4">x ≥ 22</string>
+    <string name="test5q10">10. Между какими двумя последовательными натуральными числами расположено данное число: √128</string>
+    <string name="test5q10o1">120 и 130</string>
+    <string name="test5q10o2">13 и 14</string>
+    <string name="test5q10o3">11 и 12</string>
+    <string name="test5q10o4">18 и 20</string>
 </resources>

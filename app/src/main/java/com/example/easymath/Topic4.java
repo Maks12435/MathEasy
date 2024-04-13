@@ -21,4 +21,12 @@ public class Topic4 extends AppCompatActivity {
         intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
+
+    public void startTopic4Activity(View v){
+        Intent intent = new Intent(Topic4.this, Topic5.class);
+        intent.putExtra("email", getIntent().getStringExtra("email"));
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        startActivity(intent);
+    }
 }

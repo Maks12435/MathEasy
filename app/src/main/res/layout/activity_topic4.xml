@@ -15,7 +15,7 @@
             android:id="@+id/header"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@drawable/gradient_background"
+            style="@style/SCREEN"
             android:orientation="vertical">
 
             <TextView
@@ -82,6 +82,7 @@
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="22dp"
+                android:padding="10dp"
                 android:gravity="center"
                 android:background="@drawable/textback"
                 android:textStyle="italic"
@@ -199,6 +200,7 @@
                 android:layout_marginEnd="18dp"
                 android:layout_marginTop="12dp"
                 android:gravity="center"
+                android:padding="10dp"
                 android:textStyle="italic"
                 android:text="@string/topic409"
                 android:textColor="@color/black"
@@ -318,6 +320,7 @@
                 android:layout_marginTop="12dp"
                 android:gravity="center"
                 android:text="@string/topic416"
+                android:padding="10dp"
                 android:textColor="@color/black"
                 android:textSize="16dp"
                 android:textStyle="italic"
@@ -338,6 +341,7 @@
                 android:gravity="center"
                 android:text="@string/topic417"
                 android:textColor="@color/black"
+                android:padding="10dp"
                 android:textSize="16dp"
                 android:textStyle="italic"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -418,6 +422,7 @@
                 android:gravity="center"
                 android:text="@string/topic421"
                 android:textColor="@color/black"
+                android:padding="10dp"
                 android:textSize="16dp"
                 android:textStyle="italic"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -437,6 +442,7 @@
                 android:gravity="center"
                 android:text="@string/topic422"
                 android:textColor="@color/black"
+                android:padding="10dp"
                 android:textSize="16dp"
                 android:textStyle="italic"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -476,7 +482,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_below="@id/textView34"
-                android:background="@drawable/gradient_background"
+                style="@style/SCREEN"
                 android:layout_marginTop="40dp"
                 android:layout_alignParentBottom="true">
 
@@ -487,8 +493,9 @@
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="162dp"
-                    android:backgroundTint="@color/pink"
+                    style="@style/BUTTONTOPIC"
                     android:text="Следующяя тема"
+                    android:onClick="startTopic4Activity"
                     android:textColor="@color/white"
                     android:textSize="12dp"
                     tools:ignore="TextSizeCheck" />
@@ -500,7 +507,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="40dp"
-                    android:backgroundTint="@color/pink"
+                    style="@style/BUTTONTOPIC"
                     android:onClick="startTest4Activity"
                     android:text="Начать Тест"
                     android:textColor="@color/white"

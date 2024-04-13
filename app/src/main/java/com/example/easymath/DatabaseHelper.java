@@ -134,4 +134,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         MyDatabase.close();
         return result != -1;
     }
+
+    public Boolean updateTestResult5(String email, int correctAnswersCount2) {
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("correct_answers_count5", correctAnswersCount2);
+        int result = MyDatabase.update("test_results", contentValues, "email = ?", new String[]{email});
+        MyDatabase.close();
+        return result != -1;
+    }
 }

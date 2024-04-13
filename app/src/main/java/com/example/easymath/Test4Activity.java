@@ -89,6 +89,9 @@ public class Test4Activity extends AppCompatActivity {
                 submitButtonClicked4 = true;
                 saveTestState();
                 Intent intent = new Intent(Test4Activity.this, Topic4.class);
+                intent.putExtra("email", getIntent().getStringExtra("email"));
+                intent.putExtra("name", getIntent().getStringExtra("name"));
+                intent.putExtra("sName", getIntent().getStringExtra("sName"));
                 startActivity(intent);
                 finish();
             }
