@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -41,10 +40,17 @@ public class Test4Activity extends AppCompatActivity {
     private TextView correctAnswersCounter4;
     private SharedPreferences sharedPreferences4;
 
+    String email;
+    DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test4);
+
+        databaseHelper = new DatabaseHelper(this);
+
+        Intent intent = getIntent();;
+        email = intent.getStringExtra("email");
 
         Button restartButton = findViewById(R.id.restart_button);
         restartButton.setOnClickListener(new View.OnClickListener() {
@@ -143,6 +149,8 @@ public class Test4Activity extends AppCompatActivity {
                 disableRadioGroup(questionRadioGroup);
             }
         }
+
+        databaseHelper.updateTestResult4(email, correctAnswersCount4);
 
         updateCorrectAnswersCounter();
     }

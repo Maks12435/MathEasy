@@ -71,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void startStats(View v) {
         Intent intent = new Intent(MainActivity.this, statsActivity.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
 
