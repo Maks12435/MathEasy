@@ -29,4 +29,13 @@ public class Topic3 extends AppCompatActivity {
         intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
+
+    public void BackToMain(View v) {
+        Intent intent = new Intent(Topic3.this, MainActivity.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
+        startActivity(intent);
+    }
+
 }

@@ -7,7 +7,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="topic101">Степень числа – это результат многократного умножения числа на себя. </string>
     <string name="topic102">3 · 3 · 3 · 3 · 3 = 3<sup><small>5</small></sup></string>
-    <string name="topic103">Здесь an обозначают как «степень». a- основание степени, n- показатель степени. an можно прочитать: «a в n-й степени» или «а в степени n».
+    <string name="topic103">Здесь a<sup><small>n</small></sup> обозначают как «степень». a- основание степени, n- показатель степени. an можно прочитать: «a в n-й степени» или «а в степени n».
 Определение степени числа выполняется умножением.
 </string>
     <string name="topic104">3<sup><small>5</small></sup> = 3 · 3 · 3 · 3 · 3 = 243</string>
