@@ -336,4 +336,108 @@
     <string name="test5q10o2">13 и 14</string>
     <string name="test5q10o3">11 и 12</string>
     <string name="test5q10o4">18 и 20</string>
+    <string name="topic601">I. ax<sup><small>2</small></sup> + bx + c = 0 түріндегі теңдеу квадрат теңдеу деп аталады, мұндағы x - айнымалы, a,b,c сандары нақты сандар және a ≠ 0</string>
+    <string name="topic602">a, b, c сандары квадрат теңдеудің коэффициенттері: а - бірінші коэффициент, b - екінші коэффициент, с коэффициенті бос мүше деп аталады</string>
+    <string name="topic603">Квадрат теңдеуді екінші дәрежелі теңдеу деп те атайды, өйткені оның сол жағы екінші дәрежелі көпмүше</string>
+    <string name="topic604">ax<sup><small>2</small></sup> + bx + c = 0 (a ≠ 0) квадрат теңдеу, егер b немесе c немесе b және c мәні нөлге тең болса, толық емес квадрат теңдеу деп аталады</string>
+    <string name="topic605">Толық емес квадрат теңдеу</string>
+    <string name="topic606">1. ax<sup><small>2</small></sup> + bx = 0, a ≠ 0, b ≠ 0, c = 0 түріндегі толық емес квадрат теңдеу сол жақ бөлігін көбейткіштерге бөлу арқылы шешіледі</string>
+    <string name="topic607">ax<sup><small>2</small></sup> + bx = 0
+                            x(ax + b) = 0</string>
+    <string name="topic608">x(ax + b) = 0</string>
+    <string name="topic609">Бұл теңдеудің екі түбірі бар: x<small>1</small> = 0, x<small>2</small> = -b&#8260;a</string>
+    <string name="topic610">Мысалы:</string>
+    <string name="topic611">5x<sup><small>2</small></sup> + 2x = 0</string>
+    <string name="topic612">x(5x + 2) = 0</string>
+    <string name="topic613">x<small>1</small> = 0, x<small>2</small> = -2 / 5</string>
+    <string name="topic614">2. ax<sup><small>2</small></sup> + c = 0, a ≠ 0, c ≠ 0, b = 0 түріндегі толық емес квадрат теңдеу келесідей шешіледі:</string>
+    <string name="topic615">ax<sup><small>2</small></sup> + c = 0</string>
+    <string name="topic616">x<sup><small>2</small></sup> = -c&#8260;a</string>
+    <string name="topic618">Егер -c/a>0 болса, онда теңдеудің қарама-қарсы екі түбірі болады:</string>
+    <string name="topic619">x<small>1</small> = -√c&#8260;a, x<small>2</small> = -√-c&#8260;a. Егер -c&#8260;a > 0 болмаса, онда теңдеудің түбірі болмайды</string>
+    <string name="topic620">2x<sup><small>2</small></sup> - 8 = 0 ⇒ x<sup><small>2</small></sup> = 8&#8260;2 ⇒ x<sup><small>2</small></sup> = 4 ⇒ x<small>1</small> = 2, x<small>2</small> = -2 </string>
+    <string name="topic621">3. ax<sup><small>2</small></sup> = 0, a ≠ 0, b = 0, c = 0 түріндегі толық емес квадрат теңдеудің екі бірдей түбірі бар: x<small>1/2</small>=0</string>
+    <string name="topic622">10x<sup><small>2</small></sup> = 0 ⇒
+                            x<sup><small>2</small></sup> = 0 ⇒
+                            x<small>1/2</small> = 0</string>
+    <string name="topic623">3. ax<sup><small>2</small></sup> = 0, a ≠ 0, b = 0, c = 0 түріндегі толық емес квадрат теңдеудің екі бірдей түбірі бар: x<small>1/2</small>=0</string>
+    <string name="topic624">II. Толық квадрат теңдеуді шешу</string>
+    <string name="topic625">ax<sup><small>2</small></sup> + bx + c = 0 (a≠0) квадрат теңдеуінің түбірлері
+         x<small>1/2</small> = -b ± √b<sup><small>2</small></sup> - 4ac / 2a формуласы арқылы есептеледі</string>
+    <string name="topic626">Мұнда b<sup><small>2</small></sup> - 4ac өрнегі ax<sup><small>2</small></sup> + bx + c = 0
+        (a ≠ 0) теңдеуінің <b>дискриминанты</b> деп аталады.</string>
+    <string name="topic627">1. Егер D > 0 болса, axb<sup><small>2</small></sup> + bx + c = 0 (a≠0) теңдеуінің екі түбірі болады:
+        x<small></small> = -b - √D / 2a және x<small></small> = -b + √D / 2a</string>
+    <string name="topic628">2x<sup><small>2</small></sup> + 5x + 3 = 0</string>
+    <string name="topic629">D = 5<sup><small>2</small></sup> - 4∙2∙3 = 1</string>
+    <string name="topic630">x1 = -5 + 1 / 4 = -1</string>
+    <string name="topic631">x2 = -5 - 1 / 4 = -1,5</string>
+    <string name="topic632">2. D = 0 болса, ax<sup><small>2</small></sup> + bx + c = 0 (a ≠ 0) теңдеуінің екі бірдей түбірі болады:</string>
+    <string name="topic633"> x<small>1/2</small> = -b / 2a</string>
+    <string name="topic634">x2 + 4x + 4 = 0 =>
+                            D=4<sup><small>2</small></sup> - 4∙1∙4 = 0 ⇒
+                            x<small>1/2</small> = -4 ± 0 / 2 = -2 ⇒
+                            немесе x<sup><small>2</small></sup> + 4x + 4 = 0
+                            Қысқартылған көбейту формуласын қолдану, (x+2)<sup><small>2</small></sup> = 0 ⇒ x<small>1/2</small> = -2</string>
+    <string name="topic635">3. Егер D &lt; 0 болса, ax<sup><small>2</small></sup> + bx + c = 0 (a ≠ 0) теңдеуінің түбірі жоқ.</string>
+    <string name="topic636">2x<sup><small>2</small></sup> + 8 = 0 => x<sup><small>2</small></sup> = -8&#8260;2 => x<sup><small>2</small></sup> = -4 Шешім жоқ</string>
+    <string name="test6q1">Теңдеуді шеш: x<sup><small>2</small></sup> - 12x = 0</string>
+    <string name="test6q1o1">-12; 0</string>
+    <string name="test6q1o2">0; 12</string>
+    <string name="test6q1o3">0; 6</string>
+    <string name="test6q1o4">-6; 12</string>
+
+    <string name="test6q2">Теңдеуді шеш: -9x<sup><small>2</small></sup> + 36 = 0</string>
+    <string name="test6q2o1">±4</string>
+    <string name="test6q2o2">±2</string>
+    <string name="test6q2o3">-4; 0; 2</string>
+    <string name="test6q2o4">Шешім жоқ</string>
+
+    <string name="test6q3">Теңдеуді шеш: 8x - 5x<sup><small>2</small></sup> = 0</string>
+    <string name="test6q3o1">0; 1,6</string>
+    <string name="test6q3o2">1,6; 3,2</string>
+    <string name="test6q3o3">-1,6; 0</string>
+    <string name="test6q3o4">-3,2; 1,6</string>
+
+    <string name="test6q4">Теңдеуді шеш: 6x<sup><small>2</small></sup> = 150</string>
+    <string name="test6q4o1">±6</string>
+    <string name="test6q4o2">0; 5</string>
+    <string name="test6q4o3">-5; 0; 6</string>
+    <string name="test6q4o4">±5</string>
+
+    <string name="test6q5">Теңдеуді шеш: -12x<sup><small>2</small></sup> + 9 = -18</string>
+    <string name="test6q5o1">-1,5; 1,5</string>
+    <string name="test6q5o2">-2&#8260;3; 2&#8260;3</string>
+    <string name="test6q5o3">-1&#8260;2; 1&#8260;2</string>
+    <string name="test6q5o4">-2,5; 2,5</string>
+
+    <string name="test6q6">Теңдеуді шеш: 2 2&#8260;5x<sup><small>2</small></sup> - 2 9&#8260;10 = -0,5</string>
+    <string name="test6q6o1">±0,5</string>
+    <string name="test6q6o2">±1</string>
+    <string name="test6q6o3">±2</string>
+    <string name="test6q6o4">Шешім жоқ</string>
+
+    <string name="test6q7">Теңдеуді шеш: 1,8x<sup><small>2</small></sup> - 3,24x = 0</string>
+    <string name="test6q7o1">0; 1,8</string>
+    <string name="test6q7o2">±1,8</string>
+    <string name="test6q7o3">-1,8; 0</string>
+    <string name="test6q7o4">-0,5; 0</string>
+
+    <string name="test6q8">Теңдеуді шеш: 3x<sup><small>2</small></sup> = 0</string>
+    <string name="test6q8o1">3</string>
+    <string name="test6q8o2">±9</string>
+    <string name="test6q8o3">0</string>
+    <string name="test6q8o4">Шешім жоқ</string>
+
+    <string name="test6q9">Теңдеуді шеш: 2x<sup><small>2</small></sup> + 4x = 6x<sup><small>2</small></sup> - 12x</string>
+    <string name="test6q9o1">-4; 0</string>
+    <string name="test6q9o2">±4</string>
+    <string name="test6q9o3">0</string>
+    <string name="test6q9o4">0; 4</string>
+
+    <string name="test6q10">Теңдеуді шеш: x<sup><small>2</small></sup> - 3x = 2(12 - x) - x</string>
+    <string name="test6q10o1">±2√5</string>
+    <string name="test6q10o2">±2√6</string>
+    <string name="test6q10o3">±2√7</string>
+    <string name="test6q10o4">±2√3</string>
 </resources>
