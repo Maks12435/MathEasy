@@ -96,5 +96,20 @@
         android:textStyle="bold"
         tools:ignore="TouchTargetSizeCheck" />
 
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="253dp"
+        android:layout_marginEnd="62dp"
+        android:visibility="gone"
+        android:text="Неправильное имя пользователя или пароль, попробуйте снова"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
 
 </RelativeLayout>

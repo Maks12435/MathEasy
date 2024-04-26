@@ -8,6 +8,7 @@
     <color name="pink">#EE0055</color>
     <color name="lilo">#C00C6A</color>
     <color name="correct_answer">#c2ff9b</color>
+    <color name="red">#FF0000</color>
     <color name="wrong_answer">#ffbbb2</color>
     <color name="gray">#303030</color>
 

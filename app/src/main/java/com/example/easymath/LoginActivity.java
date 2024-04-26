@@ -1,17 +1,20 @@
 package com.example.easymath;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.easymath.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
     ActivityLoginBinding binding;
+
     DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         databaseHelper = new DatabaseHelper(this);
+        TextView incorrectCredentialsText = findViewById(R.id.textView25);
         binding.buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,6 +42,13 @@ public class LoginActivity extends AppCompatActivity {
                             String name = databaseHelper.getUserName(email);
                             String sName = databaseHelper.getUserSurname(email);
 
+                            // Сохранение данных о входе пользователя
+                            SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(LoginActivity.this);
+                            SharedPreferences.Editor editor = preferences.edit();
+                            editor.putString("email", email);
+                            editor.putBoolean("isLoggedIn", true);
+                            editor.apply();
+
                             intent = new Intent(LoginActivity.this, MainActivity.class);
                             intent.putExtra("name", name);
                             intent.putExtra("sName", sName);
@@ -46,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                             finish();
 
                         } else {
-                            Toast.makeText(LoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                            incorrectCredentialsText.setVisibility(View.VISIBLE);
                         }
 
                     } else if ("teacher".equals(role)) {

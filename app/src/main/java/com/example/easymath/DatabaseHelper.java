@@ -88,9 +88,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public String getUserRole(String email) {
         String role;
         String prefix = email.substring(0, 2);
-        if ("22".equals(prefix)) {
+        if ("Student".equals(prefix)) {
             role = "student";
-        } else if ("11".equals(prefix)) {
+        } else if ("Teacher".equals(prefix)) {
             role = "teacher";
         } else {
             role = "unknown";

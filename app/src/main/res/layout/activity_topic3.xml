@@ -262,10 +262,10 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="12dp"
+                    android:textColor="@color/black"
                     android:layout_marginEnd="18dp"
                     android:text="@string/topic311"
                     android:textSize="14dp"
-                    android:textColor="@color/black"
                     tools:ignore="TextSizeCheck" />
 
                 <TextView
@@ -278,10 +278,10 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="45dp"
+                    android:textColor="@color/black"
                     android:layout_marginEnd="18dp"
                     android:text="@string/topic312"
                     android:textSize="14dp"
-                    android:textColor="@color/black"
                     tools:ignore="TextSizeCheck" />
 
                 <TextView
@@ -294,11 +294,11 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="95dp"
+                    android:textColor="@color/black"
                     android:layout_marginEnd="18dp"
                     android:text="@string/topic313"
                     android:textSize="14dp"
                     android:textStyle="italic"
-                    android:textColor="@color/black"
                     tools:ignore="TextSizeCheck" />
             </RelativeLayout>
 
