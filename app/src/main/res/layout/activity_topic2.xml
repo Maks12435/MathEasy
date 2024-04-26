@@ -26,7 +26,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="43dp"
-                android:text="Тема 2"
+                android:text="Тақырып 2"
                 android:textColor="@color/white"
                 android:textSize="28dp"
                 android:textStyle="bold"/>
@@ -39,7 +39,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="93dp"
-                android:text="Одночлены и его стандартный вид"
+                android:text="Бірмүше және оның стандарт түрі"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
@@ -157,7 +157,7 @@
                     android:layout_marginTop="12dp"
                     android:textColor="@color/black"
                     android:layout_marginEnd="207dp"
-                    android:text="Примечание: "
+                    android:text="Ескерту: "
                     android:textSize="14dp"
                     android:textStyle="bold"
                     tools:ignore="TextSizeCheck" />
@@ -273,7 +273,7 @@
                     android:layout_marginEnd="162dp"
                     style="@style/BUTTONTOPIC"
                     android:onClick="startTopic2Activity"
-                    android:text="Следующяя тема"
+                    android:text="Келесі тақырып"
                     android:textColor="@color/white"
                     android:textSize="12dp"
                     tools:ignore="TextSizeCheck" />
@@ -287,7 +287,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="40dp"
                     android:onClick="startTest2Activity"
-                    android:text="Начать Тест"
+                    android:text="Сынақты бастау"
                     android:textColor="@color/white"
                     android:textSize="12dp"
                     tools:ignore="TextSizeCheck" />

@@ -656,7 +656,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="16dp"
-            android:text="Правильных ответов: 0"
+            android:text="Дұрыс жауаптар: 0"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 
@@ -679,7 +679,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
                 style="@style/BUTTONTOPIC"
-                android:text="Отправить"
+                android:text="Жіберу"
                 android:textColor="@color/white"
                 android:textSize="12dp" />
 
@@ -691,7 +691,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
                 style="@style/BUTTONTOPIC"
-                android:text="Пройти тест заново"
+                android:text="Қайтадан өту"
                 android:textColor="@color/white"
                 android:textSize="12dp" />
 

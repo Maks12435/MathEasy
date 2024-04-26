@@ -27,7 +27,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="43dp"
-                android:text="Тема 1"
+                android:text="Тақырып 1"
                 android:textColor="@color/white"
                 android:textSize="28dp"
                 android:textStyle="bold"/>
@@ -40,7 +40,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="93dp"
-                android:text="Понятие степени с натуральным показателем"
+                android:text="Натурал көрсеткішті дәреже туралы ұғымы"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
@@ -156,7 +156,7 @@
                     android:layout_marginTop="15dp"
                     android:textColor="@color/black"
                     android:layout_marginEnd="207dp"
-                    android:text="Примечание: "
+                    android:text="Ескерту: "
                     android:textSize="14dp"
                     android:textStyle="bold" />
 
@@ -296,7 +296,7 @@
                     android:layout_marginEnd="162dp"
                     style="@style/BUTTONTOPIC"
                     android:onClick="startTopicActivity"
-                    android:text="Следующяя тема"
+                    android:text="Келесі тақырып"
                     android:textColor="@color/white"
                     android:textSize="12dp" />
 
@@ -308,7 +308,7 @@
                     android:layout_marginTop="20dp"
                     style="@style/BUTTONTOPIC"
                     android:onClick="startTestActivity"
-                    android:text="Начать Тест"
+                    android:text="Сынақты бастау"
                     android:textColor="@color/white"
                     android:layout_alignParentEnd="true"
                     android:textSize="12dp" />

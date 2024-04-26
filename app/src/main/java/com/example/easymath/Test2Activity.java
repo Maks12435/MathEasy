@@ -105,13 +105,10 @@ public class Test2Activity extends AppCompatActivity {
     }
 
     private void updateCorrectAnswersCounter() {
-        // Вычисляем процент правильных ответов
         double percentage = (double) correctAnswersCount2 / correctAnswers.length * 100;
 
-        // Форматируем строку с процентом правильных ответов
-        String percentageText = String.format("Правильных ответов: %.2f%%", percentage);
+        String percentageText = String.format("Дұрыс жауаптар: %.2f%%", percentage);
 
-        // Обновляем текст счетчика правильных ответов
         correctAnswersCounter2.setText(percentageText);
     }
 
@@ -146,7 +143,7 @@ public class Test2Activity extends AppCompatActivity {
 
         // Если не все вопросы отвечены, выходим из метода
         if (!allQuestionsAnswered) {
-            Toast.makeText(this, "Ответьте на все вопросы перед проверкой.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Тексермес бұрын барлық сұрақтарға жауап беріңіз.", Toast.LENGTH_SHORT).show();
             return;
         }
 

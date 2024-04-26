@@ -26,7 +26,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="43dp"
-                android:text="Тема 3"
+                android:text="Тақырып 3"
                 android:textColor="@color/white"
                 android:textSize="28dp"
                 android:textStyle="bold"/>
@@ -39,7 +39,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="93dp"
-                android:text="Умножение многочлена на многочлен"
+                android:text="Көпмүшені көпмүшеге көбейту"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
@@ -295,7 +295,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="162dp"
                     style="@style/BUTTONTOPIC"
-                    android:text="Следующяя тема"
+                    android:text="Келесі тақырып"
                     android:onClick="startTopic3Activity"
                     android:textColor="@color/white"
                     android:textSize="12dp"
@@ -310,7 +310,7 @@
                     android:layout_marginEnd="40dp"
                     style="@style/BUTTONTOPIC"
                     android:onClick="startTest3Activity"
-                    android:text="Начать Тест"
+                    android:text="Сынақты бастау"
                     android:textColor="@color/white"
                     android:textSize="12dp"
                     tools:ignore="TextSizeCheck" />
