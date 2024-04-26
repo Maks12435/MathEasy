@@ -16,8 +16,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-public class Test2Activity extends AppCompatActivity {
-    private String[] correctAnswers = {"option1c", "option2c", "option3a", "option4b", "option5d", "option6b", "option7d", "option8a", "option9c", "option10b"};
+public class Test7Activity extends AppCompatActivity {
+    private String[] correctAnswers = {"option1b", "option2b", "option3a", "option4d", "option5a", "option6b", "option7a", "option8c", "option9d", "option10b"};
     private int[] questionRadioGroupIds = {R.id.question1Options, R.id.question2Options, R.id.question3Options, R.id.question4Options, R.id.question5Options,
             R.id.question6Options, R.id.question7Options, R.id.question8Options, R.id.question9Options, R.id.question10Options};
     private int[][] radioButtonIds = {
@@ -33,26 +33,26 @@ public class Test2Activity extends AppCompatActivity {
             {R.id.option10a, R.id.option10b, R.id.option10c, R.id.option10d}
     };
 
-    private int[] questionTextViewIds = {R.id.textView1q, R.id.textView2q, R.id.textView3q, R.id.textView4q, R.id.textView5q,
-            R.id.textView6q, R.id.textView7q, R.id.textView8q, R.id.textView9q, R.id.textView10q};
-
-    private boolean testCompleted2 = false;
-    private int correctAnswersCount2 = 0;
-    private boolean answersChecked2 = false;
-    private boolean submitButtonClicked2 = false;
-    private TextView correctAnswersCounter2;
-    private SharedPreferences sharedPreferences2;
+    private boolean testCompleted7 = false;
+    private int correctAnswersCount7 = 0;
+    private boolean answersChecked7 = false;
+    private boolean submitButtonClicked7 = false;
+    private TextView correctAnswersCounter7;
+    private SharedPreferences sharedPreferences7;
 
     String email;
     DatabaseHelper databaseHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test2);
+        setContentView(R.layout.test7);
+
         databaseHelper = new DatabaseHelper(this);
 
-        Intent intent = getIntent();;
+        Intent intent = getIntent();
         email = intent.getStringExtra("email");
+
         Button restartButton = findViewById(R.id.restart_button);
         restartButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,19 +61,16 @@ public class Test2Activity extends AppCompatActivity {
             }
         });
 
+        correctAnswersCounter7 = findViewById(R.id.correct_answers_counter);
 
-        correctAnswersCounter2 = findViewById(R.id.correct_answers_counter);
+        sharedPreferences7 = getSharedPreferences("TestState7", Context.MODE_PRIVATE);
 
-        sharedPreferences2 = getSharedPreferences("TestState", Context.MODE_PRIVATE);
-
-        submitButtonClicked2 = sharedPreferences2.getBoolean("submit_button_clicked", false);
-
-        // Проверяем, сохранено ли состояние теста
+        // Load the state if available
         if (savedInstanceState == null) {
-            loadTestState(); // Загружаем состояние теста при первом запуске активности
+            loadTestState();
         } else {
-            restoreInstanceState(savedInstanceState); // Восстанавливаем состояние теста при повороте экрана
-            submitButtonClicked2 = savedInstanceState.getBoolean("submit_button_clicked", false);
+            restoreInstanceState(savedInstanceState);
+            submitButtonClicked7 = savedInstanceState.getBoolean("submit_button_clicked", false);
         }
 
         Button submitButton = findViewById(R.id.submit_button);
@@ -81,8 +78,8 @@ public class Test2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 checkAnswers();
-                answersChecked2 = true;
-                submitButtonClicked2 = true;
+                answersChecked7 = true;
+                submitButtonClicked7 = true;
             }
         });
 
@@ -90,14 +87,14 @@ public class Test2Activity extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                submitButtonClicked2 = true;
-                saveTestState(); // Сохраняем состояние теста перед переходом на другую активность
-                Intent intent = new Intent(Test2Activity.this, Topic2.class);
+                submitButtonClicked7 = true;
+                saveTestState();
+                Intent intent = new Intent(Test7Activity.this, Topic7.class);
                 intent.putExtra("email", getIntent().getStringExtra("email"));
                 intent.putExtra("name", getIntent().getStringExtra("name"));
                 intent.putExtra("sName", getIntent().getStringExtra("sName"));
                 startActivity(intent);
-                finish(); // Завершаем текущую активность при переходе на следующую
+                finish();
             }
         });
 
@@ -105,49 +102,40 @@ public class Test2Activity extends AppCompatActivity {
     }
 
     private void updateCorrectAnswersCounter() {
-        double percentage = (double) correctAnswersCount2 / correctAnswers.length * 100;
-
+        double percentage = (double) correctAnswersCount7 / correctAnswers.length * 100;
         String percentageText = String.format("Дұрыс жауаптар: %.2f%%", percentage);
-
-        correctAnswersCounter2.setText(percentageText);
+        correctAnswersCounter7.setText(percentageText);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        // Проверяем, была ли кнопка отправки нажата при возвращении на активити
-        if (submitButtonClicked2) {
-            // Если кнопка отправки была нажата, устанавливаем состояние кнопки отправки в true
+        if (submitButtonClicked7) {
             Button submitButton = findViewById(R.id.submit_button);
-            submitButton.performClick(); // Программно нажимаем кнопку отправки
-            // Сбрасываем флаг submitButtonClicked
-            submitButtonClicked2 = false;
+            submitButton.performClick();
+            submitButtonClicked7 = false; // Resetting the flag after performing click action
         }
     }
 
     private void checkAnswers() {
-        correctAnswersCount2 = 0;
+        correctAnswersCount7 = 0;
         boolean allQuestionsAnswered = true;
 
-        // Проверяем, были ли отвечены все вопросы
         for (int i = 0; i < correctAnswers.length; i++) {
             RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
             int selectedRadioButtonId = questionRadioGroup.getCheckedRadioButtonId();
 
-            // Если хотя бы для одного вопроса не выбран ответ, устанавливаем флаг в false и выходим из цикла
             if (selectedRadioButtonId == -1) {
                 allQuestionsAnswered = false;
                 break;
             }
         }
 
-        // Если не все вопросы отвечены, выходим из метода
         if (!allQuestionsAnswered) {
             Toast.makeText(this, "Тексермес бұрын барлық сұрақтарға жауап беріңіз.", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        // Если все вопросы отвечены, продолжаем с проверкой ответов
         for (int i = 0; i < correctAnswers.length; i++) {
             RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
             int selectedRadioButtonId = questionRadioGroup.getCheckedRadioButtonId();
@@ -158,37 +146,36 @@ public class Test2Activity extends AppCompatActivity {
 
                 if (selectedOption.equals(correctAnswers[i])) {
                     selectedRadioButton.setBackgroundColor(ContextCompat.getColor(this, R.color.correct_answer));
-                    correctAnswersCount2++;
+                    correctAnswersCount7++;
                 } else {
                     selectedRadioButton.setBackgroundColor(ContextCompat.getColor(this, R.color.wrong_answer));
                 }
-                disableRadioGroup(questionRadioGroup); // Отключить RadioGroup после выбора ответа
+                disableRadioGroup(questionRadioGroup);
             }
         }
-        databaseHelper.updateTestResult2(email, correctAnswersCount2);
 
+        // databaseHelper.updateTestResult7(email, correctAnswersCount7); IMPORTANT THING!!!
         updateCorrectAnswersCounter();
     }
 
-
     @Override
-    protected void onSaveInstanceState(Bundle outState2) {
-        super.onSaveInstanceState(outState2);
-        saveTestState(); // Сохраняем состояние теста перед поворотом экрана
-        outState2.putBoolean("submit_button_clicked", submitButtonClicked2);
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        saveTestState();
+        outState.putBoolean("submit_button_clicked", submitButtonClicked7);
     }
 
     private void restoreInstanceState(Bundle savedInstanceState) {
-        testCompleted2 = savedInstanceState.getBoolean("answers_checked", false);
-        correctAnswersCount2 = savedInstanceState.getInt("correct_answers_count", 0);
-        answersChecked2 = savedInstanceState.getBoolean("answers_checked", false);
-        submitButtonClicked2 = savedInstanceState.getBoolean("submit_button_clicked", false);
-        if (testCompleted2) {
-            disableAllRadioGroups(); // Если тест уже был пройден, отключите все RadioGroup
+        testCompleted7 = savedInstanceState.getBoolean("answers_checked", false);
+        correctAnswersCount7 = savedInstanceState.getInt("correct_answers_count", 0);
+        answersChecked7 = savedInstanceState.getBoolean("answers_checked", false);
+        submitButtonClicked7 = savedInstanceState.getBoolean("submit_button_clicked", false);
+        if (testCompleted7) {
+            disableAllRadioGroups();
         }
 
         for (int i = 0; i < questionRadioGroupIds.length; i++) {
-            int selectedRadioButtonId = savedInstanceState.getInt("selected_radio_button_" + i);
+            int selectedRadioButtonId = savedInstanceState.getInt("selected_radio_button_7" + i);
             if (selectedRadioButtonId != -1) {
                 RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
                 questionRadioGroup.check(selectedRadioButtonId);
@@ -197,18 +184,17 @@ public class Test2Activity extends AppCompatActivity {
     }
 
     private void loadTestState() {
-        // Загружаем состояние теста из SharedPreferences
-        testCompleted2 = sharedPreferences2.getBoolean("test_completed2", false);
-        correctAnswersCount2 = sharedPreferences2.getInt("correct_answers_count2", 0);
-        answersChecked2 = sharedPreferences2.getBoolean("answers_checked2", false);
-        submitButtonClicked2 = sharedPreferences2.getBoolean("submit_button_clicked2", false);
+        testCompleted7 = sharedPreferences7.getBoolean("test_completed7", false);
+        correctAnswersCount7 = sharedPreferences7.getInt("correct_answers_count7", 0);
+        answersChecked7 = sharedPreferences7.getBoolean("answers_checked7", false);
+        submitButtonClicked7 = sharedPreferences7.getBoolean("submit_button_clicked7", false);
 
-        if (testCompleted2) {
-            disableAllRadioGroups(); // Если тест уже был пройден, отключите все RadioGroup
+        if (testCompleted7) {
+            disableAllRadioGroups();
         }
 
         for (int i = 0; i < questionRadioGroupIds.length; i++) {
-            int selectedRadioButtonId = sharedPreferences2.getInt("selected_radio_button_2" + i, -1);
+            int selectedRadioButtonId = sharedPreferences7.getInt("selected_radio_button_7" + i, -1);
             if (selectedRadioButtonId != -1) {
                 RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
                 questionRadioGroup.check(selectedRadioButtonId);
@@ -217,25 +203,17 @@ public class Test2Activity extends AppCompatActivity {
     }
 
     private void saveTestState() {
-        // Сохраняем состояние теста в SharedPreferences
-        SharedPreferences.Editor editor = sharedPreferences2.edit();
+        SharedPreferences.Editor editor = sharedPreferences7.edit();
 
-        // Сохраняем состояние выбранных ответов для каждого вопроса
         for (int i = 0; i < questionRadioGroupIds.length; i++) {
             RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
-            editor.putInt("selected_radio_button_2" + i, questionRadioGroup.getCheckedRadioButtonId());
+            editor.putInt("selected_radio_button_7" + i, questionRadioGroup.getCheckedRadioButtonId());
         }
 
-        // Сохраняем состояние завершения теста
-        editor.putBoolean("test_completed2", testCompleted2);
-
-        // Сохраняем количество правильных ответов
-        editor.putInt("correct_answers_count2", correctAnswersCount2);
-
-        // Сохраняем флаг, были ли ответы уже проверены
-        editor.putBoolean("answers_checked2", answersChecked2);
-
-        editor.putBoolean("submit_button_clicked2", submitButtonClicked2);
+        editor.putBoolean("test_completed7", testCompleted7);
+        editor.putInt("correct_answers_count7", correctAnswersCount7);
+        editor.putBoolean("answers_checked7", answersChecked7);
+        editor.putBoolean("submit_button_clicked7", submitButtonClicked7);
 
         editor.apply();
     }
@@ -249,29 +227,26 @@ public class Test2Activity extends AppCompatActivity {
 
     private void enableRadioGroup(RadioGroup radioGroup) {
         for (int i = 0; i < radioGroup.getChildCount(); i++) {
-            radioGroup.getChildAt(i).setEnabled(true); // Включить все радиокнопки в RadioGroup
+            radioGroup.getChildAt(i).setEnabled(true);
         }
     }
 
     private void disableRadioGroup(RadioGroup radioGroup) {
         for (int i = 0; i < radioGroup.getChildCount(); i++) {
-            radioGroup.getChildAt(i).setEnabled(false); // Отключить все радиокнопки в RadioGroup
+            radioGroup.getChildAt(i).setEnabled(false);
         }
     }
 
     public void restartTest() {
-        // Сбрасываем переменные состояния теста
-        correctAnswersCount2 = 0;
-        testCompleted2 = false;
-        answersChecked2 = false;
-        submitButtonClicked2 = false;
+        correctAnswersCount7 = 0;
+        testCompleted7 = false;
+        answersChecked7 = false;
+        submitButtonClicked7 = false;
 
-        // Очищаем сохраненное состояние теста из SharedPreferences
-        SharedPreferences.Editor editor = sharedPreferences2.edit();
+        SharedPreferences.Editor editor = sharedPreferences7.edit();
         editor.clear();
         editor.apply();
 
-        // Сбрасываем отображение выбранных ответов и счетчика правильных ответов
         for (int radioGroupId : questionRadioGroupIds) {
             RadioGroup radioGroup = findViewById(radioGroupId);
             radioGroup.clearCheck();
@@ -286,7 +261,6 @@ public class Test2Activity extends AppCompatActivity {
             enableRadioGroup(questionRadioGroup);
         }
 
-        // Обновляем счетчик правильных ответов
         updateCorrectAnswersCounter();
     }
 }

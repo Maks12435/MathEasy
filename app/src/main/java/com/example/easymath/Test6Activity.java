@@ -103,7 +103,7 @@ public class Test6Activity extends AppCompatActivity {
 
     private void updateCorrectAnswersCounter() {
         double percentage = (double) correctAnswersCount6 / correctAnswers.length * 100;
-        String percentageText = String.format("Правильных ответов: %.2f%%", percentage);
+        String percentageText = String.format("Дұрыс жауаптар: %.2f%%", percentage);
         correctAnswersCounter6.setText(percentageText);
     }
 
@@ -132,7 +132,7 @@ public class Test6Activity extends AppCompatActivity {
         }
 
         if (!allQuestionsAnswered) {
-            Toast.makeText(this, "Ответьте на все вопросы перед проверкой.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Тексермес бұрын барлық сұрақтарға жауап беріңіз.", Toast.LENGTH_SHORT).show();
             return;
         }
 

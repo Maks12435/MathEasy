@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:id="@+id/drawer_layout"
     android:layout_height="match_parent"
-    tools:context=".Topic4">
+    tools:context=".Topic9">
 
     <RelativeLayout
         android:id="@+id/all"
@@ -18,37 +18,18 @@
             style="@style/SCREEN"
             android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/buttonBack"
-                android:layout_width="wrap_content"
-                android:layout_height="28dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="351dp"
-                android:contentDescription="@string/close"
-                android:onClick="BackToMain"
-                android:padding="10dp"
-                android:src="@drawable/icons8_back_50"
-                android:background="@android:color/transparent"
-                tools:ignore="TouchTargetSizeCheck"
-                tools:visibility="visible" />
-
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="342dp"
                 android:layout_height="70dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:gravity="center"
                 android:layout_marginStart="14dp"
-                android:text="Тақырып 4-5"
+                android:layout_marginTop="43dp"
+                android:text="Тақырып 10"
                 android:textColor="@color/white"
                 android:textSize="28dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/textView4"
@@ -56,9 +37,9 @@
                 android:layout_height="70dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="18dp"
+                android:layout_marginStart="14dp"
                 android:layout_marginTop="93dp"
-                android:text="Қысқартылған көбейту формулалары"
+                android:text="Логарифм"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
@@ -85,7 +66,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="22dp"
-                android:text="@string/topic401"
+                android:text="@string/topic901"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -105,7 +86,7 @@
                 android:gravity="center"
                 android:background="@drawable/textback"
                 android:textStyle="italic"
-                android:text="@string/topic402"
+                android:text="@string/topic902"
                 android:textColor="@color/black"
                 android:textSize="16dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -120,8 +101,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="18dp"
-                android:text="@string/topic403"
+                android:text="@string/topic903"
                 android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
@@ -134,8 +116,9 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="18dp"
+                android:gravity="center"
                 android:layout_marginTop="12dp"
-                android:text="@string/topic404"
+                android:text="@string/topic904"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -151,7 +134,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="18dp"
                 android:gravity="center"
-                android:text="@string/topic405"
+                android:text="@string/topic905"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -168,8 +151,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="18dp"
-                android:gravity="center"
-                android:text="@string/topic406"
+                android:textStyle="bold"
+                android:text="@string/topic906"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -185,9 +168,10 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="18dp"
                 android:gravity="center"
-                android:text="@string/topic407"
+                android:text="@string/topic907"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textStyle="italic"
+                android:textSize="16dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
             <TextView
@@ -200,8 +184,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="18dp"
-                android:text="@string/topic408"
+                android:text="@string/topic908"
                 android:gravity="center"
+                android:textStyle="italic"
                 android:textColor="@color/black"
                 android:textSize="16dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -215,13 +200,10 @@
                 android:layout_alignParentEnd="true"
                 android:layout_gravity="center"
                 android:layout_marginStart="20dp"
-                android:background="@drawable/textback"
                 android:layout_marginEnd="18dp"
-                android:layout_marginTop="12dp"
-                android:gravity="center"
-                android:padding="10dp"
+                android:layout_marginTop="20dp"
                 android:textStyle="italic"
-                android:text="@string/topic409"
+                android:text="@string/topic909"
                 android:textColor="@color/black"
                 android:textSize="16dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -237,10 +219,13 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="18dp"
                 android:layout_marginTop="12dp"
-
-                android:text="@string/topic410"
+                android:text="@string/topic910"
+                android:background="@drawable/textback"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textStyle="italic"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="16dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
             <TextView
@@ -254,9 +239,13 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="18dp"
                 android:layout_marginTop="12dp"
-                android:text="@string/topic411"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:background="@drawable/textback"
+                android:padding="10dp"
+                android:text="@string/topic911"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="16dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
             <TextView
@@ -271,9 +260,12 @@
                 android:layout_marginEnd="18dp"
                 android:layout_marginTop="12dp"
                 android:gravity="center"
-                android:text="@string/topic412"
+                android:padding="10dp"
+                android:background="@drawable/textback"
+                android:text="@string/topic912"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="16dp"
+                android:textStyle="italic"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
             <TextView
@@ -288,9 +280,11 @@
                 android:layout_marginEnd="18dp"
                 android:layout_marginTop="12dp"
                 android:gravity="center"
-                android:text="@string/topic413"
+                android:text="@string/topic913"
+                android:background="@drawable/textback"
                 android:textColor="@color/black"
                 android:textSize="16dp"
+                android:padding="10dp"
                 android:textStyle="italic"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
@@ -304,8 +298,10 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="18dp"
-                android:text="@string/topic414"
+                android:text="@string/topic914"
                 android:gravity="center"
+                android:background="@drawable/textback"
+                android:padding="10dp"
                 android:textColor="@color/black"
                 android:textSize="16dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -320,9 +316,12 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="22dp"
-                android:text="@string/topic415"
+                android:text="@string/topic915"
+                android:gravity="center"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="16dp"
+                android:background="@drawable/textback"
+                android:padding="10dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
             <TextView
@@ -338,7 +337,7 @@
                 android:background="@drawable/textback"
                 android:layout_marginTop="12dp"
                 android:gravity="center"
-                android:text="@string/topic416"
+                android:text="@string/topic916"
                 android:padding="10dp"
                 android:textColor="@color/black"
                 android:textSize="16dp"
@@ -358,7 +357,7 @@
                 android:layout_marginTop="12dp"
                 android:background="@drawable/textback"
                 android:gravity="center"
-                android:text="@string/topic417"
+                android:text="@string/topic917"
                 android:textColor="@color/black"
                 android:padding="10dp"
                 android:textSize="16dp"
@@ -375,9 +374,13 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="22dp"
-                android:text="@string/topic418"
+                android:text="@string/topic918"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="16dp"
+                android:background="@drawable/textback"
+                android:padding="10dp"
+                android:textStyle="italic"
+                android:gravity="center"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
             <TextView
@@ -390,9 +393,13 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="22dp"
-                android:text="@string/topic419"
+                android:text="@string/topic919"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:background="@drawable/textback"
+                android:padding="10dp"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="16dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
             <TextView
@@ -405,8 +412,11 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="18dp"
-                android:text="@string/topic420"
+                android:text="@string/topic920"
+                android:textStyle="italic"
                 android:gravity="center"
+                android:background="@drawable/textback"
+                android:padding="10dp"
                 android:textColor="@color/black"
                 android:textSize="16dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -421,9 +431,10 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="22dp"
-                android:text="@string/topic425"
+                android:text="@string/topic921"
                 android:textColor="@color/black"
                 android:textSize="14dp"
+                android:textStyle="bold"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
             <TextView
@@ -437,11 +448,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="18dp"
                 android:layout_marginTop="12dp"
-                android:background="@drawable/textback"
                 android:gravity="center"
-                android:text="@string/topic421"
+                android:text="@string/topic922"
                 android:textColor="@color/black"
-                android:padding="10dp"
                 android:textSize="16dp"
                 android:textStyle="italic"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -457,11 +466,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="18dp"
                 android:layout_marginTop="12dp"
-                android:background="@drawable/textback"
                 android:gravity="center"
-                android:text="@string/topic422"
+                android:text="@string/topic923"
                 android:textColor="@color/black"
-                android:padding="10dp"
                 android:textSize="16dp"
                 android:textStyle="italic"
                 tools:ignore="NotSibling,TextSizeCheck" />
@@ -476,9 +483,11 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="22dp"
-                android:text="@string/topic423"
+                android:text="@string/topic924"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textStyle="italic"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
             <TextView
@@ -489,11 +498,81 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="22dp"
-                android:text="@string/topic424"
+                android:text="@string/topic925"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:textSize="16dp"
+                tools:ignore="NotSibling,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView34"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:text="@string/topic926"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:textSize="16dp"
+                tools:ignore="NotSibling,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView35"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:text="@string/topic927"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:textSize="16dp"
+                tools:ignore="NotSibling,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView36"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:text="@string/topic928"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:textSize="16dp"
+                tools:ignore="NotSibling,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView37"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:text="@string/topic929"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:textSize="16dp"
                 tools:ignore="NotSibling,TextSizeCheck" />
 
             <RelativeLayout
@@ -502,7 +581,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/textView34"
                 style="@style/SCREEN"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="200dp"
                 android:layout_alignParentBottom="true">
 
                 <Button
@@ -513,8 +592,8 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="162dp"
                     style="@style/BUTTONTOPIC"
-                    android:text="Келесі тақырып"
-                    android:onClick="startTopic4Activity"
+                    android:text="Басты бетке"
+                    android:onClick="startTopic9Activity"
                     android:textColor="@color/white"
                     android:textSize="12dp"
                     tools:ignore="TextSizeCheck" />
@@ -527,7 +606,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="40dp"
                     style="@style/BUTTONTOPIC"
-                    android:onClick="startTest4Activity"
+                    android:onClick="startTest9Activity"
                     android:text="Сынақты бастау"
                     android:textColor="@color/white"
                     android:textSize="12dp"

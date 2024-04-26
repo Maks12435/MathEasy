@@ -5,221 +5,222 @@
     <string name="close">Open</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="topic101">Степень числа – это результат многократного умножения числа на себя. </string>
+    <string name="topic101">Санның дәрежесі санды өзіне қайта-қайта көбейтудің нәтижесі болып табылады. </string>
     <string name="topic102">3 · 3 · 3 · 3 · 3 = 3<sup><small>5</small></sup></string>
-    <string name="topic103">Здесь a<sup><small>n</small></sup> обозначают как «степень». a- основание степени, n- показатель степени. an можно прочитать: «a в n-й степени» или «а в степени n».
-Определение степени числа выполняется умножением.
+    <string name="topic103">Мұнда an «дәреже» ретінде белгіленген. a – дәреженің негізі, n – көрсеткіш. an-ды оқуға болады: “a-дан n-ші дәрежеге” немесе “a-дан n-ші дәрежеге”.
+Санның дәрежесін анықтау көбейту арқылы жүзеге асырылады.
 </string>
     <string name="topic104">3<sup><small>5</small></sup> = 3 · 3 · 3 · 3 · 3 = 243</string>
-    <string name="topic105">Вторую степень числа называют квадратом, а третью степень – кубом этого числа.</string>
-    <string name="topic106">Отрицательное число с четным показателем является положительным числом, так как произведение четного числа отрицательных множителей положительно.</string>
+    <string name="topic105">Санның екінші дәрежесі шаршы деп аталады, ал үшінші дәрежесі осы санның кубы деп аталады.</string>
+    <string name="topic106">Жұп дәрежелі теріс сан оң сан болып табылады, себебі теріс көбейткіштердің жұп санының көбейтіндісі оң болады.</string>
     <string name="topic107">-3<sup><small>2</small></sup> = (-3) · (-3) = 9;</string>
-    <string name="topic108">Отрицательное число с нечетным показателем является отрицательным числом, так как произведение нечетного числа отрицательных множителей отрицательно.</string>
+    <string name="topic108">Тақ көрсеткіші бар теріс сан теріс сан болып табылады, себебі теріс факторлардың тақ санының көбейтіндісі теріс болады.</string>
     <string name="topic109">-2<sup><small>3</small></sup> = (-2) · (-2) · (-2) = -8;</string>
-    <string name="topic110">1) Первая степень любого числа равна этому же числу: a<sup><small>1</small></sup> = a.</string>
-    <string name="topic111">2) Любое число в нулевой степени равно 1: a<sup><small>0</small></sup> = 1, a ≠ 0.</string>
-    <string name="topic112">\n3) Любая степень числа 0 равно нулю. 0<sup><small>n</small></sup> = 0, n ≠ 0.</string>
-    <string name="topic113">\n4) Любая степень числа 1 равна 1. 1<sup><small>n</small></sup> = 1. </string>
-    <string name="test1q1">1. Запишите степень в виде произведения: 6<sup><small>5</small></sup></string>
+    <string name="topic110">1) Кез келген санның бірінші дәрежесі бірдей санға тең: a<sup><small>1</small></sup> = a.</string>
+    <string name="topic111">2) Нөлдік дәрежедегі кез келген сан 1-ге тең: a<sup><small>0</small></sup> = 1, a ≠ 0.</string>
+    <string name="topic112">\n3) 0-дің кез келген дәрежесі нөлге тең. 0<sup><small>n</small></sup> = 0, n ≠ 0.</string>
+    <string name="topic113">\n4) 1-дің кез келген дәрежесі 1-ге тең. 1<sup><small>n</small></sup> = 1. </string>
+    <string name="test1q1">1. Дәрежені туынды ретінде жазыңыз: 6<sup><small>5</small></sup></string>
     <string name="test1q1o1">5∙5∙5∙5∙5∙5</string>
     <string name="test1q1o2">6∙6∙6∙6∙6</string>
     <string name="test1q1o3">6∙6∙6∙6∙6∙6</string>
     <string name="test1q1o4">5∙5∙5∙5∙5</string>
-    <string name="test1q2">2. Укажите основание степени: 12<sup><small>7</small></sup></string>
+    <string name="test1q2">2. Дәреженің негізін көрсетіңіз: 12<sup><small>7</small></sup></string>
     <string name="test1q2o1">7</string>
     <string name="test1q2o2">2</string>
     <string name="test1q2o3">12</string>
     <string name="test1q2o4">21</string>
-    <string name="test1q3">3. Возведите смешанное число в степень и найдите значение: (2 2&#8260;3)<sup><small>3</small></sup></string>
+    <string name="test1q3">3. Аралас санды дәрежеге көтеріп, мәнін табыңыз: (2 2&#8260;3)<sup><small>3</small></sup></string>
     <string name="test1q3o1">8 8&#8260;27</string>
     <string name="test1q3o2">24&#8260;9</string>
     <string name="test1q3o3">64&#8260;9</string>
     <string name="test1q3o4">512&#8260;27</string>
-    <string name="test1q4">4. Запишите произведение в виде степени:
-                               (-0,8)∙(-0,8)∙(-0,8)∙(-0,8)∙(-0,8)</string>
+    <string name="test1q4">4. Өнімді қуат ретінде жазыңыз:
+                                (-0,8)∙(-0,8)∙(-0,8)∙(-0,8)∙(-0,8)</string>
     <string name="test1q4o1">(-0,8)<sup><small>5</small></sup></string>
     <string name="test1q4o2">(0,8)<sup><small>5</small></sup></string>
     <string name="test1q4o3">(0,8)<sup><small>4</small></sup></string>
-    <string name="test1q4o4">(-5)<sup><small>0.8</small></sup></string>
-    <string name="test1q5">5. Запишите произведение в виде степени:\n(a-b)(a-b)(a-b)(a-b)</string>
+    <string name="test1q4o4">(-5)<sup><small>0,8</small></sup></string>
+    <string name="test1q5">5. Өнімді қуат түрінде жазыңыз:\n(a-b)(a-b)(a-b)(a-b)</string>
     <string name="test1q5o1">(a-b)<sup><small>4</small></sup></string>
     <string name="test1q5o2">a<sup><small>4</small></sup> - b<sup><small>4</small></sup></string>
-    <string name="test1q5o3">(a<sup><small>4</small></sup> - b<sup><small>4</small></sup>)<sup><small>4</small></sup></string>
+    <string name="test1q5o3">(a<sup><small>4</small></sup> - b<sup><small>4</small></sup>)<sup><small>4 </small></sup></string>
     <string name="test1q5o4">(a-b)(a-b)<sup><small>4</small></sup></string>
-    <string name="test1q6">6. Вычислите степень: (-0,9)<sup><small>3</small></sup></string>
+    <string name="test1q6">6. Дәрежені есептеңіз: (-0,9)<sup><small>3</small></sup></string>
     <string name="test1q6o1">0,729</string>
     <string name="test1q6o2">-0,729</string>
     <string name="test1q6o3">0,27</string>
     <string name="test1q6o4">-0,27</string>
-    <string name="test1q7">7. Вычислите степень: -5<sup><small>4</small></sup></string>
+    <string name="test1q7">7. Дәрежені есептеңіз: -5<sup><small>4</small></sup></string>
     <string name="test1q7o1">625</string>
     <string name="test1q7o2">-125</string>
     <string name="test1q7o3">125</string>
     <string name="test1q7o4">-625</string>
-    <string name="test1q8">8.Вычислите: (9∙5&#8260;12)<sup><small>2</small></sup> </string>
+    <string name="test1q8">8.Есептеңіз: (9∙5&#8260;12)<sup><small>2</small></sup> </string>
     <string name="test1q8o1">45&#8260;144</string>
     <string name="test1q8o2">625&#8260;144</string>
     <string name="test1q8o3">225&#8260;16</string>
     <string name="test1q8o4">300&#8260;24</string>
-    <string name="test1q9">9. Вычислите: -2,5∙2<sup><small>6</small></sup></string>
+    <string name="test1q9">9. Есептеңіз: -2,5∙2<sup><small>6</small></sup></string>
     <string name="test1q9o1">160</string>
     <string name="test1q9o2">-160</string>
     <string name="test1q9o3">80</string>
     <string name="test1q9o4">-80</string>
-    <string name="test1q10">10. Найдите значение выражения: -a<sup><small>3</small></sup> - 3a<sup><small>2</small></sup> + 2, где a=-3</string>
+    <string name="test1q10">10. Өрнектің мәнін табыңыз: -a<sup><small>3</small></sup> - 3a<sup><small>2</small></sup> + 2, мұндағы a=-3</string>
     <string name="test1q10o1">2</string>
     <string name="test1q10o2">-54</string>
     <string name="test1q10o3">54</string>
     <string name="test1q10o4">-2</string>
-    <string name="topic201">Выражения, которые составлены из чисел, переменных и их степеней при помощи действия умножения, называются <b>одночленами</b>.</string>
-    <string name="topic202">Например, 5a; abba; 2x<sup><small>3</small></sup>(-3a)<sup><small>2</small></sup>cx; -7;3<sup><small>4</small></sup>; x; y<sup><small>5</small></sup> - одночлены.</string>
-    <string name="topic203">Упростите одночлен 2x<sup><small>3</small></sup>(-3a)<sup><small>2</small></sup>cx с помощью переместительного и сочетательного законов умножения:</string>
-    <string name="topic204">2x<sup><small>3</small></sup>(-3a)<sup><small>2</small></sup>cx = 2(-3)x<sup><small>3</small></sup>a<sup><small>2</small></sup>cx = -6a<sup><small>2</small></sup>cx<sup><small>4</small></sup></string>
-    <string name="topic205">Такой вид одночлена, где на первом месте стоит числовой множитель, а за ним – переменные и их степени, называют <b>стандартным видом одночлена</b>.</string>
-    <string name="topic206">Числовой множитель одночлена, записанного в стандартном виде, называют <b>коэффициентом одночлена</b>.</string>
-    <string name="topic207">Сумму показателей степеней всех переменных, входящих в состав одночлена, называют <b>степенью одночлена</b>.</string>
-    <string name="topic208"><b>Пример 1.</b> Перемножим одночлены -3a<sup><small>2</small></sup>b<sup><small>3</small></sup>c и 5a<sup><small>3</small></sup>bc<sup><small>2</small></sup>d</string>
-    <string name="topic209">-3a<sup><small>2</small></sup>b<sup><small>3</small></sup>c ∙ 5a<sup><small>3</small></sup>bc<sup><small>2</small></sup>d = -15a<sup><small>5</small></sup>b<sup><small>4</small></sup>c<sup><small>3</small></sup>d</string>
-    <string name="topic210"><b>Пример 2.</b> Возведите одночлен 2a<sup><small>2</small></sup>y<sup><small>3</small></sup>z в четвертую степень.</string>
-    <string name="topic211">(2a<sup><small>2</small></sup>y<sup><small>3</small></sup>z)<sup><small>4</small></sup> = 2<sup><small>4</small></sup>(a<sup><small>2</small></sup>)<sup><small>4</small></sup>(y<sup><small>3</small></sup>)<sup><small>4</small></sup>z<sup><small>4</small></sup> = 16a<sup><small>8</small></sup>y<sup><small>12</small></sup>z<sup><small>4</small></sup></string>
-    <string name="topic301">Предположим, что требуется перемножить многочлены: m - n и a + b - c. Составим произведение этих многочленов:</string>
+    <string name="topic201">Көбейту амалын қолданатын сандардан, айнымалылардан және олардың дәрежелерінен құралған өрнектер <b>бірмүшелер</b> деп аталады.</string>
+    <string name="topic202">Мысалы, 5a; абба; 2x<sup><small>3</small></sup>(-3a)<sup><small>2</small></sup>cx; -7;3<sup><small>4</small></sup>; x; y<sup><small>5</small></sup> - бірмүшелер.</string>
+    <string name="topic203">Коммутативті пайдаланып бірмүшелді 2x<sup><small>3</small></sup>(-3a)<sup><small>2</small></sup>cx мәнін жеңілдету және ассоциативті көбейту заңдары:</string>
+    <string name="topic204">2x<sup><small>3</small></sup>(-3a)<sup><small>2</small></sup>cx = 2(-3) x<sup><small>3</small></sup>a<sup><small>2</small></sup>cx = -6a<sup><small>2</small></sup>cx<sup><small>4</small></sup></string>
+    <string name="topic205">Бірінші сандық фактор, одан кейін айнымалылар және олардың дәрежелері келетін бірмүшелің бұл түрі <b>бірмүшелің стандартты түрі</b> деп аталады.</string>
+    <string name="topic206">Стандартты түрде жазылған бірмүшелің санның көпіршікті бөлшегі <b>бірмүшелік коэффициенті</b> деп аталады.</string>
+    <string name="topic207">Бирмүшелердің барлық айнымалылардың дәрежелерінің қосындысы <b>бірмүшелің дәрежесі</b> деп аталады.</string>
+    <string name="topic208"><b>1-мысал.</b> Бірмүшелерді -3a<sup><small>2</small></sup>b<sup><small>3</small></sup> көбейтіңіз c және 5a<sup><small>3</small></sup>bc<sup><small>2</small></sup>d</string>
+    <string name="topic209">-3a<sup><small>2</small></sup>b<sup><small>3</small></sup>c ∙ 5a<sup><small> 3</small></sup>bc<sup><small>2</small></sup>d = -15a<sup><small>5</small></sup>b<sup><small>4</small></sup>c<sup><small>3</small></sup>d</string>
+    <string name="topic210"><b>2-мысал.</b> Бірмүшелін 2a<sup><small>2</small></sup>y<sup><small>3</small></sup>z төртінші дәрежеге көтеріңіз.</string>
+    <string name="topic211">(2a<sup><small>2</small></sup>y<sup><small>3</small></sup>z)<sup><small>4 </small></sup> = 2<sup><small>4</small></sup>(a<sup><small>2</small></sup>)<sup><small>4 </small></sup>(y<sup><small>3</small></sup>)<sup><small>4</small></sup>z<sup><small>4</small></sup> = 16a<sup><small>8</small></sup>y<sup><small>12</small></sup>z<sup><small>4</small></sup></string>
+    <string name="topic301">Көпмүшелерді көбейткіңіз келеді делік: m - n және a + b - c. Осы көпмүшелердің көбейтіндісін құрастырайық:</string>
     <string name="topic302">(m - n)(a + b - c)</string>
-    <string name="topic303">Обозначим двучлен m-n буквой x и по правилу умножения одночлена на многочлен преобразуем произведение:</string>
+    <string name="topic303">m-n биномын х әрпімен белгілеп, мономді көпмүшеге көбейту ережесіне сәйкес туындыны түрлендіріңіз:</string>
     <string name="topic304">(m - n)(a + b - c) = x(a + b - c) = xa + xb - xc</string>
-    <string name="topic305">В выражении xa + xb - xc подставим вместо x двучлен m - n и снова применим правило умножения одночлена на многочлен:</string>
+    <string name="topic305">xa + xb - xc өрнегінде x орнына m - n биномды ауыстырыңыз және мономді көпмүшеге көбейту ережесін қайта қолданыңыз:</string>
     <string name="topic306">xa + xb - xc = m - na + m - nb - m - nc = ma - na + mb - nb - mc + nc</string>
-    <string name="topic307">Итак,</string>
+    <string name="topic307">Сонымен,</string>
     <string name="topic308">m - na + b - c = ma - na + mb - nb - mn + nc</string>
-    <string name="topic309">Мы видим, что последнее выражение получилось после того, как каждый член многочлена m - n умножили на каждый член многочлена a + b - c. Отсюда получаем правило, данное ниже.</string>
-    <string name="topic310"><b>Чтобы умножить многочлен на многочлен, нужно каждый член одного многочлена умножить на каждый член другого многочлена, а полученные произведения сложить.</b></string>
-    <string name="topic311"><b>Пример</b>: Упростим выражение 5x<sup><small>3</small></sup> + (y<sup><small>2</small></sup>+5x)(xy-x<sup><small>2</small></sup>)</string>
-    <string name="topic312"><b>Решение</b>. Сначала надо перемножить двучлены y<sup><small>2</small></sup> + 5x и xy - x<sup><small></small></sup>, а затем привести подобные члены.</string>
-    <string name="topic313">5x<sup>3</sup> + (y<sup>2</sup>+5x)(xy-x<sup>2</sup>) = 5x<sup>3</sup> + y<sup>2</sup> ∙ xy - y<sup>2</sup>x<sup>2</sup> + 5x ∙ xy - 5x ∙ x<sup>2</sup> = 5x<sup>3</sup> + xy<sup>3</sup> - y<sup>2</sup> + 5x<sup>2</sup>y - 5x<sup>3</sup> = xy<sup>3</sup> - y<sup>2</sup>x<sup>2</sup> + 5x<sup>2</sup>y</string>
-    <string name="test2q1">1. Найдите одночлен из указанных выражений: </string>
+    <string name="topic309">Соңғы өрнек m - n көпмүшесінің әрбір мүшесі a + b - c көпмүшесінің әрбір мүшесіне көбейтілгеннен кейін алынғанын көреміз. Бұдан төменде берілген ережені аламыз.</string>
+    <string name="topic310"><b>Көпмүшені көпмүшеге көбейту үшін бір көпмүшенің әрбір мүшесін екінші көпмүшенің әрбір мүшесіне көбейтіп, алынған көбейтінділерді қосу керек.</b></string>
+    <string name="topic311"><b>Мысалы:</b> 5x<sup><small>3</small></sup> + (y<sup><small>2</small></sup> + 5x)(xy-x<sup><small>2</small></sup>) өрнегін жеңілдетіңіз</string>
+    <string name="topic312"><b>Шешім</b>. Алдымен y<sup><small>2</small></sup> + 5x және xy - x<sup><small></small></sup> биномдарын көбейту керек, содан кейін ұқсас мүшелерді келтіру керек. </string>
+    <string name="topic313">5x<sup>3</sup> + (y<sup>2</sup>+5x)(xy-x<sup>2</sup>) = 5x<sup>3 </sup> + y<sup>2</sup> ∙ xy - y<sup>2</sup>x<sup>2</sup> + 5x ∙ xy - 5x ∙ x<sup>2</sup> = 5x<sup>3</sup> + xy<sup>3</sup> - y<sup>2</sup> + 5x<sup>2</sup>y - 5x<sup>3</sup> sup> = xy<sup>3</sup> - y<sup>2</sup>x<sup>2</sup> + 5x<sup>2</sup>y</string>
+    <string name="test2q1">1. Көрсетілген шығармалардан бірмүшенді табыңыз: </string>
     <string name="test2q1o1">x<sup><small>2</small></sup> + x</string>
     <string name="test2q1o2">3, 4x<sup><small>2</small></sup>y</string>
     <string name="test2q1o3">2(x + y)<sup><small>2</small></sup></string>
     <string name="test2q1o4">ab&#8260;a+b</string>
-    <string name="test2q2">2. Запишите одночлен в стандартном виде: 0,5m∙4n</string>
+    <string name="test2q2">2. Бірмүшені стандартты түрде жазыңыз: 0,5m∙4n</string>
     <string name="test2q2o1">4,5mn</string>
     <string name="test2q2o2">0,9mn</string>
     <string name="test2q2o3">2mn</string>
     <string name="test2q2o4">1,5mn</string>
-    <string name="test2q3">3. Запишите одночлен в стандартном виде, и найдите его коэффициент: 2&#8260;3m<sup><small>2</small></sup>n∙4,5n<sup><small>3</small></sup></string>
+    <string name="test2q3">3. Бірмүшені стандартты түрде жазыңыз, оның коэффициентін табыңыз: 2&#8260;3m<sup><small>2</small></sup>n∙4,5n<sup><small>3</small></sup></string>
     <string name="test2q3o1">3</string>
     <string name="test2q3o2">9</string>
     <string name="test2q3o3">4</string>
     <string name="test2q3o4">0,5</string>
-    <string name="test2q4">4. Найдите значение одночлена: -0,125y<sup><small>4</small></sup>, если y = -2</string>
+    <string name="test2q4">4. Бірмүшенің мәнін табыңыз: -0,125y<sup><small>4</small></sup>, eğer y = -2</string>
     <string name="test2q4o1">2</string>
     <string name="test2q4o2">1</string>
     <string name="test2q4o3">-2</string>
     <string name="test2q4o4">-1</string>
-    <string name="test2q5">5. Определите степень одночлена: -xy∙2y<sup><small>3</small></sup>x<sup><small>4</small></sup></string>
+    <string name="test2q5">5. Бірмүшенің дәрежесін табыңыз: -xy∙2y<sup><small>3</small></sup>x<sup><small>4</small></sup></string>
     <string name="test2q5o1">7</string>
     <string name="test2q5o2">8</string>
     <string name="test2q5o3">12</string>
     <string name="test2q5o4">9</string>
-    <string name="test2q6">6. Запишите одночлен в стандартном виде: 0,12x∙(-0,3)y∙100y<sup><small>3</small></sup>x<sup><small>3</small></sup>y</string>
+    <string name="test2q6">6. Бірмүшені стандартты түрде жазыңыз: 0,12x∙(-0,3)y∙100y<sup><small>3</small></sup>x<sup><small>3</small></sup>y</string>
     <string name="test2q6o1">-36x<sup><small>4</small></sup>y<sup><small>4</small></sup></string>
     <string name="test2q6o2">3,6x<sup><small>4</small></sup>y<sup><small>6</small></sup></string>
     <string name="test2q6o3">36x<sup><small>5</small></sup>y<sup><small>4</small></sup></string>
     <string name="test2q6o4">-3,6x<sup><small>4</small></sup>y<sup><small>5</small></sup></string>
-    <string name="test2q7">7. Определите коэффициент одночлена: -9bc<sup><small>3</small></sup>∙(-y<sup><small>4</small></sup>)∙1 2&#8260;3xb</string>
+    <string name="test2q7">7. Бірмүшенің коэффициентін табыңыз: -9bc<sup><small>3</small></sup>∙(-y<sup><small>4</small></sup>)∙1 2&#8260;3xb</string>
     <string name="test2q7o1">-6</string>
     <string name="test2q7o2">15</string>
     <string name="test2q7o3">18</string>
     <string name="test2q7o4">-27</string>
-    <string name="test2q8">8. Найдите значение одночлена: x<sup><small>4</small></sup>y<sup><small>2</small></sup> , где x = -1, y = -0,5</string>
+    <string name="test2q8">8. Бірмүшенің мәнін табыңыз: x<sup><small>4</small></sup>y<sup><small>2</small></sup> , x = -1, y = -0,5</string>
     <string name="test2q8o1">0,25</string>
     <string name="test2q8o2">0,5</string>
     <string name="test2q8o3">2</string>
     <string name="test2q8o4">1</string>
-    <string name="test2q9">9. Определите степень одночлена: –x<sup><small>n</small></sup>y<sup><small>n</small></sup></string>
+    <string name="test2q9">9. Бірмүшенің дәрежесін табыңыз: –x<sup><small>n</small></sup>y<sup><small>n</small></sup></string>
     <string name="test2q9o1">n</string>
     <string name="test2q9o2">0</string>
     <string name="test2q9o3">-1</string>
     <string name="test2q9o4">2n</string>
-    <string name="test2q10">10. Запишите одночлен в стандартном виде: 1&#8260;2t∙2t<sup><small>3</small></sup>∙1&#8260;3 z<sup><small>5</small></sup>∙33t<sup><small>4</small></sup></string>
+    <string name="test2q10">10. Бірмүшені стандартты түрде жазыңыз: 1&#8260;2t∙2t<sup><small>3</small></sup>∙1&#8260;3 z<sup><small>5</small></sup>∙33t<sup><small>4</small></sup></string>
     <string name="test2q10o1">22t<sup><small>4</small></sup>z<sup><small>9</small></sup></string>
     <string name="test2q10o2">5,5t<sup><small>9</small></sup>z<sup><small>5</small></sup></string>
     <string name="test2q10o3">11t<sup><small>8</small></sup>z<sup><small>5</small></sup></string>
     <string name="test2q10o4">66t<sup><small>7</small></sup>z<sup><small>9</small></sup></string>
-    <string name="test3q1">1. Выполните умножение: 2x(x<sup><small>2</small></sup> - 7x - 3)</string>
+    <string name="test3q1">1. Көбейтуді орындаңыз: 2x(x<sup><small>2</small></sup> - 7x - 3)</string>
     <string name="test3q1o1">2x<sup><small>3</small></sup> - 7x<sup><small>2</small></sup> - 3</string>
     <string name="test3q1o2">2x<sup><small>4</small></sup> - 7x<sup><small>2</small></sup> + 6</string>
     <string name="test3q1o3">2x<sup><small>3</small></sup> - 14x<sup><small>2</small></sup> - 6x</string>
     <string name="test3q1o4">2x<sup><small>2</small></sup> - 14x - 6x</string>
-    <string name="test3q2">2. Выполните умножение: 2&#8260;3 x<sup><small>2</small></sup>y(15x - 0.9y + 6)</string>
-    <string name="test3q2o1">15x<sup><small>3</small></sup>y - 0,4x<sup><small>2</small></sup>y<sup><small>2</small></sup> + 6x<sup><small>2</small></sup>y</string>
-    <string name="test3q2o2">8x<sup><small>2</small></sup>y - 0,6x<sup><small>3</small></sup>y<sup><small>2</small></sup> + 8x<sup><small>2</small></sup>y</string>
-    <string name="test3q2o3">10x<sup><small>3</small></sup>y - 0,6x<sup><small>2</small></sup>y<sup><small>2</small></sup> + 4x<sup><small>2</small></sup>y</string>
-    <string name="test3q2o4">12x<sup><small>2</small></sup>y - 0,4x<sup><small>2</small></sup>y<sup><small>2</small></sup> + 6xy<sup><small>2</small></sup></string>
-    <string name="test3q3">3. Упростите: 14(7x-1) - 7(14x+1)</string>
+    <string name="test3q2">2. Көбейтуді орындаңыз: 2&#8260;3 x<sup><small>2</small></sup>y(15x - 0,9y + 6)</string>
+    <string name="test3q2o1">15x<sup><small>3</small></sup>y - 0,4x<sup><small>2</small></sup>y<sup><small> 2</small></sup> + 6x<sup><small>2</small></sup>y</string>
+    <string name="test3q2o2">8x<sup><small>2</small></sup>y - 0,6x<sup><small>3</small></sup>y<sup><small> 2</small></sup> + 8x<sup><small>2</small></sup>y</string>
+    <string name="test3q2o3">10x<sup><small>3</small></sup>y - 0,6x<sup><small>2</small></sup>y<sup><small> 2</small></sup> + 4x<sup><small>2</small></sup>y</string>
+    <string name="test3q2o4">12x<sup><small>2</small></sup>y - 0,4x<sup><small>2</small></sup>y<sup><small> 2</small></sup> + 6xy<sup><small>2</small></sup></string>
+    <string name="test3q3">3. Жеңілдетіңіз: 14(7x-1) - 7(14x+1)</string>
     <string name="test3q3o1">-21</string>
     <string name="test3q3o2">0</string>
     <string name="test3q3o3">14</string>
     <string name="test3q3o4">1</string>
-    <string name="test3q4">4. Упростите выражение: -2 + 3(3c-2) - 2(c-1)</string>
+    <string name="test3q4">4. Өрнекті жеңілдетіңіз: -2 + 3(3c-2) - 2(c-1)</string>
     <string name="test3q4o1">11c - 10</string>
     <string name="test3q4o2">7c - 6</string>
     <string name="test3q4o3">11c - 6</string>
     <string name="test3q4o4">7c - 10</string>
-    <string name="test3q5">5. Упростив выражение, найдите его значение: 25a - 43a - 1 + 75 - 2a, где a = 11</string>
+    <string name="test3q5">5. Өрнекті жеңілдетіп, оның мәнін табыңыз: 25a - 43a - 1 + 75 - 2a, мұндағы a = 11</string>
     <string name="test3q5o1">50</string>
     <string name="test3q5o2">-50</string>
     <string name="test3q5o3">-28</string>
     <string name="test3q5o4">28</string>
-    <string name="test3q6">6. Вынесите общий множитель за скобки: 12x<sup><small>2</small></sup>y - 48xy<sup><small>2</small></sup></string>
+    <string name="test3q6">6. Жақшалардан жалпы көбейткішті шығарыңыз: 12x<sup><small>2</small></sup>y - 48xy<sup><small>2</small></sup></string>
     <string name="test3q6o1">4xy(8x-44y)</string>
     <string name="test3q6o2">12xy(x-4y)</string>
     <string name="test3q6o3">12xy(x-36y)</string>
     <string name="test3q6o4">3xy(4y-16x)</string>
-    <string name="test3q7">7. Разложите на множители: a<sup><small>4</small></sup> + a<sup><small>5</small></sup> - a<sup><small>8</small></sup></string>
+    <string name="test3q7">7. Фактор: a<sup><small>4</small></sup> + a<sup><small>5</small></sup> - a<sup><small>8</small> </sup></string>
     <string name="test3q7o1">a<sup><small>4</small></sup>(0 + a<sup><small>2</small></sup> - a<sup><small>4</small></sup>)</string>
-    <string name="test3q7o2">a<sup><small>4</small></sup>(a<sup><small>2</small></sup> - a<sup><small>4</small></sup>)</string>
+    <string name="test3q7o2">a<sup><small>4</small></sup>(a<sup><small>2</small></sup> - a<sup><small>4 </small></sup>)</string>
     <string name="test3q7o3">a<sup><small>4</small></sup>(a - a<sup><small>4</small></sup>)</string>
     <string name="test3q7o4">a<sup><small>4</small></sup>(1 + a - a<sup><small>4</small></sup>)</string>
-    <string name="test3q8">8. Решите уравнение: y<sup><small>2</small></sup> + 0,7y = 0</string>
+    <string name="test3q8">8. Теңдеуді шешіңіз: y<sup><small>2</small></sup> + 0,7y = 0</string>
     <string name="test3q8o1">-0,7; 0</string>
     <string name="test3q8o2">0; 0,7</string>
-    <string name="test3q8o3">0; 0,3</string>
+    <string name="test3q8o3">0; 0.3</string>
     <string name="test3q8o4">-0,3; 0</string>
-    <string name="test3q9">9. Вынесите общий множитель за скобки: 4ax<sup><small>3</small></sup> + 8a<sup><small>2</small></sup>x<sup><small>2</small></sup> - 12a<sup><small>3</small></sup>x</string>
+    <string name="test3q9">9. Жақшалардан жалпы коэффициентті шығарыңыз: 4ax<sup><small>3</small></sup> + 8a<sup><small>2</small></sup>x<sup><small>2</small></sup> - 12a<sup><small>3</small></sup>x</string>
     <string name="test3q9o1">4a<sup><small>2</small></sup>x<sup><small>2</small></sup>(x + 8 - 12a)</string>
     <string name="test3q9o2">12ax(x<sup><small>2</small></sup> + 4ax - a<sup><small>2</small></sup>)</string>
     <string name="test3q9o3">4ax(x<sup><small>2</small></sup> + 2ax - 3a<sup><small>2</small></sup>)</string>
     <string name="test3q9o4">12ax(8x<sup><small>2</small></sup> + 4ax - a<sup><small>2</small></sup>)</string>
-    <string name="test3q10">10. Разложите на множители: m<sup><small>2</small></sup> - 2m<sup><small>3</small></sup> - m<sup><small>4</small></sup></string>
-    <string name="test3q10o1">m<sup><small>4</small></sup>(m<sup><small>2</small></sup> - 2m - 1)</string>
-    <string name="test3q10o2">m<sup><small>2</small></sup>(1 - 2m - m<sup><small>2</small></sup>)</string>
+    <string name="test3q10">10. Қосқыш: m<sup><small>2</small></sup> - 2m<sup><small>3</small></sup> - m<sup><small>4</small></sup></string>
+    <string name="test3q10o1">m<sup><small>4</small></sup>(m<sup><small>2</small></sup> - 2м - 1)</string>
+    <string name="test3q10o2">m<sup><small>2</small></sup>(1 - 2м - m<sup><small>2</small></sup>)</string>
     <string name="test3q10o3">m<sup><small>3</small></sup>(m - 2 - m<sup><small>2</small></sup>)</string>
-    <string name="test3q10o4">m(m - 2m<sup><small>2</small></sup> - m<sup><small>4</small></sup>)</string>
-    <string name="topic401"><b>Формулы сокращённого умножения</b> многочленов — часто встречающиеся случаи умножения многочленов. Одно из них квадрат суммы и разности.</string>
+    <string name="test3q10o4">m(m - 2м<sup><small>2</small></sup> - m<sup><small>4</small></sup>)</string>
+    ```xml
+    <string name="topic401"><b>Қысқартылған көбейту формулалары</b> — көптеген кездесетін көбейту формулалары. Олардың бірі қосынды мен айырманың квадраты.</string>
     <string name="topic402">(a + b)<sup><small>2</small></sup> = a<sup><small>2</small></sup> + 2ab + b<sup><small>2</small></sup></string>
-    <string name="topic403">К примеру, (7x + 2)<sup><small>2</small></sup> можно приравнять к трёхчлену 49x<sup><small>2</small></sup> + 28x + 4</string>
-    <string name="topic404">Или, наоборот, трёхчлен 4x<sup><small>2</small></sup> - 12x + 9 можно представить в виде (2x - 3)<sup><small>2</small></sup></string>
-    <string name="topic405">Применение квадрата суммы или разности:</string>
+    <string name="topic403">Мысалы, (7x + 2)<sup><small>2</small></sup> 49x<sup><small>2</small></sup> + 28x + 4 үш мүшелігіне теңдейді.</string>
+    <string name="topic404">Немесе, керісінше, 4x<sup><small>2</small></sup> - 12x + 9 үш мүшені (2x - 3)<sup><small>2</small></sup> түрінде көрсетуге болады.</string>
+    <string name="topic405">Қосындының немесе айырманың квадратын пайдаланыңыз:</string>
     <string name="topic406">101<sup><small>2</small></sup> = (100 + 1)<sup><small>2</small></sup> = 10000 + 200 + 1 = 10201</string>
     <string name="topic407">98<sup><small>2</small></sup> = (100 - 2)<sup><small>2</small></sup> = 10000 - 400 + 4 = 9604</string>
-    <string name="topic408"><b>Разность квадратов двух выражений</b></string>
+    <string name="topic408"><b>Екі өрнектің квадраттарының айырмашылығы</b></string>
     <string name="topic409">a<sup><small>2</small></sup> - b<sup><small>2</small></sup> = (a - b)(a + b)</string>
-    <string name="topic410">К примеру, 9x<sup><small>2</small></sup> - 16 можно разложить на множители (3x-4)(3x+4)</string>
-    <string name="topic411">Или, наоборот, из множителей 5-2x5+2x можно получить 25-4x<sup><small>2</small></sup></string>
-    <string name="topic412">Применение разности квадратов в вычислении:</string>
+    <string name="topic410">Мысалы, 9x<sup><small>2</small></sup> - 16 көбейткіштерге жиіліктелуі мүмкін (3x-4)(3x+4)</string>
+    <string name="topic411">Немесе, керісінше, 5-2x5+2x көбейткіштерінен 25-4x<sup><small>2</small></sup> алуға болады.</string>
+    <string name="topic412">Есептеуде шаршы айырманы пайдалану:</string>
     <string name="topic413">49<sup><small>2</small></sup> - 38<sup><small>2</small></sup> = (49 - 38)(49 + 38) = 11 ∙ 87 = 957</string>
-    <string name="topic414"><b>Сумма и разность кубов двух выражений</b></string>
-    <string name="topic415"><b>Формулы сокращённого умножения</b> многочленов — часто встречающиеся случаи умножения многочленов. Одно из них сумма и разность кубов.</string>
+    <string name="topic414"><b>Екі өрнектің кубтарының қосындысы мен айырмасы</b></string>
+    <string name="topic415"><b>Қысқартылған көбейту формулалары</b> — көптеген кездесетін көбейту формулалары. Олардың бірі кубтардың қосындысы мен айырмасы.</string>
     <string name="topic416">a<sup><small>3</small></sup> - b<sup><small>3</small></sup> = (a - b)(a<sup><small>2</small></sup> + ab + b<sup><small>2</small></sup>)</string>
     <string name="topic417">a<sup><small>3</small></sup> + b<sup><small>3</small></sup> = (a + b)(a<sup><small>2</small></sup> - ab + b<sup><small>2</small></sup>)</string>
-    <string name="topic418">К примеру, 8x<sup><small>3</small></sup> - 27 можно разложить на множители (2x - 3)(4x<sup><small>2</small></sup> + 6x + 9)</string>
-    <string name="topic419">Или, наоборот, из множителей (5 - 2x)(25 + 10x + 4x<sup><small>2</small></sup>) можно получить 125 - 8x<sup><small>3</small></sup></string>
-    <string name="topic420"><b>Куб суммы и разности двух выражений</b></string>
+    <string name="topic418">Мысалы, 8x<sup><small>3</small></sup> - 27 көбейткіштерге жиіліктелуі мүмкін (2x - 3)(4x<sup><small>2</small></sup> + 6x + 9)</string>
+    <string name="topic419">Немесе, керісінше, көбейткіштерден (5 - 2x)(25 + 10x + 4x<sup><small>2</small></sup>) алуға болады 125 - 8x<sup><small>3</small></sup></string>
+    <string name="topic420"><b>Екі өрнектің қосындысы мен айырмасының кубы</b></string>
     <string name="topic421">(a - b)<sup><small>3</small></sup> = a<sup><small>3</small></sup> - 3a<sup><small>2</small></sup>b + 3ab<sup><small>2</small></sup> - b<sup><small>3</small></sup></string>
     <string name="topic422">(a + b)<sup><small>3</small></sup> = a<sup><small>3</small></sup> + 3a<sup><small>2</small></sup>b + 3ab<sup><small>2</small></sup> + b<sup><small>3</small></sup></string>
-    <string name="topic423">К примеру, (2x + 3)<sup><small>2</small></sup> можно записать в виде многочлена 8x<sup><small>3</small></sup> + 36x<sup><small>2</small></sup> + 54 + 27</string>
-    <string name="topic424">Или, наоборот, из многочлена 125a<sup><small>3</small></sup> - 150a<sup><small>2</small></sup>b + 60ab<sup><small>2</small></sup> - 8b<sup><small>3</small></sup> можно получить (5a - 2b)<sup><small>3</small></sup></string>
-    <string name="topic425"><b>Формулы сокращённого умножения</b> многочленов — часто встречающиеся случаи умножения многочленов. Одно из них куб суммы и разности.</string>
+    <string name="topic423">Мысалы, (2x + 3)<sup><small>2</small></sup> многочлені ретінде жазылуы мүмкін 8x<sup><small>3</small></sup> + 36x<sup><small>2</small></sup> + 54 + 27</string>
+    <string name="topic424">Немесе, керісінше, 125a<sup><small>3</small></sup> - 150a<sup><small>2</small></sup>b многочленінен + 60ab<sup><small>2</small></sup> - 8b<sup><small>3</small></sup> алуға болады (5a - 2b)<sup><small>3</small></sup></string>
+    <string name="topic425"><b>Қысқартылған көбейту формулалары</b> — көптеген кездесетін көбейту формулалары. Солардың бірі қосынды мен айырманың кубы</string>
     <string name="test4q1">1. Запишите в виде многочлена: (2 + t)<sup><small>3</small></sup></string>
     <string name="test4q1o1">6 + 4t + 6t<sup>2</sup> + t<sup>3</sup></string>
     <string name="test4q1o2">8 + 4t + 3t<sup><small>2</small></sup> + t<sup><small>3</small></sup></string>
@@ -270,38 +271,40 @@
     <string name="test4q10o2">(3a - b)(9a<sup><small>2</small></sup> + 3ab + b<sup><small>2</small></sup>)</string>
     <string name="test4q10o3">(9a - b)(81a<sup><small>2</small></sup> + 9ab + b<sup><small>2</small></sup>)</string>
     <string name="test4q10o4">(9a - b)(18a<sup><small>2</small></sup> + 3ab + b<sup><small>2</small></sup>)</string>
-    <string name="topic501"><b>Квадратным корнем числа а называют</b> число х, квадратом которого является число а. </string>
-    <string name="topic502">Арифметическим квадратным корнем из числа a называется неотрицательное число, квадрат которого равен данному числу a. Обозначается как √a, здесь √ – знак арифметического квадратного корня. √a читается как: «арифметический квадратный корень из a».</string>
-    <string name="topic503">Из определения арифметического квадратного корня следует, что:</string>
-    <string name="topic504">1. Только если а ≥ 0, выражение a имеет смысл, и областью определения является числовой промежуток  [0; + ∞).</string>
-    <string name="topic505">2. Неравенство a ≥ 0  имеет смысл для любого неотрицательного а, это значит, что значением арифметического квадратного корня могут быть только неотрицательные числа.</string>
-    <string name="topic506">3. Равенство (√a)<sup><small>2</small></sup> = a имеет смысл для любого неотрицательного а, это значит, что квадрат квадратного корня равен числу под корнем. Не обязательно употреблять слово «арифметический».</string>
-    <string name="topic507">Метод нахождения квадратного корня из числа называется <b>извлечением числа под квадратный корень</b>.
-                            Чтобы определить, является ли b арифметическим квадратным корнем из a, нужно проследить, чтобы выполнились нижеперечисленные условия:</string>
+    <string name="topic501"><b>a санының квадрат түбірі</b> квадраты а саны болатын х саны деп аталады. </string>
+    <string name="topic502">a-ның арифметикалық квадрат түбірі - квадраты берілген a санына тең теріс емес сан. √a деп белгіленген, мұнда √ арифметикалық квадрат түбірдің белгісі. √a былай оқылады: “a.-ның арифметикалық квадрат түбірі”</string>
+    <string name="topic503">Арифметикалық квадрат түбір анықтамасынан мыналар шығады:</string>
+    <string name="topic504">1. Егер a ≥ 0 болса ғана a өрнегі мағыналы болады, ал анықтау облысы сандық интервал [0; + ∞).</string>
+    <string name="topic505">2. a ≥ 0 теңсіздігі кез келген теріс емес а үшін мағынасы бар, бұл тек теріс емес сандар арифметикалық квадрат түбірдің мәні бола алатынын білдіреді.</string>
+    <string name="topic506">3. (√a)<sup><small>2</small></sup> = a теңдігі кез келген теріс емес а үшін мағынасы бар, бұл квадрат түбірдің квадраты түбір астындағы санға тең екенін білдіреді. «Арифметика.»</string>
+    сөзін қолданудың қажеті жоқ
+    <string name="topic507">Санның квадрат түбірін табу әдісі <b>шаршы түбір</b> деп аталады.
+                             b a-ның арифметикалық квадрат түбірі екенін анықтау үшін келесі шарттар орындалғанына көз жеткізу керек:</string>
     <string name="topic508">b ≥ 0,</string>
     <string name="topic509">b<sup><small>2</small></sup> = a</string>
-    <string name="topic510">Пример:</string>
-    <string name="topic511">√81 = 9, потому что 9 > 0 и 9² = 81</string>
-    <string name="topic512">√0 = 0, потому что 0 неотрицательное число и 0² = 0</string>
-    <string name="topic513">√(25/64) = 5/8, потому что 5/8 > 0 и (5/8)² = 25/64</string>
-    <string name="topic514">Числа √a и -√a называют <b>противоположными корнями</b></string>
-    <string name="topic515">Например, уравнение x² = 64 имеет два корня: x1 = √64 = 8 и x2 = -√64 = -8</string>
-    <string name="test5q1">1. Найдите значение данного корня: √121</string>
+    <string name="topic510">Мысалы:</string>
+    <string name="topic511">√81 = 9, себебі 9 > 0 және 9² = 81</string>
+    <string name="topic512">√0 = 0, себебі 0 теріс емес және 0² = 0</string>
+    <string name="topic513">√(25/64) = 5/8, себебі 5/8 > 0 және (5/8)² = 25/64</string>
+    <string name="topic514">√a және -√a сандары <b>қарсы түбірлер</b></string>
+    деп аталады.
+    <string name="topic515">Мысалы, x² = 64 теңдеуінің екі түбірі бар: x1 = √64 = 8 және x2 = -√64 = -8</string>
+    <string name="test5q1">1. Мына түбірдің мәнін табыңыз: √121</string>
     <string name="test5q1o1">12</string>
     <string name="test5q1o2">14</string>
     <string name="test5q1o3">11</string>
     <string name="test5q1o4">13</string>
-    <string name="test5q2">2. Найдите значение данного выражения: √81 - √225</string>
+    <string name="test5q2">2. Мына өрнектің мәнін табыңыз: √81 - √225</string>
     <string name="test5q2o1">24</string>
     <string name="test5q2o2">12</string>
     <string name="test5q2o3">-12</string>
     <string name="test5q2o4">-6</string>
-    <string name="test5q3">3. Найдите значение выражения: (√49)<sup><small>2</small></sup></string>
+    <string name="test5q3">3. Өрнектің мәнін табыңыз: (√49)<sup><small>2</small></sup></string>
     <string name="test5q3o1">49</string>
     <string name="test5q3o2">7</string>
     <string name="test5q3o3">14</string>
     <string name="test5q3o4">21</string>
-    <string name="test5q4">4. Найдите значение выражения: (√51)<sup><small>2</small></sup> - (√35)<sup><small>2</small></sup></string>
+    <string name="test5q4">4. Өрнектің мәнін табыңыз: (√51)<sup><small>2</small></sup> - (√35)<sup><small>2</small></sup></string>
     <string name="test5q4o1">4</string>
     <string name="test5q4o2">16</string>
     <string name="test5q4o3">32</string>
@@ -311,7 +314,7 @@
     <string name="test5q5o2">40</string>
     <string name="test5q5o3">42</string>
     <string name="test5q5o4">43</string>
-    <string name="test5q6">6. Вычислите: √0,09 + √1,96</string>
+    <string name="test5q6">6. Есептеңіз: √0,09 + √1,96</string>
     <string name="test5q6o1">1,43</string>
     <string name="test5q6o2">4,4</string>
     <string name="test5q6o3">1,7</string>
@@ -326,16 +329,16 @@
     <string name="test5q8o2">81</string>
     <string name="test5q8o3">9</string>
     <string name="test5q8o4">324</string>
-    <string name="test5q9">9. При каких значениях x данное выражение имеет значение: √11x</string>
+    <string name="test5q9">9. Бұл өрнек x-тің қандай мәндері үшін жарамды: √11x</string>
     <string name="test5q9o1">x ≥ 0</string>
     <string name="test5q9o2">x ≥ 11</string>
     <string name="test5q9o3">x ≥ -11</string>
     <string name="test5q9o4">x ≥ 22</string>
-    <string name="test5q10">10. Между какими двумя последовательными натуральными числами расположено данное число: √128</string>
-    <string name="test5q10o1">120 и 130</string>
-    <string name="test5q10o2">13 и 14</string>
-    <string name="test5q10o3">11 и 12</string>
-    <string name="test5q10o4">18 и 20</string>
+    <string name="test5q10">10. Бұл сан қатарынан екі натурал санның арасында орналасқан: √128</string>
+    <string name="test5q10o1">120 және 130</string>
+    <string name="test5q10o2">13 және 14</string>
+    <string name="test5q10o3">11 және 12</string>
+    <string name="test5q10o4">18 және 20</string>
     <string name="topic601">I. ax<sup><small>2</small></sup> + bx + c = 0 түріндегі теңдеу квадрат теңдеу деп аталады, мұндағы x - айнымалы, a,b,c сандары нақты сандар және a ≠ 0</string>
     <string name="topic602">a, b, c сандары квадрат теңдеудің коэффициенттері: а - бірінші коэффициент, b - екінші коэффициент, с коэффициенті бос мүше деп аталады</string>
     <string name="topic603">Квадрат теңдеуді екінші дәрежелі теңдеу деп те атайды, өйткені оның сол жағы екінші дәрежелі көпмүше</string>
@@ -440,4 +443,320 @@
     <string name="test6q10o2">±2√6</string>
     <string name="test6q10o3">±2√7</string>
     <string name="test6q10o4">±2√3</string>
+
+    <string name="topic701">ax > b және ax &lt; b (немесе сәйкесінше ax ≥ b және ax ≤ b)
+        теңсіздіктері, мұндағы a және b кейбір сандар және х - айнымалы,
+        бір айнымалысы бар <b>сызықтық теңсіздіктер</b> деп аталады</string>
+    <string name="topic702"><i>Мысалы:</i> x - 5 > 0;   7x + 6 ≤ 15;  (x + 6) / 2 &lt; (x - 15) / 5</string>
+    <string name="topic703"><i>Бір айнымалыдағы теңсіздіктің шешімі</i> оны шынайы сандық теңсіздікке айналдыратын айнымалының мәні болып табылады.
+        Теңсіздікті шешу дегеніміз оның көптеген шешімдерін табу немесе олардың жоқтығын дәлелдеу.</string>
+    <string name="topic704">Эквивалентті теңсіздіктер. Шешімдері бірдей теңсіздіктер эквивалент деп аталады. Шешімі жоқ теңсіздіктер де эквивалент деп саналады.
+        Теңсіздіктерді шешу кезінде берілген теңсіздікті эквивалентімен алмастыратын түрлендірулер қолданылады.
+        Мұндай алмастыру эквивалентті теңсіздік түрлендіруі деп аталады. Теңсіздіктерді эквивалентті түрлендіру ережелері</string>
+    <string name="topic705">Егер a = 0 және b > 0 болса, 0x > b теңсіздігінің шешімі болмайды. Кез келген х мәні үшін теңсіздік жалған болғандықтан. </string>
+    <string name="topic706">Егер a = 0 және b &lt; 0 болса, онда 0x > b кез келген х мәні үшін теңсіздік ақиқат болады.</string>
+    <string name="topic707">Мысалы: </string>
+    <string name="topic708">7x + 1 - 4x > 3x + 16 &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 6x + 17 > 2(3x + 4)</string>
+    <string name="topic709">7x + 7 - 4x > 3x + 16  &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 6x + 17 > 6x + 8</string>
+    <string name="topic710">3x - 3x > 16 - 7 &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 6x - 6x > 8 - 17</string>
+    <string name="topic711">0x > 9 &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 0x > -9</string>
+    <string name="topic712">Жауабы: ∅ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; Жауабы: (-∞;∞)</string>
+    <string name="topic713">Бірлестік – А және В интервалдарының кем дегенде біреуіне жататын А және В сандық интервал.</string>
+    <string name="topic714"></string>
+    <string name="topic715"></string>
+    <string name="topic716"></string>
+    <string name="topic717"></string>
+    <string name="topic718">А және В сандық интервалдарының қиылысы А және В екі интервалына жататын сан.</string>
+    <string name="topic719"></string>
+    <string name="topic720"></string>
+    <string name="topic721"></string>
+    <string name="topic722"></string>
+    <string name="topic723"></string>
+    <string name="topic724"></string>
+    <string name="topic725"></string>
+    <string name="topic726">Интервал әдісімен шешу</string>
+    <string name="topic727">1-мысал. f(x) = (x + 4)(x - 2)(x - 10) функциясын қарастырайық.</string>
+    <string name="topic728">Бұл функцияның анықталу облысы барлық сандар жиыны болады. Алдымен функцияның нөлдерін табайық. -4, 2, 10
+        сандары осы функцияның нөлдері болады және анықтау облысын (-∞;-4), (-4;2), (2;10), (10;+∞) интервалдарына бөледі.</string>
+    <string name="topic729"></string>
+    <string name="topic730">Әрбір интервалдың таңбасын анықтау үшін функциядағы х мәнінің орнына осы аралықтағы кез келген санды қоямыз.
+         Мысалы, (-4;2) интервалында 0 саны бар.(0 + 4)(0 - 2)(0 - 10) = 80, яғни нәтиже оң сан.</string>
+    <string name="topic731">Сондықтан x∈(-∞; -4) &#8746; (2;10) үшін f(x) &lt; 0, және x∈(-4;2) &#8746; (10;+∞), f(x) > 0 үшін.</string>
+    <string name="topic732">2-мысал. x<sup><small>2</small></sup> - 3x + 2 > 0 теңсіздігін шешейік.</string>
+    <string name="topic733">Алдымен f(x) = x<sup><small>2</small></sup> - 3x + 2 функциясының түбірлерін табайық: x = 1; x = 2, яғни f(x) = (x - 1)(x - 2).</string>
+    <string name="topic734">Координаталық түзудегі түбірлерді белгілеп, интервалдардың белгілерін анықтайық:</string>
+    <string name="topic735"></string>
+    <string name="topic736">Яғни, x<sup><small>2</small></sup> - 3x + 2 > 0 теңсіздігінің шешімі (-∞; 1) және (2; +∞) интервалдарының бірігуі болады.</string>
+    <string name="topic737">Жауабы: (-∞;12) &#8746; (12;+∞)</string>
+    <string name="topic738">Бір айнымалысы бар сызықтық емес теңсіздіктер жүйесін шешу</string>
+    <string name="topic739">Бір немесе бірнеше теңсіздіктер сызықты емес бір айнымалысы бар теңсіздіктер жүйесін қарастырайық.</string>
+    <string name="topic740">Мысалы: {2x<sup><small>2</small></sup> &lt; 32(x - 2)<sup><small>2</small></sup> > 25 ; {x<sup><small>2</small></sup> - 5x + 7 > 0 |x| ≥ 2 ;т.б.</string>
+    <string name="topic741">1-мысал. {x-8 ≤ 3 9x<sup><small>2</small></sup> + x ≥ 0 теңсіздіктер жүйесін шешейік.</string>
+    <string name="topic742">Шешім. Алдымен әрбір теңсіздіктің шешімін табайық.</string>
+    <string name="topic743">x-8 ≤ 3 теңсіздігінің шешімі (-∞; 11) сәулесі, 9x<sup><small>2</small></sup> + x ≥ 0 теңсіздігінің шешімі
+        (-∞; -19][0; +∞) жиыны екі теңсіздіктің жалпы шешімін табыңыз.</string>
+    <string name="topic744">Жауабы: (-∞;-19] &#8746; [0;11]</string>
+    <string name="topic745">2-мысал. y = √(x - 2)(x + 1) + √9 - x<sup><small>2</small></sup> функциясының анықталу облысын табайық.</string>
+    <string name="topic746">Шешім. y = √(x - 2)(x + 1) + √9 - x<sup><small>2</small></sup> функциясының анықталу облысы {(x - 2)(x + 1) ≥ 0; 9 - x<sup><small>2</small></sup> ≥ 0 теңсіздіктер жүйесін қанағаттандыратын x
+        айнымалысының мәндер жиыны болады.</string>
+    <string name="topic747">Енді осы жүйені шешуге тырысыңыз.</string>
+    <string name="topic748">Жауабы: [-3;-1] &#8746; [2;3]</string>
+
+    <string name="test7q1">1. Теңсіздікті шешіңіз: 5x ≥ -9</string>
+    <string name="test7q1o1">[-1,8; +∞)</string>
+    <string name="test7q1o2">[-45; +∞)</string>
+    <string name="test7q1o3">(-∞;1,8]</string>
+    <string name="test7q1o4">(45; +∞)</string>
+
+    <string name="test7q2">2. Теңсіздікті шешіңіз: x - 67 ≤ 18</string>
+    <string name="test7q2o1">[85; +∞)</string>
+    <string name="test7q2o2">(-∞;85]</string>
+    <string name="test7q2o3">(-∞;85)></string>
+    <string name="test7q2o4">(85; +∞)</string>
+
+    <string name="test7q3">3. Теңсіздікті шешіңіз: 25 + 9x &lt; -11</string>
+    <string name="test7q3o1">(-4; +∞)</string>
+    <string name="test7q3o2">(-∞; -4]</string>
+    <string name="test7q3o3">[-4; +∞)</string>
+    <string name="test7q3o4">(-∞; -4)</string>
+
+    <string name="test7q4">4. Теңсіздікті шешіңіз: 33 - 6x &lt; -9</string>
+    <string name="test7q4o1">(-∞; 7)</string>
+    <string name="test7q4o2">(-7; +∞)</string>
+    <string name="test7q4o3">(7; +∞)</string>
+    <string name="test7q4o4">(-∞;7]</string>
+
+    <string name="test7q5">5. Теңсіздікті шешіңіз: 22x + 15 > 3 + 22x</string>
+    <string name="test7q5o1">(0; +)</string>
+    <string name="test7q5o2">(-∞;+∞)</string>
+    <string name="test7q5o3">[-∞;+∞]</string>
+    <string name="test7q5o4">Шешім жоқ</string>
+
+    <string name="test7q6">6. Теңсіздікті шешіңіз: 9 - 5,4x ≤ 8,2x - 4,6</string>
+    <string name="test7q6o1">(-∞;1]</string>
+    <string name="test7q6o2">(-1; +∞)</string>
+    <string name="test7q6o3">(-∞; -1]</string>
+    <string name="test7q6o4">[1; +∞)</string>
+
+    <string name="test7q7">7. Теңсіздікті шешіңіз: -45x + 1 - 21 > 27</string>
+    <string name="test7q7o1">(-∞;2,6)</string>
+    <string name="test7q7o2">(2,6; +)</string>
+    <string name="test7q7o3">(-∞; -2,6)</string>
+    <string name="test7q7o4">(-2,6;+∞)</string>
+
+    <string name="test7q8">8. Теңсіздіктің ең үлкен бүтін мәнін табыңыз: 34y - 2 + 2y + 1 &lt; 3(2+2y)</string>
+    <string name="test7q8o1">1</string>
+    <string name="test7q8o2">2</string>
+    <string name="test7q8o3">0</string>
+    <string name="test7q8o4">-1</string>
+
+    <string name="test7q10">10. Теңсіздікті шешіңіз: -8(6x - 1) - 25 > 31</string>
+    <string name="test7q10o1">(-∞;1)</string>
+    <string name="test7q10o2">(-∞;-1)</string>
+    <string name="test7q10o3">(1; +)</string>
+    <string name="test7q10o4">(-1;+∞)</string>
+
+    <string name="test7q9">9. Теңсіздіктің ең үлкен бүтін мәнін табыңыз: 5(3y + 1) + 4(2y - 3) &lt; 4(1 + 3y)</string>
+    <string name="test7q9o1">0</string>
+    <string name="test7q9o2">2</string>
+    <string name="test7q9o3">1</string>
+    <string name="test7q9o4">-1</string>
+
+    <string name="topic801">Арифметикалық прогрессия</string>
+    <string name="topic802"><b>Арифметикалық прогрессия</b> – бұл a1, a2, a3,...,a<small>n</small> түріндегі сан тізбегі, яғни екіншіден бастап әрбір
+        сан алдыңғысынан алынатын сандар тізбегі (прогрессия мүшелері) оған d (d≠0)
+        тұрақты санын қосу арқылы <b>(қадам немесе прогрессия айырмашылықтары)</b>.</string>
+    <string name="topic803">Жалпы термин формуласы:</string>
+    <string name="topic804">a<small>n</small> = a<small>1</small> + (n-1) ⋅ d</string>
+    <string name="topic805">a<small>n</small> = a<small>k</small> + (n-k) ⋅ d</string>
+    <string name="topic806">1-мысал. Арифметикалық прогрессияда a<small>1</small> = 3; d = 0,5. Осы прогрессияның он бесінші мүшесін табыңыз.</string>
+    <string name="topic807">a<small>15</small> = a<small>1</small> + (15-1)⋅d</string>
+    <string name="topic808">a<small>15</small> = 3 + 14 ⋅ 0,5 = 10</string>
+    <string name="topic809">Жауап: a<small>15</small> = 10</string>
+    <string name="topic810">Айырмашылық формуласы: </string>
+    <string name="topic811">d = a<small>2</small> - a<small>1</small> = a<small>3</small> - a<small>2</small> = a<small>n + 1</small> - a<small>n</small></string>
+    <string name="topic812">&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+        &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;d = (a<small>n</small> - a<small>k</small>) / (n-k)</string>
+    <string name="topic813">2-мысал. Арифметикалық прогрессияда a<small>7</small> = 16; a<small>12</small> = 24. Осы прогрессияның он бесінші мүшесін табыңыз.</string>
+    <string name="topic814">d = (a<small>12</small> - a<small>7</small>) / (12-7)</string>
+    <string name="topic815">d = (24 - 16) / 5 = 8 / 5 = 1,6</string>
+    <string name="topic816">Жауап: d = 1,6</string>
+    <string name="topic817">Геометриялық прогрессия</string>
+    <string name="topic818">Егер b<small>1</small>, b<small>2</small>, b<small>3</small>,...,b<small>n</small> тізбегінде әрбір келесі мүше алдыңғы мүшені q (q≠0) санына көбейту арқылы алынса, онда мұндай тізбек
+        <b>геометриялық прогрессия</b> деп аталады.
+        Мұндағы q – геометриялық прогрессияның бөлгіші.</string>
+    <string name="topic819">Жалпы термин формуласы: </string>
+    <string name="topic820">b<small>n</small> = b<small>1</small> ⋅ q<sup><small>n - 1</small></sup></string>
+    <string name="topic821">b<small>n</small> = b<small>k</small> ⋅ q<sup><small>n - k</small></sup></string>
+    <string name="topic822">1-мысал. Егер геометриялық прогрессияның бірінші мүшесі 6, ал бөлгіші 1/3 болса, онда осы прогрессияның алтыншы мүшесін табыңыз.</string>
+    <string name="topic823">Шешуі: b<small>6</small> = b<small>1</small> ⋅ q<sup><small>6 - 1</small></sup> = 6 ⋅ (1/3)<sup><small>5</small></sup> = 2/81</string>
+    <string name="topic824">Жауап: b<small>6</small> = 2/81</string>
+    <string name="topic825">2-мысал. b<small>1</small> = 27; b<small>8</small> = 181 екені белгілі болса, геометриялық прогрессияның бөлгішін табыңыз.</string>
+    <string name="topic826">Шешуі: b<small>8</small> = b1 ⋅ q<sup><small>8 - 1</small></sup></string>
+    <string name="topic827">1/81 = 27 ⋅ q<sup><small>7</small></sup></string>
+    <string name="topic828">q<sup><small>7</small></sup> = 1/81 : 27</string>
+    <string name="topic829">q<sup><small>7</small></sup> = 1/2187</string>
+    <string name="topic830">q = 1/3</string>
+    <string name="topic831">Негізгі қасиет: </string>
+    <string name="topic832">b<small>n</small> = √b<small>n - 1</small> ⋅ b<small>n + 1</small></string>
+    <string name="topic833">Егер n + k = m + p болса, b<small>n</small>b<small>k</small> = b<small>m</small>b<small>p</small></string>
+    <string name="topic834">3-мысал. x, √x, x-5 реті бойынша алынған өрнектегі х-ті табыңыз, мұндағы үш қатарлы мүше геометриялық прогрессияны құрайды.</string>
+    <string name="topic835">Шешуі: √x = √(x⋅(x-5))</string>
+    <string name="topic836">x = x<small><sup>2</sup></small> - 5x </string>
+    <string name="topic837">x<small><sup>2</sup></small> = 6x</string>
+    <string name="topic838">x = 6</string>
+    <string name="topic839">Жауап: x = 6</string>
+
+    <string name="test8q1">1. Арифметикалық прогрессияны көрсетіңіз:</string>
+    <string name="test8q1o1">6, 8, 10, 8, 14; …</string>
+    <string name="test8q1o2">1, 11, 111, 1111, …</string>
+    <string name="test8q1o3">-30; -22; -14; -6;…</string>
+    <string name="test8q1o4">6; 15; 25; 36; …</string>
+
+    <string name="test8q2">2. Қандай тізбек арифметикалық прогрессия бола алмайды?</string>
+    <string name="test8q2o1">6; 12; 18; 24; …</string>
+    <string name="test8q2o2">3; 33; 333; …</string>
+    <string name="test8q2o3">-43; -33; -23; -13;…</string>
+    <string name="test8q2o4">0,4;2,4;4,4;6,4;…</string>
+
+    <string name="test8q3">3. Арифметикалық прогрессияның айырмасын табыңыз: 37;39;41;43;...</string>
+    <string name="test8q3o1">0,5</string>
+    <string name="test8q3o2">3</string>
+    <string name="test8q3o3">-2</string>
+    <string name="test8q3o4">2</string>
+
+    <string name="test8q4">4. Арифметикалық прогрессияның айырмасын табыңыз: 1/7; 16/63; 23/63; 10/21;…</string>
+    <string name="test8q4o1">1/9</string>
+    <string name="test8q4o2">9/63</string>
+    <string name="test8q4o3">1/7</string>
+    <string name="test8q4o4">1/63</string>
+
+    <string name="test8q5">5. Егер a<small>1</small> = 4; d = 10 болса, онда прогрессияның келесі үш мүшесін табыңыз.</string>
+    <string name="test8q5o1">40; 160; 640</string>
+    <string name="test8q5o2">14; 18; 22</string>
+    <string name="test8q5o3">14; 24; 34</string>
+    <string name="test8q5o4">14; 34; 74</string>
+
+    <string name="test8q6">6. Геометриялық прогрессия болатын тізбекті көрсетіңіз:</string>
+    <string name="test8q6o1">2; 4; 6; 8; …</string>
+    <string name="test8q6o2">4; 8; 12; 16; …</string>
+    <string name="test8q6o3">2; 6; 18; 36; …</string>
+    <string name="test8q6o4">1; 2; 4; 8; 16; …</string>
+
+    <string name="test8q7">7. Геометриялық прогрессия бола алмайтын тізбекті көрсетіңіз:</string>
+    <string name="test8q7o1">1;-4;16;-64;…</string>
+    <string name="test8q7o2">3;9;27;54;…</string>
+    <string name="test8q7o3">10; 20; 40; 80; …</string>
+    <string name="test8q7o4">128; 64; 32; 16; …</string>
+
+    <string name="test8q8">8. Геометриялық прогрессияның бөлгішін табыңыз: 7;21;63;189;…</string>
+    <string name="test8q8o1">-3</string>
+    <string name="test8q8o2">4</string>
+    <string name="test8q8o3">3</string>
+    <string name="test8q8o4">-4</string>
+
+    <string name="test8q9">9. Геометриялық прогрессияның бөлімін табыңыз: 9;-9;9;-9;…</string>
+    <string name="test8q9o1">-1</string>
+    <string name="test8q9o2">1</string>
+    <string name="test8q9o3">0</string>
+    <string name="test8q9o4">-9</string>
+
+    <string name="test8q10">10. Геометриялық прогрессияның бөлгішін табыңыз: -1/16;1/4;-1;4;…</string>
+    <string name="test8q10o1">1/4</string>
+    <string name="test8q10o2">4</string>
+    <string name="test8q10o3">-1/4</string>
+    <string name="test8q10o4">-4</string>
+
+    <string name="topic901">b санының а негізіне арналған логарифмі в санын алу үшін а негізін көтеру керек с дәрежесінің көрсеткіші.</string>
+    <string name="topic902">log<small>a</small>b = c то же самое что и 	b = a<sup><small>c</small></sup></string>
+    <string name="topic903">Ол былай оқылады:</string>
+    <string name="topic904">log<small>a</small>b – а негізіне b-ның логарифмі.</string>
+    <string name="topic905">log<small>2</small>8 – 2 негізіне 8-нің логарифмі.</string>
+    <string name="topic906">Мысалдар:</string>
+    <string name="topic907">log<small>2</small>8 = 3</string>
+    <string name="topic908">log<small>5</small>25 = 2</string>
+    <string name="topic909">Логарифмдердің негізгі қасиеттері:</string>
+    <string name="topic910">log<small>a</small>1 = 0</string>
+    <string name="topic911">log<small>a</small>a = 1</string>
+    <string name="topic912">log<small>a</small>b ⋅ c = log<small>a</small>b + log<small>a</small>c</string>
+    <string name="topic913">log<small>a</small>b&#8260;c = log<small>a</small>b - log<small>a</small>c</string>
+    <string name="topic914">log<small>a</small>b<sup><small>c</small></sup> = c ⋅ log<small>a</small>b</string>
+    <string name="topic915">log<small>a<sup><small>n</small></sup></small>b = 1&#8260;n log<small>a</small>b</string>
+    <string name="topic916">c = log<small>a</small>a<sup><small>c</small></sup></string>
+    <string name="topic917">log<small>a</small>b = 1 / log<small>b</small>a</string>
+    <string name="topic918">log<small>10</small>b = lg<small>b</small></string>
+    <string name="topic919">log<small>e</small>b = ln<small>b</small></string>
+    <string name="topic920">a<sup><small>log<small>a</small>b</small></sup> = b</string>
+    <string name="topic921">Мысалдар: </string>
+    <string name="topic922">log<small>4</small>1 = 0</string>
+    <string name="topic923">log<small>5</small>5 = 1</string>
+    <string name="topic924">log<small>12</small>8 + log<small>12</small>18 = log<small>12</small>144 = 2</string>
+    <string name="topic925">log<small>4</small>20 - log<small>4</small>5 =log<small>4</small>4</string>
+    <string name="topic926">log<small>5</small>5<sup><small>3</small></sup> = 3 ⋅ log<small>5</small>5 = 3</string>
+    <string name="topic927">log<small>3<sup><small>2</small></sup></small>3 = 0,5log<small>3</small>3 = 0,5</string>
+    <string name="topic928">log<small>16</small>4 = 1 / log<small>4</small>16 =
+    1 / 2log<small>4</small>4 = 1/2</string>
+    <string name="topic929">7<sup><small>log<small>7</small>4</small></sup> = 4</string>
+
+    <string name="test9q1">1. Функцияның анықталу облысын табыңыз: y = log<small>2</small>(x-2)</string>
+    <string name="test9q1o1">(-∞;2)</string>
+    <string name="test9q1o2">(-2;+∞)</string>
+    <string name="test9q1o3">(2;+)</string>
+    <string name="test9q1o4">(-∞;-2)</string>
+
+    <string name="test9q2">2. Функцияның анықталу облысын табыңыз: f(x) = lg(4-5x)</string>
+    <string name="test9q2o1">(-∞;0,8] </string>
+    <string name="test9q2o2">(-∞;0,8)</string>
+    <string name="test9q2o3">(0,8;+∞)</string>
+    <string name="test9q2o4">[0,8;+∞)</string>
+
+    <string name="test9q3">3. Логарифмдік функцияның мәндер жиынын табыңыз:</string>
+    <string name="test9q3o1">(-∞;+∞)</string>
+    <string name="test9q3o2">(0;+∞)</string>
+    <string name="test9q3o3">(-∞;0)</string>
+    <string name="test9q3o4">[-∞;+∞]</string>
+
+    <string name="test9q4">4. Функцияның анықталу облысын табыңыз:f(x) = log<small>2,5</small>(2x-1)</string>
+    <string name="test9q4o1">[0,5;+∞)</string>
+    <string name="test9q4o2">(-∞;0,5]</string>
+    <string name="test9q4o3">(-∞;0,5)</string>
+    <string name="test9q4o4">(0,5;+∞)</string>
+
+    <string name="test9q5">5. Функцияның анықталу облысын табыңыз: f(x) = log<small>0,31</small>(3 - x<sup><small>2</small></sup>)</string>
+    <string name="test9q5o1">(-∞;-√3)∪(√3;+∞)</string>
+    <string name="test9q5o2">[-√3;√3]</string>
+    <string name="test9q5o3">(-∞;-√3]∪[√3;+∞)</string>
+    <string name="test9q5o4">(-√3;√3) </string>
+
+    <string name="test9q6">6. Функцияның анықталу облысын табыңыз: f(x) = log<small>5</small>((x<sup><small>2</small></sup>-4x)/(x+3))</string>
+    <string name="test9q6o1">(-∞;-3)(0;4)</string>
+    <string name="test9q6o2">(-3;0)∪(0;4)</string>
+    <string name="test9q6o3">(-3;0)∪(4;+∞) </string>
+    <string name="test9q6o4">(-∞;-3)∪(4;+∞) </string>
+
+    <string name="test9q7">7. Функцияның анықталу облысын табыңыз:
+f(x) = log<small>0,6</small>(3 - x) + √x+1</string>
+    <string name="test9q7o1">(-1;3) </string>
+    <string name="test9q7o2">[-1;3) </string>
+    <string name="test9q7o3">(-1;+∞) </string>
+    <string name="test9q7o4">[3;+∞)</string>
+
+    <string name="test9q8">8. Функцияның анықталу облысын табыңыз: f(x) = √(x<sup><small>2</small></sup> + x) + log<small>0,2</small>(5-x)</string>
+    <string name="test9q8o1">(-∞;-1]∪[0;5)</string>
+    <string name="test9q8o2">(-∞;0)∪(5;+∞)</string>
+    <string name="test9q8o3">[-1;0]∪(5;+∞)</string>
+    <string name="test9q8o4">[0;5)∪(5;+)</string>
+
+    <string name="test9q9">9. Функцияның анықталу облысын табыңыз: f(x) = log<small>x - 2</small>(2x/(x+1) - 1</string>
+    <string name="test9q9o1">(2;3)∪(3;+∞)</string>
+    <string name="test9q9o2">(2;+∞) </string>
+    <string name="test9q9o3">(-∞;1)∪(2;+∞)</string>
+    <string name="test9q9o4">(-1;1)∪(3;+∞)</string>
+
+    <string name="test9q10">10. Функцияның анықталу облысын табыңыз: f(x) = ln(3 + 5x) - ln(4 - 9x<sup><small>2</small></sup>)</string>
+    <string name="test9q10o1">(-3&#8260;5;3&#8260;5)</string>
+    <string name="test9q10o2">(-2&#8260;3;2&#8260;3)</string>
+    <string name="test9q10o3">(-3&#8260;5;2&#8260;3)</string>
+    <string name="test9q10o4">(-2&#8260;3;3&#8260;5)</string>
+
 </resources>
