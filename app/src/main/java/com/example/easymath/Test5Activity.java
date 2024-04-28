@@ -104,6 +104,7 @@ public class Test5Activity extends AppCompatActivity {
         double percentage = (double) correctAnswersCount5 / correctAnswers.length * 100;
         String percentageText = String.format("Дұрыс жауаптар: %.2f%%", percentage);
         correctAnswersCounter5.setText(percentageText);
+        evaluatePerformance(percentage);
     }
 
     @Override
@@ -116,6 +117,20 @@ public class Test5Activity extends AppCompatActivity {
         }
     }
 
+    private void evaluatePerformance(double percentage) {
+        String feedback;
+        if (percentage < 50) {
+            feedback = "Жақсы емес, материалды қайталаңыз және оралыңыз";
+        } else if (percentage >= 50 && percentage < 70) {
+            feedback = "Жаман емес, бірақ қателіктеріңізді ескеріңіз";
+        } else if (percentage >= 70 && percentage < 90) {
+            feedback = "Жақсы, бірақ сәл зейінді болыңыз";
+        } else {
+            feedback = "Тақырыпты өте жақсы түсіндіңіз, жұмысыңызды жалғастырыңыз";
+        }
+        // Display feedback using a Toast
+        Toast.makeText(this, feedback, Toast.LENGTH_LONG).show();
+    }
     private void checkAnswers() {
         correctAnswersCount5 = 0;
         boolean allQuestionsAnswered = true;

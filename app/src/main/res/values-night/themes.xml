@@ -12,6 +12,10 @@
         <item name="android:background">@color/black</item>
     </style>
 
+    <style name="ESKERTU">
+        <item name="android:background">#CFCFCF</item>
+    </style>
+
     <style name="BUTTON">
         <item name="android:background">@color/black</item>
     </style>

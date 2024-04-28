@@ -110,6 +110,8 @@ public class Test2Activity extends AppCompatActivity {
         String percentageText = String.format("Дұрыс жауаптар: %.2f%%", percentage);
 
         correctAnswersCounter2.setText(percentageText);
+
+        evaluatePerformance(percentage);
     }
 
     @Override
@@ -288,5 +290,20 @@ public class Test2Activity extends AppCompatActivity {
 
         // Обновляем счетчик правильных ответов
         updateCorrectAnswersCounter();
+    }
+
+    private void evaluatePerformance(double percentage) {
+        String feedback;
+        if (percentage < 50) {
+            feedback = "Жақсы емес, материалды қайталаңыз және оралыңыз";
+        } else if (percentage >= 50 && percentage < 70) {
+            feedback = "Жаман емес, бірақ қателіктеріңізді ескеріңіз";
+        } else if (percentage >= 70 && percentage < 90) {
+            feedback = "Жақсы, бірақ сәл зейінді болыңыз";
+        } else {
+            feedback = "Тақырыпты өте жақсы түсіндіңіз, жұмысыңызды жалғастырыңыз";
+        }
+        // Display feedback using a Toast
+        Toast.makeText(this, feedback, Toast.LENGTH_LONG).show();
     }
 }

@@ -33,7 +33,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="148dp"
-                android:text="Платформа для обучения математики, состоящяя из нескольких разделов математики с понятным графическим интерфейсом и анализом ваших достижений"
+                android:text="Математиканың бірнеше бөлімдерінен тұратын математиканы оқыту платформасы
+                анық графикалық интерфейспен және сіздің жетістіктеріңізді талдаумен"
                 android:textColor="@color/white"
                 android:textSize="14dp"
                 tools:ignore="TextSizeCheck" />
@@ -69,7 +70,7 @@
                 tools:visibility="visible" />
 
             <ImageButton
-                android:id="@+id/buttonDrawerLayout1"
+                android:id="@+id/logoutButton"
                 style="@style/BUTTON"
                 android:layout_width="86dp"
                 android:layout_height="35dp"
@@ -87,6 +88,12 @@
 
         </RelativeLayout>
 
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </ScrollView>
         <RelativeLayout
             android:id="@+id/main_block"
             android:layout_width="match_parent"
@@ -105,7 +112,7 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="60dp"
                 android:backgroundTint="@color/white"
-                android:text="ПОНЯТИЕ СТЕПЕНИ С НАТУРАЛЬНЫМ ПОКАЗАТЕЛЕМ"
+                android:text="Натурал көрсеткішті дәреже туралы ұғымы"
                 android:textColor="@color/black"
                 android:gravity="start|center_vertical"/>
 
@@ -129,7 +136,7 @@
                 android:layout_marginStart="70dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="14dp"
-                android:text="ОДНОЧЛЕН И ЕГО СТАНДАРТНЫЙ ВИД"
+                android:text="Бірмүше және оның стандарт түрі"
                 android:textColor="@color/black"
                 android:gravity="start|center_vertical"/>
 
@@ -153,7 +160,7 @@
                 android:layout_marginStart="70dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="14dp"
-                android:text="УМНОЖЕНИЕ МНОГОЧЛЕНА НА МНОГОЧЛЕН"
+                android:text="Көпмүшені көпмүшеге көбейту"
                 android:textColor="@color/black"
                 android:gravity="start|center_vertical"/>
 
@@ -177,7 +184,7 @@
                 android:layout_marginStart="70dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="14dp"
-                android:text="КВАДРАТ СУММЫ И РАЗНОСТИ ДВУХ ВЫРАЖЕНИЙ"
+                android:text="Қысқартылған көбейту формулалары"
                 android:textColor="@color/black"
                 android:gravity="start|center_vertical"/>
 
@@ -201,7 +208,7 @@
                 android:layout_marginStart="70dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="14dp"
-                android:text="ПОНЯТИЕ КВАДРАТНОГО КОРНЯ"
+                android:text="Квадрат түбір туралы түсінік. Иррационал сандар"
                 android:textColor="@color/black"
                 android:gravity="start|center_vertical"/>
 

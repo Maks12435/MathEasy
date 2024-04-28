@@ -16,6 +16,7 @@ public class LoginActivity extends AppCompatActivity {
     ActivityLoginBinding binding;
 
     DatabaseHelper databaseHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,20 +43,12 @@ public class LoginActivity extends AppCompatActivity {
                             String name = databaseHelper.getUserName(email);
                             String sName = databaseHelper.getUserSurname(email);
 
-                            // Сохранение данных о входе пользователя
-                            SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(LoginActivity.this);
-                            SharedPreferences.Editor editor = preferences.edit();
-                            editor.putString("email", email);
-                            editor.putBoolean("isLoggedIn", true);
-                            editor.apply();
-
                             intent = new Intent(LoginActivity.this, MainActivity.class);
                             intent.putExtra("name", name);
                             intent.putExtra("sName", sName);
                             intent.putExtra("email", email);
                             startActivity(intent);
                             finish();
-
                         } else {
                             incorrectCredentialsText.setVisibility(View.VISIBLE);
                         }

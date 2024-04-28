@@ -45,7 +45,8 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_marginStart="14dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="25dp"
                 android:text="Тақырып 1"
                 android:textColor="@color/white"
                 android:textSize="28dp"
@@ -57,8 +58,9 @@
                 android:layout_height="70dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="18dp"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="93dp"
+                android:gravity="center"
                 android:text="Натурал көрсеткішті дәреже туралы ұғымы"
                 android:textColor="@color/white"
                 android:textSize="20dp"
@@ -70,10 +72,10 @@
             android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_below="@id/header"
-            android:layout_marginTop="-30dp"
-            android:background="@drawable/backgrounds1">
+            android:layout_marginTop="-31dp"
+            android:background="@drawable/backgrounds1"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView5"
@@ -99,8 +101,8 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_marginTop="12dp"
+                android:gravity="center"
                 android:text="@string/topic102"
                 android:textColor="@color/black"
                 android:textSize="16dp"
@@ -130,8 +132,8 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_marginTop="12dp"
+                android:gravity="center"
                 android:text="@string/topic104"
                 android:textColor="@color/black"
                 android:textSize="16dp"
@@ -163,7 +165,7 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="12dp"
-                android:background="@drawable/textback"
+                style="@style/ESKERTU"
                 android:elevation="8dp">
 
                 <TextView
@@ -174,11 +176,11 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="15dp"
-                    android:gravity="center"
-                    android:layout_marginEnd="20dp"
                     android:layout_marginTop="15dp"
-                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
                     android:text="Ескерту: "
+                    android:textColor="@color/black"
                     android:textSize="14dp"
                     android:textStyle="bold" />
 
@@ -193,8 +195,8 @@
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="35dp"
                     android:layout_marginEnd="25dp"
-                    android:textColor="@color/black"
                     android:text="@string/topic110"
+                    android:textColor="@color/black"
                     android:textSize="12dp" />
 
                 <TextView
@@ -205,10 +207,10 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="25dp"
-                    android:layout_marginEnd="25dp"
                     android:layout_marginTop="70dp"
-                    android:textColor="@color/black"
+                    android:layout_marginEnd="25dp"
                     android:text="@string/topic111"
+                    android:textColor="@color/black"
                     android:textSize="12dp" />
 
                 <TextView
@@ -221,8 +223,8 @@
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="90dp"
                     android:layout_marginEnd="25dp"
-                    android:textColor="@color/black"
                     android:text="@string/topic112"
+                    android:textColor="@color/black"
                     android:textSize="12dp" />
 
                 <TextView
@@ -235,8 +237,8 @@
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="120dp"
                     android:layout_marginEnd="25dp"
-                    android:textColor="@color/black"
                     android:text="@string/topic113"
+                    android:textColor="@color/black"
                     android:textSize="12dp" />
             </RelativeLayout>
 
@@ -262,13 +264,13 @@
                 android:layout_below="@+id/textView15"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="12dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="12dp"
                 android:gravity="center"
                 android:text="@string/topic107"
                 android:textColor="@color/black"
-                android:textStyle="italic"
                 android:textSize="16dp"
+                android:textStyle="italic"
                 tools:ignore="NotSibling" />
 
             <TextView
@@ -293,8 +295,8 @@
                 android:layout_below="@+id/textView17"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="12dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="12dp"
                 android:gravity="center"
                 android:text="@string/topic109"
                 android:textColor="@color/black"
@@ -304,21 +306,21 @@
 
             <RelativeLayout
                 android:id="@+id/footer"
+                style="@style/SCREEN"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_below="@+id/textView18"
-                style="@style/SCREEN"
-                android:layout_marginTop="40dp"
-                android:layout_alignParentBottom="true">
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="40dp">
 
                 <Button
                     android:id="@+id/buttonNext"
+                    style="@style/BUTTONTOPIC"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="162dp"
-                    style="@style/BUTTONTOPIC"
                     android:onClick="startTopicActivity"
                     android:text="Келесі тақырып"
                     android:textColor="@color/white"
@@ -326,15 +328,15 @@
 
                 <Button
                     android:id="@+id/buttonTest"
+                    style="@style/BUTTONTOPIC"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:layout_marginEnd="40dp"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginTop="20dp"
-                    style="@style/BUTTONTOPIC"
+                    android:layout_marginEnd="40dp"
                     android:onClick="startTestActivity"
                     android:text="Сынақты бастау"
                     android:textColor="@color/white"
-                    android:layout_alignParentEnd="true"
                     android:textSize="12dp" />
 
             </RelativeLayout>

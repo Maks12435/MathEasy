@@ -13,6 +13,10 @@
         <item name="android:background">@drawable/gradient_background</item>
     </style>
 
+    <style name="ESKERTU">
+        <item name="android:background">@drawable/textback</item>
+    </style>
+
     <style name="BUTTON">
         <item name="android:background">@drawable/img</item>
     </style>

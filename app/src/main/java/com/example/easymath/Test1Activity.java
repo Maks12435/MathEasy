@@ -114,6 +114,8 @@ public class Test1Activity extends AppCompatActivity {
 
         // Обновляем текст счетчика правильных ответов
         correctAnswersCounter.setText(percentageText);
+
+        evaluatePerformance(percentage);
     }
 
     @Override
@@ -133,25 +135,21 @@ public class Test1Activity extends AppCompatActivity {
         correctAnswersCount1 = 0;
         boolean allQuestionsAnswered = true;
 
-        // Проверяем, были ли отвечены все вопросы
         for (int i = 0; i < correctAnswers.length; i++) {
             RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
             int selectedRadioButtonId = questionRadioGroup.getCheckedRadioButtonId();
 
-            // Если хотя бы для одного вопроса не выбран ответ, устанавливаем флаг в false и выходим из цикла
             if (selectedRadioButtonId == -1) {
                 allQuestionsAnswered = false;
                 break;
             }
         }
 
-        // Если не все вопросы отвечены, выходим из метода
         if (!allQuestionsAnswered) {
             Toast.makeText(this, "Тексермес бұрын барлық сұрақтарға жауап беріңіз.", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        // Если все вопросы отвечены, продолжаем с проверкой ответов
         for (int i = 0; i < correctAnswers.length; i++) {
             RadioGroup questionRadioGroup = findViewById(questionRadioGroupIds[i]);
             int selectedRadioButtonId = questionRadioGroup.getCheckedRadioButtonId();
@@ -290,8 +288,22 @@ public class Test1Activity extends AppCompatActivity {
             enableRadioGroup(questionRadioGroup);
         }
 
-        // Обновляем счетчик правильных ответов
         updateCorrectAnswersCounter();
+    }
+
+    private void evaluatePerformance(double percentage) {
+        String feedback;
+        if (percentage < 50) {
+            feedback = "Жақсы емес, материалды қайталаңыз және оралыңыз";
+        } else if (percentage >= 50 && percentage < 70) {
+            feedback = "Жаман емес, бірақ қателіктеріңізді ескеріңіз";
+        } else if (percentage >= 70 && percentage < 90) {
+            feedback = "Жақсы, бірақ сәл зейінді болыңыз";
+        } else {
+            feedback = "Тақырыпты өте жақсы түсіндіңіз, жұмысыңызды жалғастырыңыз";
+        }
+        // Display feedback using a Toast
+        Toast.makeText(this, feedback, Toast.LENGTH_LONG).show();
     }
 
 }
