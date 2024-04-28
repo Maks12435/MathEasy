@@ -170,7 +170,7 @@ public class Test9Activity extends AppCompatActivity {
             }
         }
 
-        // databaseHelper.updateTestResult9(email, correctAnswersCount9); IMPORTANT THING!!!
+        databaseHelper.updateTestResult9(email, correctAnswersCount9);
         updateCorrectAnswersCounter();
     }
 

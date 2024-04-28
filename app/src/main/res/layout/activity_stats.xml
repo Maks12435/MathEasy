@@ -4,244 +4,394 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:ignore="ScrollViewCount">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <RelativeLayout
-        android:id="@+id/header"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        style="@style/SCREEN">
-
-
-
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="24dp"
-            android:text="Сіздің нәтижелеріңіз"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-
-        <TextView
-            android:id="@+id/textView21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textView20"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="25dp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:text="Жетістіктеріңізді қадағалаңыз және нәтижелерді жақсартыңыз"
-            android:textColor="@color/white"/>
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/profileInfoLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/header"
-        android:orientation="vertical">
-
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                style="@style/SCREEN">
 
-            <TextView
-                android:id="@+id/top1"
-                android:layout_width="221dp"
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Ваши Результаты"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="52dp"
+                    android:text="Отслеживайте ваши достижения и улучшайте результаты."
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/profileInfoLayout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Натурал көрсеткішті дәреже туралы ұғымы"
-                android:textSize="15sp" />
+                android:layout_below="@id/header"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/g1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text=""
-                android:textSize="15sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
 
-        </LinearLayout>
+                    <TextView
+                        android:id="@+id/top1"
+                        android:layout_width="221dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Натурал көрсеткішті дәреже туралы ұғымы"
+                        android:textSize="15sp" />
 
-        <View
-            android:layout_width="330dp"
-            android:layout_height="2dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_below="@id/top1"
-            android:background="@color/border" />
+                    <TextView
+                        android:id="@+id/g1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text=""
+                        android:textSize="15sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                </LinearLayout>
 
-            <TextView
-                android:id="@+id/top2"
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/top1"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Бірмүше және оның стандарт түрі"
-                android:textSize="15sp" />
+                <View
+                    android:layout_width="330dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/top1"
+                    android:background="@color/border" />
 
-            <TextView
-                android:id="@+id/g2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text=""
-                android:textSize="15sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-        </LinearLayout>
 
-        <View
-            android:layout_width="330dp"
-            android:layout_height="2dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_below="@id/top2"
-            android:background="@color/border" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/top2"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/top1"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Бірмүше және оның стандарт түрі"
+                        android:textSize="15sp" />
 
-            <TextView
-                android:id="@+id/top3"
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/top1"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Көпмүшені көпмүшеге көбейту"
-                android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/g2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text=""
+                        android:textSize="15sp" />
 
-            <TextView
-                android:id="@+id/g3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text=""
-                android:textSize="15sp" />
-        </LinearLayout>
+                </LinearLayout>
 
-        <View
-            android:layout_width="330dp"
-            android:layout_height="2dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_below="@id/top3"
-            android:background="@color/border" />
+                <View
+                    android:layout_width="330dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/top2"
+                    android:background="@color/border" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:id="@+id/top4"
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/top1"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Қысқартылған көбейту формулалары"
-                android:textSize="15sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/g4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text=""
-                android:textSize="15sp" />
-        </LinearLayout>
+                    <TextView
+                        android:id="@+id/top3"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/top1"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Көпмүшені көпмүшеге көбейту"
+                        android:textSize="15sp" />
 
-        <View
-            android:layout_width="330dp"
-            android:layout_height="2dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_below="@id/top4"
-            android:background="@color/border" />
+                    <TextView
+                        android:id="@+id/g3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text=""
+                        android:textSize="15sp" />
+                </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                <View
+                    android:layout_width="330dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/top3"
+                    android:background="@color/border" />
 
-            <TextView
-                android:id="@+id/top5"
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/top1"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Квадрат түбір туралы түсінік. Иррационал сандар"
-                android:textSize="15sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/top4"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/top1"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Қысқартылған көбейту формулалары"
+                        android:textSize="15sp" />
 
-            <TextView
-                android:id="@+id/g5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text=""
-                android:textSize="15sp" />
-        </LinearLayout>
 
-        <View
-            android:layout_width="330dp"
-            android:layout_height="2dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_below="@id/top5"
-            android:background="@color/border" />
 
-        <com.example.easymath.BarChartView
-            android:id="@+id/barChartView"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/textback"
-            android:padding="10dp" />
+                    <TextView
+                        android:id="@+id/g4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text=""
+                        android:textSize="15sp" />
+                </LinearLayout>
 
-        <View
-            android:layout_width="380dp"
-            android:layout_height="4dp"
-            android:layout_gravity="center"
-            android:layout_below="@id/top5"
-            android:background="@color/border" />
-    </LinearLayout>
+                <View
+                    android:layout_width="330dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/top4"
+                    android:background="@color/border" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/top5"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/top1"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Квадрат түбір туралы түсінік. Иррационал сандар."
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/g5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text=""
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="330dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/top5"
+                    android:background="@color/border" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/top6"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/top1"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Квадрат теңдеу және оның түбірлері. Квадрат теңдеудің түбірлерінің формуласы"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/g6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text=""
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="330dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/top6"
+                    android:background="@color/border" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/top7"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/top1"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Теңсіздіктер"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/g7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text=""
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="330dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/top7"
+                    android:background="@color/border" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/top8"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/top1"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Прогрессия"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/g8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text=""
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="330dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/top8"
+                    android:background="@color/border" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/top9"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/top1"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Логарифм"
+                        android:textSize="15sp" />
+
+
+
+                    <TextView
+                        android:id="@+id/g9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text=""
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="330dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/top9"
+                    android:background="@color/border" />
+
+                <com.example.easymath.BarChartView
+                    android:id="@+id/barChartView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="70dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/textback"
+                    android:padding="10dp" />
+
+                <View
+                    android:layout_width="380dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_below="@id/top5"
+                    android:background="@color/border" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -295,5 +445,4 @@
             tools:src="@drawable/profile" />
 
     </LinearLayout>
-
 </RelativeLayout>

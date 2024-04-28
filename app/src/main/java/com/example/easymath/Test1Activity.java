@@ -167,7 +167,7 @@ public class Test1Activity extends AppCompatActivity {
                 disableRadioGroup(questionRadioGroup); // Отключить RadioGroup после выбора ответа
             }
         }
-        databaseHelper.insertTestResult(email, correctAnswersCount1);
+        databaseHelper.updateTestResult1(email, correctAnswersCount1);
 
         updateCorrectAnswersCounter();
 
