@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ImageButton buttonDrawerLayout;
     NavigationView navigationView;
-
+    String email;
+    DatabaseHelper databaseHelper;
     private ActionBar actionBar;
     private boolean isNightMode = false;
 
@@ -119,6 +120,9 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("name", getIntent().getStringExtra("name"));
         intent.putExtra("sName", getIntent().getStringExtra("sName"));
         intent.putExtra("email", getIntent().getStringExtra("email"));
+        databaseHelper = new DatabaseHelper(this);
+        email = intent.getStringExtra("email");
+        databaseHelper.StartDB(email);
         startActivity(intent);
     }
 

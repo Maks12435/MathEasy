@@ -42,7 +42,6 @@ public class LoginActivity extends AppCompatActivity {
                             String name = databaseHelper.getUserName(email);
                             String sName = databaseHelper.getUserSurname(email);
 
-                            // Сохранение данных о входе пользователя
                             SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(LoginActivity.this);
                             SharedPreferences.Editor editor = preferences.edit();
                             editor.putString("email", email);
@@ -75,23 +74,11 @@ public class LoginActivity extends AppCompatActivity {
                             finish();
 
                         } else {
-                            Toast.makeText(LoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                            incorrectCredentialsText.setVisibility(View.VISIBLE);
                         }
 
                     } else {
-                        Boolean checkCredentials = databaseHelper.checkEmailPassword(email, password);
-
-                        if (checkCredentials) {
-                            String name = databaseHelper.getUserName(email);
-                            String sName = databaseHelper.getUserSurname(email);
-
-                            intent = new Intent(LoginActivity.this, MainActivity.class);
-                            intent.putExtra("name", name);
-                            intent.putExtra("sName", sName);
-                            intent.putExtra("email", email);
-                            startActivity(intent);
-                            finish();
-                        }
+                        Toast.makeText(LoginActivity.this, "Дұрыс электрондық поштаны енгізіңіз", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

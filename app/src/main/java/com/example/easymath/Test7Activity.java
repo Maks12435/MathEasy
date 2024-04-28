@@ -154,7 +154,7 @@ public class Test7Activity extends AppCompatActivity {
             }
         }
 
-        // databaseHelper.updateTestResult7(email, correctAnswersCount7); IMPORTANT THING!!!
+        databaseHelper.updateTestResult7(email, correctAnswersCount7);
         updateCorrectAnswersCounter();
     }
 

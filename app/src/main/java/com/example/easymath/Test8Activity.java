@@ -153,7 +153,7 @@ public class Test8Activity extends AppCompatActivity {
             }
         }
 
-        // databaseHelper.updateTestResult8(email, correctAnswersCount8); IMPORTANT THING!!!
+        databaseHelper.updateTestResult8(email, correctAnswersCount8);
         updateCorrectAnswersCounter();
     }
 
