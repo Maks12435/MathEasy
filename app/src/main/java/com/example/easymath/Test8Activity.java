@@ -176,10 +176,9 @@ public class Test8Activity extends AppCompatActivity {
             }
         }
 
+        databaseHelper.updateTestResult8(email, correctAnswersCount8);
         Button submitButton = findViewById(R.id.submit_button);
         submitButton.setEnabled(false);
-
-        databaseHelper.updateTestResult8(email, correctAnswersCount8);
         updateCorrectAnswersCounter();
     }
 

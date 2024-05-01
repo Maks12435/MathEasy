@@ -23,8 +23,8 @@ public class StudentsActivity extends AppCompatActivity {
         TableLayout tableLayout = findViewById(R.id.tableLayout);
 
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT name, sName FROM users WHERE email LIKE 'Student%' ORDER BY email", null);
-        Cursor cursor2 = db.rawQuery("SELECT correct_answers_count1,  correct_answers_count2, correct_answers_count3, correct_answers_count4, correct_answers_count5 FROM test_results ORDER BY email", null);
+        Cursor cursor = db.rawQuery("SELECT name, sName FROM users ORDER BY email", null);
+        Cursor cursor2 = db.rawQuery("SELECT correct_answers_count1,  correct_answers_count2, correct_answers_count3, correct_answers_count4, correct_answers_count5, correct_answers_count6, correct_answers_count7, correct_answers_count8, correct_answers_count9 FROM test_results ORDER BY email", null);
 
         while (cursor.moveToNext() && cursor2.moveToNext()) {
             @SuppressLint("Range") String fullName = cursor.getString(cursor.getColumnIndex("name")) + " " +

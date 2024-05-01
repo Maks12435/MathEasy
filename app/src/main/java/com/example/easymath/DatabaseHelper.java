@@ -8,10 +8,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    public static final String databaseName = "BB.db";
+    public static final String databaseName = "DB.db";
 
     public DatabaseHelper(@Nullable Context context) {
-        super(context, "BB.db", null, 1);
+        super(context, "DB.db", null, 1);
     }
 
     @Override
@@ -87,13 +87,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public String getUserRole(String email) {
         String role;
-        String prefix = email.substring(0, 7);
-        if ("Student".equals(prefix)) {
-            role = "student";
-        } else if ("Teacher".equals(prefix)) {
+        String prefix = email.substring(0, 1);
+        if ("T".equals(prefix)) {
             role = "teacher";
         } else {
-            role = "unknown";
+            role = "student";
         }
         return role;
     }

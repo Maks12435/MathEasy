@@ -171,10 +171,11 @@ public class Test1Activity extends AppCompatActivity {
             }
         }
         databaseHelper.updateTestResult1(email, correctAnswersCount1);
-        updateCorrectAnswersCounter();
 
         Button submitButton = findViewById(R.id.submit_button);
         submitButton.setEnabled(false);
+
+        updateCorrectAnswersCounter();
 
     }
 

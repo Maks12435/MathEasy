@@ -21,13 +21,31 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="22dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="13dp"
             android:layout_marginEnd="228dp"
-            android:layout_marginBottom="95dp"
+            android:layout_marginBottom="110dp"
             android:text="Профиль"
             android:textColor="@color/white"
             android:textSize="30dp"
             android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/logoutButton"
+            style="@style/BUTTON"
+            android:layout_width="43dp"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="368dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/close"
+            android:onClick="GoToLogin"
+            android:padding="10dp"
+            android:src="@drawable/icons8_logout_32"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:visibility="visible" />
 
         <ImageView
             android:id="@+id/imageView2"

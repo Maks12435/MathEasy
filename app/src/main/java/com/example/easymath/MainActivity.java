@@ -156,46 +156,73 @@ public class MainActivity extends AppCompatActivity {
 
     public void StartTopic1(View v) {
         Intent intent = new Intent(MainActivity.this, Topic1.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
 
     public void StartTopic2(View v) {
         Intent intent = new Intent(MainActivity.this, Topic2.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
 
     public void StartTopic3(View v) {
         Intent intent = new Intent(MainActivity.this, Topic3.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
 
     public void StartTopic4(View v) {
         Intent intent = new Intent(MainActivity.this, Topic4.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
 
     public void StartTopic5(View v) {
         Intent intent = new Intent(MainActivity.this, Topic5.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
 
     public void StartTopic6(View v) {
         Intent intent = new Intent(MainActivity.this, Topic6.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
 
     public void StartTopic7(View v) {
         Intent intent = new Intent(MainActivity.this, Topic7.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
 
     public void StartTopic8(View v) {
         Intent intent = new Intent(MainActivity.this, Topic8.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
 
     public void StartTopic9(View v) {
         Intent intent = new Intent(MainActivity.this, Topic9.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
 }
