@@ -137,7 +137,9 @@ public class Test5Activity extends AppCompatActivity {
             feedback = "Тақырыпты өте жақсы түсіндіңіз, жұмысыңызды жалғастырыңыз \uD83D\uDE0A";
         }
         // Display feedback using a Toast
-        CustomFeedbackDialog.showFeedback(this, feedback);
+        if (testCompleted5) {
+            CustomFeedbackDialog.showFeedback(this, feedback);
+        }
     }
     private void checkAnswers() {
         correctAnswersCount5 = 0;

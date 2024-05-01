@@ -310,7 +310,9 @@ public class Test1Activity extends AppCompatActivity {
             feedback = "Тақырыпты өте жақсы түсіндіңіз, жұмысыңызды жалғастырыңыз \uD83D\uDE0A";
         }
         // Display feedback using a Toast
-        CustomFeedbackDialog.showFeedback(this, feedback);
+        if (testCompleted) {
+            CustomFeedbackDialog.showFeedback(this, feedback);
+        }
     }
 
 }
