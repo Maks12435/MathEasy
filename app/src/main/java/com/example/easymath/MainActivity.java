@@ -7,7 +7,6 @@ import android.preference.PreferenceManager;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -23,11 +22,10 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ImageButton buttonDrawerLayout;
     NavigationView navigationView;
-    String email;
-    DatabaseHelper databaseHelper;
     private ActionBar actionBar;
     private boolean isNightMode = false;
-
+    String email;
+    DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +33,12 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
         buttonDrawerLayout = findViewById(R.id.buttonDrawerLayout);
         navigationView = findViewById(R.id.nav_view);
+        databaseHelper = new DatabaseHelper(this);
 
+        Intent intent = getIntent();;
+        email = intent.getStringExtra("email");
+
+        databaseHelper.insertTestResult(email);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         isNightMode = preferences.getBoolean("isNightMode", false);
 
@@ -121,9 +124,6 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("name", getIntent().getStringExtra("name"));
         intent.putExtra("sName", getIntent().getStringExtra("sName"));
         intent.putExtra("email", getIntent().getStringExtra("email"));
-        databaseHelper = new DatabaseHelper(this);
-        email = intent.getStringExtra("email");
-        databaseHelper.StartDB(email);
         startActivity(intent);
     }
 
@@ -152,5 +152,50 @@ public class MainActivity extends AppCompatActivity {
         isNightMode = false;
         updateTheme();
         recreate();
+    }
+
+    public void StartTopic1(View v) {
+        Intent intent = new Intent(MainActivity.this, Topic1.class);
+        startActivity(intent);
+    }
+
+    public void StartTopic2(View v) {
+        Intent intent = new Intent(MainActivity.this, Topic2.class);
+        startActivity(intent);
+    }
+
+    public void StartTopic3(View v) {
+        Intent intent = new Intent(MainActivity.this, Topic3.class);
+        startActivity(intent);
+    }
+
+    public void StartTopic4(View v) {
+        Intent intent = new Intent(MainActivity.this, Topic4.class);
+        startActivity(intent);
+    }
+
+    public void StartTopic5(View v) {
+        Intent intent = new Intent(MainActivity.this, Topic5.class);
+        startActivity(intent);
+    }
+
+    public void StartTopic6(View v) {
+        Intent intent = new Intent(MainActivity.this, Topic6.class);
+        startActivity(intent);
+    }
+
+    public void StartTopic7(View v) {
+        Intent intent = new Intent(MainActivity.this, Topic7.class);
+        startActivity(intent);
+    }
+
+    public void StartTopic8(View v) {
+        Intent intent = new Intent(MainActivity.this, Topic8.class);
+        startActivity(intent);
+    }
+
+    public void StartTopic9(View v) {
+        Intent intent = new Intent(MainActivity.this, Topic9.class);
+        startActivity(intent);
     }
 }

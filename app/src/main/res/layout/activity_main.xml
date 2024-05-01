@@ -88,180 +88,330 @@
 
         </RelativeLayout>
 
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-
-        </ScrollView>
         <RelativeLayout
             android:id="@+id/main_block"
             android:layout_width="match_parent"
-            android:layout_height="1000dp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/header"
             android:layout_marginTop="-50dp"
             android:background="@drawable/backgrounds">
 
-            <Button
-                android:id="@+id/button1"
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="70dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginTop="60dp"
-                android:backgroundTint="@color/white"
-                android:text="Натурал көрсеткішті дәреже туралы ұғымы"
-                android:textColor="@color/black"
-                android:gravity="start|center_vertical"/>
+                android:layout_height="wrap_content">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="7dp"
-                android:layout_below="@id/button1"
-                android:background="@color/border" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/button2"
-                android:backgroundTint="@color/white"
-                android:layout_below="@id/button1"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="70dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginTop="14dp"
-                android:text="Бірмүше және оның стандарт түрі"
-                android:textColor="@color/black"
-                android:gravity="start|center_vertical"/>
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="60dp"
+                        android:backgroundTint="@color/white"
+                        android:text="Натурал көрсеткішті дәреже туралы ұғымы"
+                        android:textColor="@color/black"
+                        android:onClick="StartTopic1"
+                        android:gravity="start|center_vertical"/>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="7dp"
-                android:layout_below="@id/button2"
-                android:background="@color/border" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_below="@id/button1"
+                        android:background="@color/border" />
 
-            <Button
-                android:id="@+id/button3"
-                android:backgroundTint="@color/white"
-                android:layout_below="@id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="70dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginTop="14dp"
-                android:text="Көпмүшені көпмүшеге көбейту"
-                android:textColor="@color/black"
-                android:gravity="start|center_vertical"/>
+                    <Button
+                        android:id="@+id/button2"
+                        android:backgroundTint="@color/white"
+                        android:layout_below="@id/button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="14dp"
+                        android:onClick="StartTopic2"
+                        android:text="Бірмүше және оның стандарт түрі"
+                        android:textColor="@color/black"
+                        android:gravity="start|center_vertical"/>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="7dp"
-                android:layout_below="@id/button3"
-                android:background="@color/border" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_below="@id/button2"
+                        android:background="@color/border" />
 
-            <Button
-                android:id="@+id/button4"
-                android:backgroundTint="@color/white"
-                android:layout_below="@id/button3"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="70dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginTop="14dp"
-                android:text="Қысқартылған көбейту формулалары"
-                android:textColor="@color/black"
-                android:gravity="start|center_vertical"/>
+                    <Button
+                        android:id="@+id/button3"
+                        android:backgroundTint="@color/white"
+                        android:layout_below="@id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="14dp"
+                        android:onClick="StartTopic3"
+                        android:text="Көпмүшені көпмүшеге көбейту"
+                        android:textColor="@color/black"
+                        android:gravity="start|center_vertical"/>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="7dp"
-                android:layout_below="@id/button4"
-                android:background="@color/border" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_below="@id/button3"
+                        android:background="@color/border" />
 
-            <Button
-                android:id="@+id/button5"
-                android:backgroundTint="@color/white"
-                android:layout_below="@id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="70dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginTop="14dp"
-                android:text="Квадрат түбір туралы түсінік. Иррационал сандар"
-                android:textColor="@color/black"
-                android:gravity="start|center_vertical"/>
+                    <Button
+                        android:id="@+id/button4"
+                        android:backgroundTint="@color/white"
+                        android:layout_below="@id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="14dp"
+                        android:onClick="StartTopic4"
+                        android:text="Қысқартылған көбейту формулалары"
+                        android:textColor="@color/black"
+                        android:gravity="start|center_vertical"/>
 
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="144dp"
-                app:srcCompat="@drawable/book2" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_below="@id/button4"
+                        android:background="@color/border" />
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="218dp"
-                app:srcCompat="@drawable/book2" />
+                    <Button
+                        android:id="@+id/button5"
+                        android:backgroundTint="@color/white"
+                        android:layout_below="@id/button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="14dp"
+                        android:onClick="StartTopic5"
+                        android:text="Квадрат түбір туралы түсінік. Иррационал сандар"
+                        android:textColor="@color/black"
+                        android:gravity="start|center_vertical"/>
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="292dp"
-                app:srcCompat="@drawable/book2" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_below="@id/button5"
+                        android:background="@color/border" />
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="366dp"
-                app:srcCompat="@drawable/book2" />
+                    <Button
+                        android:id="@+id/button6"
+                        android:backgroundTint="@color/white"
+                        android:layout_below="@id/button5"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="14dp"
+                        android:onClick="StartTopic6"
+                        android:text="Квадрат теңдеу және оның түбірлері"
+                        android:textColor="@color/black"
+                        android:gravity="start|center_vertical"/>
 
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="70dp"
-                app:srcCompat="@drawable/book2" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_below="@id/button6"
+                        android:background="@color/border" />
 
+                    <Button
+                        android:id="@+id/button7"
+                        android:backgroundTint="@color/white"
+                        android:layout_below="@id/button6"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="14dp"
+                        android:onClick="StartTopic7"
+                        android:text="Теңсіздіктер"
+                        android:textColor="@color/black"
+                        android:gravity="start|center_vertical"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_below="@id/button7"
+                        android:background="@color/border" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:backgroundTint="@color/white"
+                        android:layout_below="@id/button7"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="14dp"
+                        android:onClick="StartTopic8"
+                        android:text="Прогрессия"
+                        android:textColor="@color/black"
+                        android:gravity="start|center_vertical"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_below="@id/button8"
+                        android:background="@color/border" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:backgroundTint="@color/white"
+                        android:layout_below="@id/button8"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="14dp"
+                        android:onClick="StartTopic9"
+                        android:text="Логарифм"
+                        android:textColor="@color/black"
+                        android:gravity="start|center_vertical"/>
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="144dp"
+                        app:srcCompat="@drawable/book2" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="218dp"
+                        app:srcCompat="@drawable/book2" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="292dp"
+                        app:srcCompat="@drawable/book2" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="366dp"
+                        app:srcCompat="@drawable/book2" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="442dp"
+                        app:srcCompat="@drawable/book2" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="516dp"
+                        app:srcCompat="@drawable/book2" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="592dp"
+                        app:srcCompat="@drawable/book2" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="668dp"
+                        app:srcCompat="@drawable/book2" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="70dp"
+                        app:srcCompat="@drawable/book2" />
+
+                </RelativeLayout>
+
+            </ScrollView>
 
         </RelativeLayout>
 

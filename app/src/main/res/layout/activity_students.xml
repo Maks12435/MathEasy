@@ -13,6 +13,29 @@
         android:layout_height="120dp"
         android:background="@drawable/gradient_background">
 
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:text="Оқушылардың үлгерімі"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="297dp"
+            android:layout_height="39dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="58dp"
+            android:text="Осы кесте арқылы оқушылардың үлгерімін бақылаңыз"
+            android:textColor="@color/white" />
+
     </RelativeLayout>
 
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"

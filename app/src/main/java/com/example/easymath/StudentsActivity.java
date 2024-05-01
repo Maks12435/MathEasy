@@ -35,6 +35,10 @@ public class StudentsActivity extends AppCompatActivity {
             @SuppressLint("Range") String grade3 = cursor2.getString(cursor2.getColumnIndex("correct_answers_count3"));
             @SuppressLint("Range") String grade4 = cursor2.getString(cursor2.getColumnIndex("correct_answers_count4"));
             @SuppressLint("Range") String grade5 = cursor2.getString(cursor2.getColumnIndex("correct_answers_count5"));
+            @SuppressLint("Range") String grade6 = cursor2.getString(cursor2.getColumnIndex("correct_answers_count6"));
+            @SuppressLint("Range") String grade7 = cursor2.getString(cursor2.getColumnIndex("correct_answers_count7"));
+            @SuppressLint("Range") String grade8 = cursor2.getString(cursor2.getColumnIndex("correct_answers_count8"));
+            @SuppressLint("Range") String grade9 = cursor2.getString(cursor2.getColumnIndex("correct_answers_count9"));
 
             TableRow row = new TableRow(this);
             TableRow.LayoutParams layoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT);
@@ -77,12 +81,40 @@ public class StudentsActivity extends AppCompatActivity {
             textViewIndex5.setPadding(3, 3, 3, 3);
             textViewIndex5.setBackgroundResource(R.drawable.table_border);
 
+            TextView textViewIndex6 = new TextView(this);
+            textViewIndex6.setLayoutParams(textViewParams);
+            textViewIndex6.setText(grade6);
+            textViewIndex6.setPadding(3, 3, 3, 3);
+            textViewIndex6.setBackgroundResource(R.drawable.table_border);
+
+            TextView textViewIndex7 = new TextView(this);
+            textViewIndex7.setLayoutParams(textViewParams);
+            textViewIndex7.setText(grade7);
+            textViewIndex7.setPadding(3, 3, 3, 3);
+            textViewIndex7.setBackgroundResource(R.drawable.table_border);
+
+            TextView textViewIndex8 = new TextView(this);
+            textViewIndex8.setLayoutParams(textViewParams);
+            textViewIndex8.setText(grade8);
+            textViewIndex8.setPadding(3, 3, 3, 3);
+            textViewIndex8.setBackgroundResource(R.drawable.table_border);
+
+            TextView textViewIndex9 = new TextView(this);
+            textViewIndex9.setLayoutParams(textViewParams);
+            textViewIndex9.setText(grade9);
+            textViewIndex9.setPadding(3, 3, 3, 3);
+            textViewIndex9.setBackgroundResource(R.drawable.table_border);
+
             textViewName.setLayoutParams(new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 3f));
             textViewIndex.setLayoutParams(new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 0.8f));
             textViewIndex2.setLayoutParams(new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 0.8f));
             textViewIndex3.setLayoutParams(new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 0.8f));
             textViewIndex4.setLayoutParams(new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 0.8f));
             textViewIndex5.setLayoutParams(new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 0.8f));
+            textViewIndex6.setLayoutParams(new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 0.8f));
+            textViewIndex7.setLayoutParams(new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 0.8f));
+            textViewIndex8.setLayoutParams(new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 0.8f));
+            textViewIndex9.setLayoutParams(new TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 0.8f));
 
             row.addView(textViewName);
             row.addView(textViewIndex);
@@ -90,6 +122,10 @@ public class StudentsActivity extends AppCompatActivity {
             row.addView(textViewIndex3);
             row.addView(textViewIndex4);
             row.addView(textViewIndex5);
+            row.addView(textViewIndex6);
+            row.addView(textViewIndex7);
+            row.addView(textViewIndex8);
+            row.addView(textViewIndex9);
             tableLayout.addView(row);
         }
         cursor.close();
