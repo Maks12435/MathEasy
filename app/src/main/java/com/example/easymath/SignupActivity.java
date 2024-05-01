@@ -1,12 +1,12 @@
 package com.example.easymath;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.easymath.databinding.ActivitySignupBinding;
 public class SignupActivity extends AppCompatActivity {
     ActivitySignupBinding binding;
@@ -25,21 +25,22 @@ public class SignupActivity extends AppCompatActivity {
                 String sName = binding.editTextSName.getText().toString();
                 String name = binding.editTextName.getText().toString();
                 if(email.equals("")||password.equals("")||sName.equals("")||name.equals(""))
-                    Toast.makeText(SignupActivity.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignupActivity.this, "Барлық өрістер міндетті болып табылады", Toast.LENGTH_SHORT).show();
                 else{
                     Boolean checkUserEmail = databaseHelper.checkEmail(email);
                     if(checkUserEmail == false){
                         Boolean insert = databaseHelper.insertData(name, sName, email, password);
                         if(insert == true){
-                            Toast.makeText(SignupActivity.this, "Signup Successfully!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignupActivity.this, "\n" +
+                                    "Тіркелу сәтті!", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
                             startActivity(intent);
                         }else{
-                            Toast.makeText(SignupActivity.this, "Signup Failed!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignupActivity.this, "Тіркелу сәтсіз аяқталды!", Toast.LENGTH_SHORT).show();
                         }
                     }
                     else{
-                        Toast.makeText(SignupActivity.this, "User already exists! Please login", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignupActivity.this, "Пайдаланушы бұрыннан бар! Жүйеге кіріңіз", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

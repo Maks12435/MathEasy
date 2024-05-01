@@ -167,11 +167,10 @@ public class Test1Activity extends AppCompatActivity {
                 } else {
                     selectedRadioButton.setBackgroundColor(ContextCompat.getColor(this, R.color.wrong_answer));
                 }
-                disableRadioGroup(questionRadioGroup); // Отключить RadioGroup после выбора ответа
+                disableRadioGroup(questionRadioGroup);
             }
         }
         databaseHelper.updateTestResult1(email, correctAnswersCount1);
-
         updateCorrectAnswersCounter();
 
         Button submitButton = findViewById(R.id.submit_button);
@@ -293,10 +292,9 @@ public class Test1Activity extends AppCompatActivity {
             RadioGroup questionRadioGroup = findViewById(groupId);
             enableRadioGroup(questionRadioGroup);
         }
-
-
         Button submitButton = findViewById(R.id.submit_button);
         submitButton.setEnabled(true);
+
         updateCorrectAnswersCounter();
     }
 

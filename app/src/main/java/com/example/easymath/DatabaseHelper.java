@@ -8,10 +8,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    public static final String databaseName = "EN.db";
+    public static final String databaseName = "BB.db";
 
     public DatabaseHelper(@Nullable Context context) {
-        super(context, "EN.db", null, 1);
+        super(context, "BB.db", null, 1);
     }
 
     @Override
@@ -98,50 +98,50 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return role;
     }
 
-    public void StartDB(String email) {
+    public Boolean insertTestResult(String email) {
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("email", email);
-        String result = String.valueOf(MyDatabase.update("test_results", contentValues, "email = ?", new String[]{email}));
+        long result = MyDatabase.insert("test_results", null, contentValues);
         MyDatabase.close();
+        return result != -1;
     }
-
-    public void updateTestResult1(String email, int correctAnswersCount2) {
+    public Boolean updateTestResult1(String email, int correctAnswersCount1) {
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put("correct_answers_count1", correctAnswersCount2);
+        contentValues.put("correct_answers_count1", correctAnswersCount1);
         int result = MyDatabase.update("test_results", contentValues, "email = ?", new String[]{email});
         MyDatabase.close();
+        return result != -1;
     }
-
-    public void updateTestResult2(String email, int correctAnswersCount2) {
+    public Boolean updateTestResult2(String email, int correctAnswersCount2) {
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("correct_answers_count2", correctAnswersCount2);
         int result = MyDatabase.update("test_results", contentValues, "email = ?", new String[]{email});
         MyDatabase.close();
+        return result != -1;
     }
-
-    public void updateTestResult3(String email, int correctAnswersCount3) {
+    public Boolean updateTestResult3(String email, int correctAnswersCount2) {
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put("correct_answers_count3", correctAnswersCount3);
+        contentValues.put("correct_answers_count3", correctAnswersCount2);
         int result = MyDatabase.update("test_results", contentValues, "email = ?", new String[]{email});
         MyDatabase.close();
+        return result != -1;
     }
-
-    public void updateTestResult4(String email, int correctAnswersCount4) {
+    public Boolean updateTestResult4(String email, int correctAnswersCount2) {
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put("correct_answers_count4", correctAnswersCount4);
+        contentValues.put("correct_answers_count4", correctAnswersCount2);
         int result = MyDatabase.update("test_results", contentValues, "email = ?", new String[]{email});
         MyDatabase.close();
+        return result != -1;
     }
-
-    public Boolean updateTestResult5(String email, int correctAnswersCount5) {
+    public Boolean updateTestResult5(String email, int correctAnswersCount2) {
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put("correct_answers_count5", correctAnswersCount5);
+        contentValues.put("correct_answers_count5", correctAnswersCount2);
         int result = MyDatabase.update("test_results", contentValues, "email = ?", new String[]{email});
         MyDatabase.close();
         return result != -1;

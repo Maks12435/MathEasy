@@ -1,20 +1,21 @@
 package com.example.easymath;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.TextView;
-import android.widget.Spinner;
-import android.app.DatePickerDialog;
 import android.widget.DatePicker;
-import java.util.Calendar;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.easymath.databinding.ActivityTeacherBinding;
+
+import java.util.Calendar;
 
 public class TeacherActivity extends AppCompatActivity {
 
@@ -92,6 +93,11 @@ public class TeacherActivity extends AppCompatActivity {
 
     public void GoToStudents(View v) {
         Intent intent = new Intent(TeacherActivity.this, StudentsActivity.class);
+        startActivity(intent);
+    }
+
+    public void GoToCourse(View v) {
+        Intent intent = new Intent(TeacherActivity.this, Topic1.class);
         startActivity(intent);
     }
 }

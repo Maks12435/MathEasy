@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
                 String email = binding.editTextEmail.getText().toString();
                 String password = binding.editTextPassword.getText().toString();
                 if (email.equals("") || password.equals("")) {
-                    Toast.makeText(LoginActivity.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Барлық өрістер міндетті болып табылады", Toast.LENGTH_SHORT).show();
                 } else {
 
                     String role = databaseHelper.getUserRole(email);

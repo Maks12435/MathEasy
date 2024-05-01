@@ -21,14 +21,10 @@ public class statsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityStatsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         dbHelper = new DatabaseHelper(this);
+
         Intent intent = getIntent();
-        email = intent.getStringExtra("email");
-        dbHelper.StartDB(email);
-
         String email = intent.getStringExtra("email");
-
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT correct_answers_count1, correct_answers_count2,  correct_answers_count3, correct_answers_count4, correct_answers_count5, correct_answers_count6, correct_answers_count7, correct_answers_count8, correct_answers_count9 FROM test_results WHERE email=?", new String[]{email});
 

@@ -18,7 +18,7 @@
         android:layout_marginTop="250dp"
         android:layout_marginEnd="33dp"
         android:background="@drawable/backgrounds"
-        android:hint="Name"
+        android:hint="Аты"
         android:textAlignment="center" />
 
     <EditText
@@ -32,7 +32,7 @@
         android:layout_marginTop="310dp"
         android:layout_marginEnd="33dp"
         android:background="@drawable/backgrounds"
-        android:hint="Surname"
+        android:hint="Тегі"
         android:textAlignment="center" />
 
     <EditText
@@ -60,7 +60,7 @@
         android:layout_marginTop="430dp"
         android:layout_marginEnd="31dp"
         android:background="@drawable/backgrounds"
-        android:hint="Password"
+        android:hint="Құпия сөз"
         android:textAlignment="center" />
 
     <Button
@@ -75,7 +75,7 @@
         android:layout_marginEnd="31dp"
         android:background="@drawable/regbutton"
         android:onClick="register"
-        android:text="Register" />
+        android:text="Тіркелу" />
 
     <TextView
         android:id="@+id/textView2"
@@ -102,7 +102,7 @@
         android:layout_marginTop="583dp"
         android:layout_marginEnd="50dp"
         android:gravity="center"
-        android:text="Если вы уже зарегистрировались, нажмите сюда чтобы войти"
+        android:text="Егер сіз бұрыннан тіркелген болсаңыз, кіру үшін осы жерді басыңыз"
         android:textColor="@color/white"
         android:textSize="14sp" />
 
@@ -118,7 +118,7 @@
         android:layout_marginEnd="50dp"
         android:gravity="center"
         android:clickable="true"
-        android:text="Login"
+        android:text="Кіру"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="13dp" />
