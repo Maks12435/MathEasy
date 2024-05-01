@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 public class Test4Activity extends AppCompatActivity {
-    private String[] correctAnswers = {"option1b", "option2c", "option3d", "option4a", "option5a", "option6b", "option7d", "option8c", "option9b", "option10a"};
+    private String[] correctAnswers = {"option1c", "option2d", "option3a", "option4b", "option5c", "option6d", "option7a", "option8b", "option9b", "option10c"};
     private int[] questionRadioGroupIds = {R.id.question1Options, R.id.question2Options, R.id.question3Options, R.id.question4Options, R.id.question5Options,
             R.id.question6Options, R.id.question7Options, R.id.question8Options, R.id.question9Options, R.id.question10Options};
     private int[][] radioButtonIds = {
@@ -79,6 +79,9 @@ public class Test4Activity extends AppCompatActivity {
                 checkAnswers();
                 answersChecked4 = true;
                 submitButtonClicked4 = true;
+
+                double percentage = (double) correctAnswersCount4 / correctAnswers.length * 100;
+                evaluatePerformance(percentage);
             }
         });
 
@@ -104,7 +107,6 @@ public class Test4Activity extends AppCompatActivity {
         double percentage = (double) correctAnswersCount4 / correctAnswers.length * 100;
         String percentageText = String.format("Дұрыс жауаптар: %.2f%%", percentage);
         correctAnswersCounter4.setText(percentageText);
-        evaluatePerformance(percentage);
     }
 
     @Override
@@ -115,6 +117,12 @@ public class Test4Activity extends AppCompatActivity {
             submitButton.performClick();
             submitButtonClicked4 = false; // Resetting the flag after performing click action
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        saveTestState(); // Сохраняем состояние теста перед выходом из активити
     }
 
     private void evaluatePerformance(double percentage) {
@@ -171,6 +179,9 @@ public class Test4Activity extends AppCompatActivity {
 
         databaseHelper.updateTestResult4(email, correctAnswersCount4);
 
+
+        Button submitButton = findViewById(R.id.submit_button);
+        submitButton.setEnabled(false);
         updateCorrectAnswersCounter();
     }
 
@@ -277,6 +288,8 @@ public class Test4Activity extends AppCompatActivity {
             enableRadioGroup(questionRadioGroup);
         }
 
+        Button submitButton = findViewById(R.id.submit_button);
+        submitButton.setEnabled(true);
         updateCorrectAnswersCounter();
     }
 }

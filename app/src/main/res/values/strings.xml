@@ -266,7 +266,7 @@
     <string name="test4q9o2">z<sup><small>2</small></sup> + 27</string>
     <string name="test4q9o3">27z - 27</string>
     <string name="test4q9o4">z - 27</string>
-    <string name="test4q10">Разложите на множители: 27a<sup><small>3</small></sup> - b<sup><small>3</small></sup></string>
+    <string name="test4q10">10. Разложите на множители: 27a<sup><small>3</small></sup> - b<sup><small>3</small></sup></string>
     <string name="test4q10o1">(3a - b)(9a<sup><small>2</small></sup> - 3ab - b<sup><small>2</small></sup>)</string>
     <string name="test4q10o2">(3a - b)(9a<sup><small>2</small></sup> + 3ab + b<sup><small>2</small></sup>)</string>
     <string name="test4q10o3">(9a - b)(81a<sup><small>2</small></sup> + 9ab + b<sup><small>2</small></sup>)</string>

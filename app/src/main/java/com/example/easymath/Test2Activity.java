@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 public class Test2Activity extends AppCompatActivity {
-    private String[] correctAnswers = {"option1c", "option2c", "option3a", "option4b", "option5d", "option6b", "option7d", "option8a", "option9c", "option10b"};
+    private String[] correctAnswers = {"option1b", "option2c", "option3a", "option4c", "option5d", "option6d", "option7b", "option8a", "option9d", "option10c"};
     private int[] questionRadioGroupIds = {R.id.question1Options, R.id.question2Options, R.id.question3Options, R.id.question4Options, R.id.question5Options,
             R.id.question6Options, R.id.question7Options, R.id.question8Options, R.id.question9Options, R.id.question10Options};
     private int[][] radioButtonIds = {
@@ -83,6 +83,9 @@ public class Test2Activity extends AppCompatActivity {
                 checkAnswers();
                 answersChecked2 = true;
                 submitButtonClicked2 = true;
+
+                double percentage = (double) correctAnswersCount2 / correctAnswers.length * 100;
+                evaluatePerformance(percentage);
             }
         });
 
@@ -110,8 +113,6 @@ public class Test2Activity extends AppCompatActivity {
         String percentageText = String.format("Дұрыс жауаптар: %.2f%%", percentage);
 
         correctAnswersCounter2.setText(percentageText);
-
-        evaluatePerformance(percentage);
     }
 
     @Override
@@ -125,6 +126,12 @@ public class Test2Activity extends AppCompatActivity {
             // Сбрасываем флаг submitButtonClicked
             submitButtonClicked2 = false;
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        saveTestState(); // Сохраняем состояние теста перед выходом из активити
     }
 
     private void checkAnswers() {
@@ -169,6 +176,9 @@ public class Test2Activity extends AppCompatActivity {
         }
         databaseHelper.updateTestResult2(email, correctAnswersCount2);
 
+
+        Button submitButton = findViewById(R.id.submit_button);
+        submitButton.setEnabled(false);
         updateCorrectAnswersCounter();
     }
 
@@ -288,7 +298,8 @@ public class Test2Activity extends AppCompatActivity {
             enableRadioGroup(questionRadioGroup);
         }
 
-        // Обновляем счетчик правильных ответов
+        Button submitButton = findViewById(R.id.submit_button);
+        submitButton.setEnabled(true);
         updateCorrectAnswersCounter();
     }
 

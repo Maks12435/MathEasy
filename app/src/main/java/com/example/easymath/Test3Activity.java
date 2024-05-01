@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 public class Test3Activity extends AppCompatActivity {
-    private String[] correctAnswers = {"option1b", "option2c", "option3d", "option4a", "option5a", "option6b", "option7d", "option8c", "option9b", "option10a"};
+    private String[] correctAnswers = {"option1c", "option2c", "option3a", "option4b", "option5d", "option6b", "option7d", "option8a", "option9c", "option10b"};
     private int[] questionRadioGroupIds = {R.id.question1Options, R.id.question2Options, R.id.question3Options, R.id.question4Options, R.id.question5Options,
             R.id.question6Options, R.id.question7Options, R.id.question8Options, R.id.question9Options, R.id.question10Options};
     private int[][] radioButtonIds = {
@@ -79,6 +79,8 @@ public class Test3Activity extends AppCompatActivity {
                 checkAnswers();
                 answersChecked3 = true;
                 submitButtonClicked3 = true;
+                double percentage = (double) correctAnswersCount3 / correctAnswers.length * 100;
+                evaluatePerformance(percentage);
             }
         });
 
@@ -104,7 +106,6 @@ public class Test3Activity extends AppCompatActivity {
         double percentage = (double) correctAnswersCount3 / correctAnswers.length * 100;
         String percentageText = String.format("Дұрыс жауаптар: %.2f%%", percentage);
         correctAnswersCounter3.setText(percentageText);
-        evaluatePerformance(percentage);
     }
 
     @Override
@@ -115,6 +116,12 @@ public class Test3Activity extends AppCompatActivity {
             submitButton.performClick();
             submitButtonClicked3 = false; // Resetting the flag after performing click action
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        saveTestState(); // Сохраняем состояние теста перед выходом из активити
     }
 
     private void evaluatePerformance(double percentage) {
@@ -171,6 +178,8 @@ public class Test3Activity extends AppCompatActivity {
 
         databaseHelper.updateTestResult3(email, correctAnswersCount3);
 
+        Button submitButton = findViewById(R.id.submit_button);
+        submitButton.setEnabled(false);
         updateCorrectAnswersCounter();
     }
 
@@ -277,6 +286,8 @@ public class Test3Activity extends AppCompatActivity {
             enableRadioGroup(questionRadioGroup);
         }
 
+        Button submitButton = findViewById(R.id.submit_button);
+        submitButton.setEnabled(true);
         updateCorrectAnswersCounter();
     }
 }

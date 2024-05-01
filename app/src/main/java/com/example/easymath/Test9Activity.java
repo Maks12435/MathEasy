@@ -80,6 +80,8 @@ public class Test9Activity extends AppCompatActivity {
                 checkAnswers();
                 answersChecked9 = true;
                 submitButtonClicked9 = true;
+                double percentage = (double) correctAnswersCount9 / correctAnswers.length * 100;
+                evaluatePerformance(percentage);
             }
         });
 
@@ -105,7 +107,6 @@ public class Test9Activity extends AppCompatActivity {
         double percentage = (double) correctAnswersCount9 / correctAnswers.length * 100;
         String percentageText = String.format("Дұрыс жауаптар: %.2f%%", percentage);
         correctAnswersCounter9.setText(percentageText);
-        evaluatePerformance(percentage);
     }
 
     private void evaluatePerformance(double percentage) {
@@ -133,6 +134,11 @@ public class Test9Activity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        saveTestState(); // Сохраняем состояние теста перед выходом из активити
+    }
     private void checkAnswers() {
         correctAnswersCount9 = 0;
         boolean allQuestionsAnswered = true;
@@ -169,6 +175,9 @@ public class Test9Activity extends AppCompatActivity {
                 disableRadioGroup(questionRadioGroup);
             }
         }
+
+        Button submitButton = findViewById(R.id.submit_button);
+        submitButton.setEnabled(false);
 
         databaseHelper.updateTestResult9(email, correctAnswersCount9);
         updateCorrectAnswersCounter();
@@ -277,6 +286,9 @@ public class Test9Activity extends AppCompatActivity {
             enableRadioGroup(questionRadioGroup);
         }
 
+
+        Button submitButton = findViewById(R.id.submit_button);
+        submitButton.setEnabled(true);
         updateCorrectAnswersCounter();
     }
 }

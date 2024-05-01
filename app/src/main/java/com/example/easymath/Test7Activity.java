@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 public class Test7Activity extends AppCompatActivity {
-    private String[] correctAnswers = {"option1b", "option2b", "option3a", "option4d", "option5a", "option6b", "option7a", "option8c", "option9d", "option10b"};
+    private String[] correctAnswers = {"option1a", "option2b", "option3d", "option4c", "option5b", "option6d", "option7c", "option8a", "option9a", "option10b"};
     private int[] questionRadioGroupIds = {R.id.question1Options, R.id.question2Options, R.id.question3Options, R.id.question4Options, R.id.question5Options,
             R.id.question6Options, R.id.question7Options, R.id.question8Options, R.id.question9Options, R.id.question10Options};
     private int[][] radioButtonIds = {
@@ -80,6 +80,8 @@ public class Test7Activity extends AppCompatActivity {
                 checkAnswers();
                 answersChecked7 = true;
                 submitButtonClicked7 = true;
+                double percentage = (double) correctAnswersCount7 / correctAnswers.length * 100;
+                evaluatePerformance(percentage);
             }
         });
 
@@ -105,7 +107,6 @@ public class Test7Activity extends AppCompatActivity {
         double percentage = (double) correctAnswersCount7 / correctAnswers.length * 100;
         String percentageText = String.format("Дұрыс жауаптар: %.2f%%", percentage);
         correctAnswersCounter7.setText(percentageText);
-        evaluatePerformance(percentage);
     }
 
     private void evaluatePerformance(double percentage) {
@@ -131,6 +132,12 @@ public class Test7Activity extends AppCompatActivity {
             submitButton.performClick();
             submitButtonClicked7 = false; // Resetting the flag after performing click action
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        saveTestState(); // Сохраняем состояние теста перед выходом из активити
     }
 
     private void checkAnswers() {
@@ -170,6 +177,9 @@ public class Test7Activity extends AppCompatActivity {
             }
         }
 
+
+        Button submitButton = findViewById(R.id.submit_button);
+        submitButton.setEnabled(false);
         databaseHelper.updateTestResult7(email, correctAnswersCount7);
         updateCorrectAnswersCounter();
     }
@@ -277,6 +287,8 @@ public class Test7Activity extends AppCompatActivity {
             enableRadioGroup(questionRadioGroup);
         }
 
+        Button submitButton = findViewById(R.id.submit_button);
+        submitButton.setEnabled(true);
         updateCorrectAnswersCounter();
     }
 }

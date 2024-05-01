@@ -69,11 +69,10 @@ public class Test1Activity extends AppCompatActivity {
 
         submitButtonClicked = sharedPreferences.getBoolean("submit_button_clicked", false);
 
-        // Проверяем, сохранено ли состояние теста
         if (savedInstanceState == null) {
-            loadTestState(); // Загружаем состояние теста при первом запуске активности
+            loadTestState();
         } else {
-            restoreInstanceState(savedInstanceState); // Восстанавливаем состояние теста при повороте экрана
+            restoreInstanceState(savedInstanceState);
             submitButtonClicked = savedInstanceState.getBoolean("submit_button_clicked", false);
         }
 
@@ -84,6 +83,9 @@ public class Test1Activity extends AppCompatActivity {
                 checkAnswers();
                 answersChecked = true;
                 submitButtonClicked = true;
+
+                double percentage = (double) correctAnswersCount1 / correctAnswers.length * 100;
+                evaluatePerformance(percentage);
             }
         });
 
@@ -106,30 +108,31 @@ public class Test1Activity extends AppCompatActivity {
     }
 
     private void updateCorrectAnswersCounter() {
-        // Вычисляем процент правильных ответов
         double percentage = (double) correctAnswersCount1 / correctAnswers.length * 100;
 
-        // Форматируем строку с процентом правильных ответов
         String percentageText = String.format("Дұрыс жауаптар: %.2f%%", percentage);
 
         // Обновляем текст счетчика правильных ответов
         correctAnswersCounter.setText(percentageText);
-
-        evaluatePerformance(percentage);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        // Проверяем, была ли кнопка отправки нажата при возвращении на активити
         if (submitButtonClicked) {
-            // Если кнопка отправки была нажата, устанавливаем состояние кнопки отправки в true
             Button submitButton = findViewById(R.id.submit_button);
-            submitButton.performClick(); // Программно нажимаем кнопку отправки
-            // Сбрасываем флаг submitButtonClicked
+            submitButton.performClick();
             submitButtonClicked = false;
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        saveTestState();
+    }
+
+
 
     private void checkAnswers() {
         correctAnswersCount1 = 0;
@@ -170,6 +173,9 @@ public class Test1Activity extends AppCompatActivity {
         databaseHelper.updateTestResult1(email, correctAnswersCount1);
 
         updateCorrectAnswersCounter();
+
+        Button submitButton = findViewById(R.id.submit_button);
+        submitButton.setEnabled(false);
 
     }
 
@@ -288,6 +294,9 @@ public class Test1Activity extends AppCompatActivity {
             enableRadioGroup(questionRadioGroup);
         }
 
+
+        Button submitButton = findViewById(R.id.submit_button);
+        submitButton.setEnabled(true);
         updateCorrectAnswersCounter();
     }
 
