@@ -62,7 +62,7 @@ public class Test3Activity extends AppCompatActivity {
 
         correctAnswersCounter3 = findViewById(R.id.correct_answers_counter);
 
-        sharedPreferences3 = getSharedPreferences("TestState", Context.MODE_PRIVATE);
+        sharedPreferences3 = getSharedPreferences("TestState_" + email, Context.MODE_PRIVATE);
 
         // Load the state if available
         if (savedInstanceState == null) {
@@ -127,16 +127,16 @@ public class Test3Activity extends AppCompatActivity {
     private void evaluatePerformance(double percentage) {
         String feedback;
         if (percentage < 50) {
-            feedback = "Жақсы емес, материалды қайталаңыз және оралыңыз";
+            feedback = "Жақсы емес, материалды қайталаңыз және оралыңыз \uD83D\uDE1E";
         } else if (percentage >= 50 && percentage < 70) {
-            feedback = "Жаман емес, бірақ қателіктеріңізді ескеріңіз";
+            feedback = "Жаман емес, бірақ қателіктеріңізді ескеріңіз \uD83D\uDE10";
         } else if (percentage >= 70 && percentage < 90) {
-            feedback = "Жақсы, бірақ сәл зейінді болыңыз";
+            feedback = "Жақсы, бірақ сәл зейінді болыңыз \uD83D\uDE42";
         } else {
-            feedback = "Тақырыпты өте жақсы түсіндіңіз, жұмысыңызды жалғастырыңыз";
+            feedback = "Тақырыпты өте жақсы түсіндіңіз, жұмысыңызды жалғастырыңыз \uD83D\uDE0A";
         }
         // Display feedback using a Toast
-        Toast.makeText(this, feedback, Toast.LENGTH_LONG).show();
+        CustomFeedbackDialog.showFeedback(this, feedback);
     }
 
     private void checkAnswers() {

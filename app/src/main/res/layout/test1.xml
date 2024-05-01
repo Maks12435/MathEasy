@@ -118,14 +118,15 @@
 
         <RelativeLayout
             android:id="@+id/textbox2"
-            android:layout_width="386dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView9"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="12dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center"
             android:gravity="center"
             style="@style/TEST_RELATIVE"
             android:elevation="8dp"
@@ -185,14 +186,16 @@
 
         <RelativeLayout
             android:id="@+id/textbox3"
-            android:layout_width="386dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView9"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:layout_gravity="center"
             style="@style/TEST_RELATIVE"
             android:elevation="8dp"
             android:padding="12dp">
@@ -203,6 +206,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/test1q3"
                 android:textColor="#0B0B0B"
+                android:textSize="16dp"
                 android:visibility="visible"
                 />
 
@@ -219,12 +223,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q3o1" />
 
                 <RadioButton
                     android:id="@+id/option3b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="16dp"
                     style="@style/TEST_RADIO"
                     android:text="@string/test1q3o2" />
 
@@ -233,12 +239,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q3o3" />
 
                 <RadioButton
                     android:id="@+id/option3d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="16dp"
                     style="@style/TEST_RADIO"
                     android:text="@string/test1q3o4" />
             </RadioGroup>
@@ -246,14 +254,16 @@
 
         <RelativeLayout
             android:id="@+id/textbox4"
-            android:layout_width="386dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView9"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             style="@style/TEST_RELATIVE"
             android:elevation="8dp"
             android:padding="12dp">
@@ -264,6 +274,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/test1q4"
                 android:textColor="#0B0B0B"
+                android:textSize="16dp"
                 android:visibility="visible"
                 />
 
@@ -280,6 +291,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q4o1" />
 
                 <RadioButton
@@ -287,12 +299,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q4o2" />
 
                 <RadioButton
                     android:id="@+id/option4c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="16dp"
                     style="@style/TEST_RADIO"
                     android:text="@string/test1q4o3" />
 
@@ -300,6 +314,7 @@
                     android:id="@+id/option4d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="16dp"
                     style="@style/TEST_RADIO"
                     android:text="@string/test1q4o4" />
             </RadioGroup>
@@ -307,14 +322,16 @@
 
         <RelativeLayout
             android:id="@+id/textbox5"
-            android:layout_width="386dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView9"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             style="@style/TEST_RELATIVE"
             android:elevation="8dp"
             android:padding="12dp">
@@ -325,6 +342,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/test1q5"
                 android:textColor="#0B0B0B"
+                android:textSize="16dp"
                 android:visibility="visible"
                 />
 
@@ -341,6 +359,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q5o1" />
 
                 <RadioButton
@@ -348,6 +367,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q5o2" />
 
                 <RadioButton
@@ -355,6 +375,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q5o3" />
 
                 <RadioButton
@@ -362,20 +383,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q5o4" />
             </RadioGroup>
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/textbox6"
-            android:layout_width="386dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView9"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             style="@style/TEST_RELATIVE"
             android:elevation="8dp"
             android:padding="12dp">
@@ -387,6 +411,7 @@
                 android:text="@string/test1q6"
                 android:textColor="#0B0B0B"
                 android:visibility="visible"
+                android:textSize="16dp"
                 />
 
             <RadioGroup
@@ -402,6 +427,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q6o1" />
 
                 <RadioButton
@@ -409,6 +435,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q6o2" />
 
                 <RadioButton
@@ -416,6 +443,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q6o3" />
 
                 <RadioButton
@@ -423,20 +451,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q6o4" />
             </RadioGroup>
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/textbox7"
-            android:layout_width="386dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView9"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             style="@style/TEST_RELATIVE"
             android:elevation="8dp"
             android:padding="12dp">
@@ -448,6 +479,7 @@
                 android:text="@string/test1q7"
                 android:textColor="#0B0B0B"
                 android:visibility="visible"
+                android:textSize="16dp"
                 />
 
             <RadioGroup
@@ -463,6 +495,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q7o1" />
 
                 <RadioButton
@@ -470,6 +503,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q7o2" />
 
                 <RadioButton
@@ -477,6 +511,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q7o3" />
 
                 <RadioButton
@@ -484,20 +519,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q7o4" />
             </RadioGroup>
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/textbox8"
-            android:layout_width="386dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView9"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             style="@style/TEST_RELATIVE"
             android:elevation="8dp"
             android:padding="12dp">
@@ -508,6 +546,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/test1q8"
                 android:textColor="#0B0B0B"
+                android:textSize="16dp"
                 android:visibility="visible"
                 />
 
@@ -524,6 +563,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q8o1" />
 
                 <RadioButton
@@ -531,6 +571,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q8o2" />
 
                 <RadioButton
@@ -538,6 +579,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q8o3" />
 
                 <RadioButton
@@ -545,20 +587,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q8o4" />
             </RadioGroup>
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/textbox9"
-            android:layout_width="386dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView9"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             style="@style/TEST_RELATIVE"
             android:elevation="8dp"
             android:padding="12dp">
@@ -569,6 +614,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/test1q9"
                 android:textColor="#0B0B0B"
+                android:textSize="16dp"
                 android:visibility="visible"
                 />
 
@@ -585,6 +631,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q9o1" />
 
                 <RadioButton
@@ -592,6 +639,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q9o2" />
 
                 <RadioButton
@@ -599,6 +647,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q9o3" />
 
                 <RadioButton
@@ -606,20 +655,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q9o4" />
             </RadioGroup>
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/textbox10"
-            android:layout_width="386dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView10"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             style="@style/TEST_RELATIVE"
             android:elevation="8dp"
             android:padding="12dp">
@@ -631,6 +683,7 @@
                 android:text="@string/test1q10"
                 android:textColor="#0B0B0B"
                 android:visibility="visible"
+                android:textSize="16dp"
                 />
 
             <RadioGroup
@@ -646,6 +699,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q10o1" />
 
                 <RadioButton
@@ -653,6 +707,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q10o2" />
 
                 <RadioButton
@@ -660,6 +715,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q10o3" />
 
                 <RadioButton
@@ -667,6 +723,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/TEST_RADIO"
+                    android:textSize="16dp"
                     android:text="@string/test1q10o4" />
             </RadioGroup>
         </RelativeLayout>

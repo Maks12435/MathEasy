@@ -110,7 +110,7 @@
     <string name="test2q3o2">9</string>
     <string name="test2q3o3">4</string>
     <string name="test2q3o4">0,5</string>
-    <string name="test2q4">4. Бірмүшенің мәнін табыңыз: -0,125y<sup><small>4</small></sup>, eğer y = -2</string>
+    <string name="test2q4">4. Бірмүшенің мәнін табыңыз: -0,125y<sup><small>4</small></sup>, eгер y = -2</string>
     <string name="test2q4o1">2</string>
     <string name="test2q4o2">1</string>
     <string name="test2q4o3">-2</string>
@@ -219,54 +219,54 @@
     <string name="topic421">(a - b)<sup><small>3</small></sup> = a<sup><small>3</small></sup> - 3a<sup><small>2</small></sup>b + 3ab<sup><small>2</small></sup> - b<sup><small>3</small></sup></string>
     <string name="topic422">(a + b)<sup><small>3</small></sup> = a<sup><small>3</small></sup> + 3a<sup><small>2</small></sup>b + 3ab<sup><small>2</small></sup> + b<sup><small>3</small></sup></string>
     <string name="topic423">Мысалы, (2x + 3)<sup><small>2</small></sup> многочлені ретінде жазылуы мүмкін 8x<sup><small>3</small></sup> + 36x<sup><small>2</small></sup> + 54 + 27</string>
-    <string name="topic424">Немесе, керісінше, 125a<sup><small>3</small></sup> - 150a<sup><small>2</small></sup>b многочленінен + 60ab<sup><small>2</small></sup> - 8b<sup><small>3</small></sup> алуға болады (5a - 2b)<sup><small>3</small></sup></string>
+    <string name="topic424">Немесе, керісінше, 125a<sup><small>3</small></sup> - 150a<sup><small>2</small></sup>b көпмүшеден + 60ab<sup><small>2</small></sup> - 8b<sup><small>3</small></sup> алуға болады (5a - 2b)<sup><small>3</small></sup></string>
     <string name="topic425"><b>Қысқартылған көбейту формулалары</b> — көптеген кездесетін көбейту формулалары. Солардың бірі қосынды мен айырманың кубы</string>
-    <string name="test4q1">1. Запишите в виде многочлена: (2 + t)<sup><small>3</small></sup></string>
+    <string name="test4q1">1. Көпмүшесі түрінде жазыңыз: (2 + t)<sup><small>3</small></sup></string>
     <string name="test4q1o1">6 + 4t + 6t<sup>2</sup> + t<sup>3</sup></string>
     <string name="test4q1o2">8 + 4t + 3t<sup><small>2</small></sup> + t<sup><small>3</small></sup></string>
     <string name="test4q1o3">8 + 12t + 6t<sup><small>2</small></sup> + t<sup><small>3</small></sup></string>
     <string name="test4q1o4">6 + 12t + 3t<sup><small>2</small></sup> + t<sup><small>3</small></sup></string>
-    <string name="test4q2">2. Запишите в виде многочлена: (-n + 3m)<sup><small>3</small></sup></string>
+    <string name="test4q2">2. Көпмүшесі түрінде жазыңыз: (-n + 3m)<sup><small>3</small></sup></string>
     <string name="test4q2o1">9m<sup><small>3</small></sup> - 18m<sup><small>2</small></sup>n + 18mn<sup><small>2</small></sup> - n<sup><small>3</small></sup></string>
     <string name="test4q2o2">18m<sup><small>3</small></sup> - 27m<sup><small>2</small></sup>n + 18mn<sup><small>2</small></sup> - n<sup><small>3</small></sup></string>
     <string name="test4q2o3">9m<sup><small>3</small></sup> - 9m<sup><small>2</small></sup>n + 27mn<sup><small>2</small></sup> - n<sup><small>3</small></sup></string>
     <string name="test4q2o4">27m<sup><small>3</small></sup> - 27m<sup><small>2</small></sup>n + 9mn<sup><small>2</small></sup> - n<sup><small>3</small></sup></string>
-    <string name="test4q3">3. Запишите в виде многочлена: (5x<sup><small>2</small></sup> - 4c)<sup><small>3</small></sup></string>
+    <string name="test4q3">3. Көпмүшесі түрінде жазыңыз: (5x<sup><small>2</small></sup> - 4c)<sup><small>3</small></sup></string>
     <string name="test4q3o1">125x<sup><small>6</small></sup> - 300c<sup><small>4</small></sup> + 240c<sup><small>2</small></sup>x<sup><small>2</small></sup> - 64c<sup><small>3</small></sup></string>
     <string name="test4q3o2">15x<sup><small>6</small></sup> - 100c<sup><small>4</small></sup> + 120c<sup><small>2</small></sup>x<sup><small>2</small></sup> - 12c<sup><small>3</small></sup></string>
     <string name="test4q3o3">125x<sup><small>6</small></sup> - 150c<sup><small>2</small></sup>x<sup><small>2</small></sup> + 240cx<sup><small>4</small></sup> - 64c<sup><small>3</small></sup></string>
     <string name="test4q3o4">15x<sup><small>6</small></sup> - 120cx<sup><small>4</small></sup> + 240c<sup><small>2</small></sup>x<sup><small>2</small></sup> - 12c<sup><small>3</small></sup></string>
-    <string name="test4q4">4. Запишите в виде многочлена: (1&#8260;3a - 1&#8260;5b)<sup><small>3</small></sup></string>
+    <string name="test4q4">4. Көпмүшесі түрінде жазыңыз: (1&#8260;3a - 1&#8260;5b)<sup><small>3</small></sup></string>
     <string name="test4q4o1">1&#8260;9a<sup><small>3</small></sup> - 1&#8260;12a<sup><small>3</small></sup>b + 2&#8260;15ab<sup><small>3</small></sup> - 1&#8260;125b<sup><small>3</small></sup></string>
     <string name="test4q4o2">1&#8260;27a<sup><small>3</small></sup> - 1&#8260;15a<sup><small>2</small></sup>b + 1&#8260;25ab<sup><small>2</small></sup> - 1&#8260;125b<sup><small>3</small></sup></string>
     <string name="test4q4o3">1&#8260;27a<sup><small>3</small></sup> - 1&#8260;15ab<sup><small>2</small></sup> + 1&#8260;25a<sup><small>2</small></sup>b - 1&#8260;15b<sup><small>3</small></sup></string>
     <string name="test4q4o4">1&#8260;9a<sup><small>3</small></sup> - 1&#8260;12a<sup><small>2</small></sup>b + 1&#8260;27ab<sup><small>2</small></sup> - 1&#8260;15b<sup><small>3</small></sup></string>
-    <string name="test4q5">5. Укажите многочлен в виде куба двучлена: 125p<sup><small>3</small></sup> - 75p<sup><small>2</small></sup>q + 15pq<sup><small>2</small></sup> - q<sup><small>3</small></sup></string>
+    <string name="test4q5">5. Биномдық текше түріндегі көпмүшені көрсетіңіз: 125p<sup><small>3</small></sup> - 75p<sup><small>2</small></sup>q + 15pq<sup><small>2</small></sup> - q<sup><small>3</small></sup></string>
     <string name="test4q5o1">(5p + q)<sup><small>3</small></sup></string>
     <string name="test4q5o2">(25p - q)<sup><small>3</small></sup></string>
     <string name="test4q5o3">(5p - q)<sup><small>3</small></sup></string>
     <string name="test4q5o4">(5p + 25q)<sup><small>3</small></sup></string>
-    <string name="test4q6">6. Упростите выражение: (a - 2b)<sup><small>3</small></sup> + 6ab(a - 2b)</string>
+    <string name="test4q6">6. Өрнекті жеңілдету: (a - 2b)<sup><small>3</small></sup> + 6ab(a - 2b)</string>
     <string name="test4q6o1">a<sup><small>3</small></sup> + 4b<sup><small>3</small></sup> - 4ab</string>
     <string name="test4q6o2">a<sup><small>3</small></sup> + 4b<sup><small>3</small></sup></string>
     <string name="test4q6o3">a<sup><small>3</small></sup> + 2a<sup><small>2</small></sup>b - 8b<sup><small>3</small></sup></string>
     <string name="test4q6o4">a<sup><small>3</small></sup> - 8b<sup><small>3</small></sup></string>
-    <string name="test4q7">7. Запишите выражение в стандартном виде многочлена: (x<sup><small>2</small></sup> - y<sup><small>2</small></sup>)<sup><small>3</small></sup></string>
+    <string name="test4q7">7. Өрнекті стандартты көпмүше түрінде жазыңыз: (x<sup><small>2</small></sup> - y<sup><small>2</small></sup>)<sup><small>3</small></sup></string>
     <string name="test4q7o1">a<sup><small>3</small></sup> + 4b<sup><small>3</small></sup> - 4ab</string>
     <string name="test4q7o2">a<sup><small>3</small></sup> + 4b<sup><small>3</small></sup></string>
     <string name="test4q7o3">a<sup><small>3</small></sup> + 2a<sup><small>2</small></sup>b - 8b<sup><small>3</small></sup></string>
     <string name="test4q7o4">a<sup><small>3</small></sup> - 8b<sup><small>3</small></sup></string>
-    <string name="test4q8">8. Решите уравнение: a<sup><small>3</small></sup> - (a - 3)<sup><small>3</small></sup> = 54 + 9a<sup><small>2</small></sup></string>
+    <string name="test4q8">8. Теңдеуді шешіңіз: a<sup><small>3</small></sup> - (a - 3)<sup><small>3</small></sup> = 54 + 9a<sup><small>2</small></sup></string>
     <string name="test4q8o1">1</string>
     <string name="test4q8o2">-1</string>
     <string name="test4q8o3">0</string>
     <string name="test4q8o4">2</string>
-    <string name="test4q9">9. Запишите выражение в стандартном виде многочлена: z<sup><small>2</small></sup>(9 - z) – (3 - z)<sup><small>3</small></sup></string>
+    <string name="test4q9">9. Өрнекті стандартты көпмүше түрінде жазыңыз: z<sup><small>2</small></sup>(9 - z) – (3 - z)<sup><small>3</small></sup></string>
     <string name="test4q9o1">z<sup><small>3</small></sup> - 27z + 27</string>
     <string name="test4q9o2">z<sup><small>2</small></sup> + 27</string>
     <string name="test4q9o3">27z - 27</string>
     <string name="test4q9o4">z - 27</string>
-    <string name="test4q10">10. Разложите на множители: 27a<sup><small>3</small></sup> - b<sup><small>3</small></sup></string>
+    <string name="test4q10">10. Көбейткіштерге жіктеу: 27a<sup><small>3</small></sup> - b<sup><small>3</small></sup></string>
     <string name="test4q10o1">(3a - b)(9a<sup><small>2</small></sup> - 3ab - b<sup><small>2</small></sup>)</string>
     <string name="test4q10o2">(3a - b)(9a<sup><small>2</small></sup> + 3ab + b<sup><small>2</small></sup>)</string>
     <string name="test4q10o3">(9a - b)(81a<sup><small>2</small></sup> + 9ab + b<sup><small>2</small></sup>)</string>
@@ -384,61 +384,61 @@
                             Қысқартылған көбейту формуласын қолдану, (x+2)<sup><small>2</small></sup> = 0 ⇒ x<small>1/2</small> = -2</string>
     <string name="topic635">3. Егер D &lt; 0 болса, ax<sup><small>2</small></sup> + bx + c = 0 (a ≠ 0) теңдеуінің түбірі жоқ.</string>
     <string name="topic636">2x<sup><small>2</small></sup> + 8 = 0 => x<sup><small>2</small></sup> = -8&#8260;2 => x<sup><small>2</small></sup> = -4 Шешім жоқ</string>
-    <string name="test6q1">Теңдеуді шеш: x<sup><small>2</small></sup> - 12x = 0</string>
+    <string name="test6q1">1. Теңдеуді шеш: x<sup><small>2</small></sup> - 12x = 0</string>
     <string name="test6q1o1">-12; 0</string>
     <string name="test6q1o2">0; 12</string>
     <string name="test6q1o3">0; 6</string>
     <string name="test6q1o4">-6; 12</string>
 
-    <string name="test6q2">Теңдеуді шеш: -9x<sup><small>2</small></sup> + 36 = 0</string>
+    <string name="test6q2">2. Теңдеуді шеш: -9x<sup><small>2</small></sup> + 36 = 0</string>
     <string name="test6q2o1">±4</string>
     <string name="test6q2o2">±2</string>
     <string name="test6q2o3">-4; 0; 2</string>
     <string name="test6q2o4">Шешім жоқ</string>
 
-    <string name="test6q3">Теңдеуді шеш: 8x - 5x<sup><small>2</small></sup> = 0</string>
+    <string name="test6q3">3. Теңдеуді шеш: 8x - 5x<sup><small>2</small></sup> = 0</string>
     <string name="test6q3o1">0; 1,6</string>
     <string name="test6q3o2">1,6; 3,2</string>
     <string name="test6q3o3">-1,6; 0</string>
     <string name="test6q3o4">-3,2; 1,6</string>
 
-    <string name="test6q4">Теңдеуді шеш: 6x<sup><small>2</small></sup> = 150</string>
+    <string name="test6q4">4. Теңдеуді шеш: 6x<sup><small>2</small></sup> = 150</string>
     <string name="test6q4o1">±6</string>
     <string name="test6q4o2">0; 5</string>
     <string name="test6q4o3">-5; 0; 6</string>
     <string name="test6q4o4">±5</string>
 
-    <string name="test6q5">Теңдеуді шеш: -12x<sup><small>2</small></sup> + 9 = -18</string>
+    <string name="test6q5">5. Теңдеуді шеш: -12x<sup><small>2</small></sup> + 9 = -18</string>
     <string name="test6q5o1">-1,5; 1,5</string>
     <string name="test6q5o2">-2&#8260;3; 2&#8260;3</string>
     <string name="test6q5o3">-1&#8260;2; 1&#8260;2</string>
     <string name="test6q5o4">-2,5; 2,5</string>
 
-    <string name="test6q6">Теңдеуді шеш: 2 2&#8260;5x<sup><small>2</small></sup> - 2 9&#8260;10 = -0,5</string>
+    <string name="test6q6">6. Теңдеуді шеш: 2 2&#8260;5x<sup><small>2</small></sup> - 2 9&#8260;10 = -0,5</string>
     <string name="test6q6o1">±0,5</string>
     <string name="test6q6o2">±1</string>
     <string name="test6q6o3">±2</string>
     <string name="test6q6o4">Шешім жоқ</string>
 
-    <string name="test6q7">Теңдеуді шеш: 1,8x<sup><small>2</small></sup> - 3,24x = 0</string>
+    <string name="test6q7">7. Теңдеуді шеш: 1,8x<sup><small>2</small></sup> - 3,24x = 0</string>
     <string name="test6q7o1">0; 1,8</string>
     <string name="test6q7o2">±1,8</string>
     <string name="test6q7o3">-1,8; 0</string>
     <string name="test6q7o4">-0,5; 0</string>
 
-    <string name="test6q8">Теңдеуді шеш: 3x<sup><small>2</small></sup> = 0</string>
+    <string name="test6q8">8. Теңдеуді шеш: 3x<sup><small>2</small></sup> = 0</string>
     <string name="test6q8o1">3</string>
     <string name="test6q8o2">±9</string>
     <string name="test6q8o3">0</string>
     <string name="test6q8o4">Шешім жоқ</string>
 
-    <string name="test6q9">Теңдеуді шеш: 2x<sup><small>2</small></sup> + 4x = 6x<sup><small>2</small></sup> - 12x</string>
+    <string name="test6q9">9. Теңдеуді шеш: 2x<sup><small>2</small></sup> + 4x = 6x<sup><small>2</small></sup> - 12x</string>
     <string name="test6q9o1">-4; 0</string>
     <string name="test6q9o2">±4</string>
     <string name="test6q9o3">0</string>
     <string name="test6q9o4">0; 4</string>
 
-    <string name="test6q10">Теңдеуді шеш: x<sup><small>2</small></sup> - 3x = 2(12 - x) - x</string>
+    <string name="test6q10">10. Теңдеуді шеш: x<sup><small>2</small></sup> - 3x = 2(12 - x) - x</string>
     <string name="test6q10o1">±2√5</string>
     <string name="test6q10o2">±2√6</string>
     <string name="test6q10o3">±2√7</string>

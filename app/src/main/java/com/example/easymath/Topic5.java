@@ -27,6 +27,7 @@ public class Topic5 extends AppCompatActivity {
         intent.putExtra("name", getIntent().getStringExtra("name"));
         intent.putExtra("sName", getIntent().getStringExtra("sName"));
         intent.putExtra("email", getIntent().getStringExtra("email"));
+        startActivity(intent);
     }
 
     public void startTopic5Activity(View v){

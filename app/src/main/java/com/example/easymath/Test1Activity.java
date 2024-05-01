@@ -65,7 +65,7 @@ public class Test1Activity extends AppCompatActivity {
 
         correctAnswersCounter = findViewById(R.id.correct_answers_counter);
 
-        sharedPreferences = getSharedPreferences("TestState", Context.MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("TestState_" + email, Context.MODE_PRIVATE);
 
         submitButtonClicked = sharedPreferences.getBoolean("submit_button_clicked", false);
 
@@ -100,7 +100,7 @@ public class Test1Activity extends AppCompatActivity {
                 intent.putExtra("name", getIntent().getStringExtra("name"));
                 intent.putExtra("sName", getIntent().getStringExtra("sName"));
                 startActivity(intent);
-                finish(); // Завершаем текущую активность при переходе на следующую
+                finish();
             }
         });
 
@@ -112,7 +112,6 @@ public class Test1Activity extends AppCompatActivity {
 
         String percentageText = String.format("Дұрыс жауаптар: %.2f%%", percentage);
 
-        // Обновляем текст счетчика правильных ответов
         correctAnswersCounter.setText(percentageText);
     }
 
@@ -302,16 +301,16 @@ public class Test1Activity extends AppCompatActivity {
     private void evaluatePerformance(double percentage) {
         String feedback;
         if (percentage < 50) {
-            feedback = "Жақсы емес, материалды қайталаңыз және оралыңыз";
+            feedback = "Жақсы емес, материалды қайталаңыз және оралыңыз \uD83D\uDE1E";
         } else if (percentage >= 50 && percentage < 70) {
-            feedback = "Жаман емес, бірақ қателіктеріңізді ескеріңіз";
+            feedback = "Жаман емес, бірақ қателіктеріңізді ескеріңіз \uD83D\uDE10";
         } else if (percentage >= 70 && percentage < 90) {
-            feedback = "Жақсы, бірақ сәл зейінді болыңыз";
+            feedback = "Жақсы, бірақ сәл зейінді болыңыз \uD83D\uDE42";
         } else {
-            feedback = "Тақырыпты өте жақсы түсіндіңіз, жұмысыңызды жалғастырыңыз";
+            feedback = "Тақырыпты өте жақсы түсіндіңіз, жұмысыңызды жалғастырыңыз \uD83D\uDE0A";
         }
         // Display feedback using a Toast
-        Toast.makeText(this, feedback, Toast.LENGTH_LONG).show();
+        CustomFeedbackDialog.showFeedback(this, feedback);
     }
 
 }
