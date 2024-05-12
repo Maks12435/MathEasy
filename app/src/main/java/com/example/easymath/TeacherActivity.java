@@ -41,13 +41,13 @@ public class TeacherActivity extends AppCompatActivity {
             binding.email.setText(email);
         } else {
 
-            Toast.makeText(TeacherActivity.this, "Error", Toast.LENGTH_SHORT).show();
+            Toast.makeText(TeacherActivity.this, "Қате", Toast.LENGTH_SHORT).show();
         }
 
         Spinner genderSpinner = findViewById(R.id.genderSpinner);
         Spinner departmentSpinner = findViewById(R.id.departmentSpinner);
-        String[] genders = {"Мужчина", "Женщина"};
-        String[] departments = {"Департамент алгебры и геометрии", "Департамент образовательной математики:", "Департамент компьютерных наук и информатики"};
+        String[] genders = {"Ер", "Әйел"};
+        String[] departments = {"Алгебра және геометрия кафедрасы", "Оқу математикасы кафедрасы:", "Информатика және информатика кафедрасы"};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, genders);
         ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, departments);
@@ -81,8 +81,8 @@ public class TeacherActivity extends AppCompatActivity {
                     public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                         // Обработка выбора даты
                         String birthday = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year;
-                        tvSelectedDate.setText("Дата рождения: " + birthday);
-                        Toast.makeText(TeacherActivity.this, "Дата рождения: " + birthday, Toast.LENGTH_SHORT).show();
+                        tvSelectedDate.setText("Туған күні: " + birthday);
+                        Toast.makeText(TeacherActivity.this, "Туған күні: " + birthday, Toast.LENGTH_SHORT).show();
                     }
                 }, year, month, dayOfMonth);
 

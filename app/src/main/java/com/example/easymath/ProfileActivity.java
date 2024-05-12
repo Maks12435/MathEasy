@@ -43,13 +43,13 @@ public class ProfileActivity extends AppCompatActivity {
             binding.email.setText(email);
         } else {
 
-            Toast.makeText(ProfileActivity.this, "Error", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ProfileActivity.this, "Қате", Toast.LENGTH_SHORT).show();
         }
 
         Spinner genderSpinner = findViewById(R.id.genderSpinner);
         Spinner departmentSpinner = findViewById(R.id.departmentSpinner);
-        String[] genders = {"Мужчина", "Женщина"};
-        String[] departments = {"Младшие классы", "Высшие курсы"};
+        String[] genders = {"Ер", "Әйел"};
+        String[] departments = {"Кіші сыныптар", "Жоғары курстар"};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, genders);
         ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, departments);
@@ -81,7 +81,6 @@ public class ProfileActivity extends AppCompatActivity {
                 new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                        // Обработка выбора даты
                         String birthday = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year;
                         tvSelectedDate.setText("Дата рождения: " + birthday);
                         Toast.makeText(ProfileActivity.this, "Дата рождения: " + birthday, Toast.LENGTH_SHORT).show();
@@ -115,5 +114,11 @@ public class ProfileActivity extends AppCompatActivity {
         intent.putExtra("email", getIntent().getStringExtra("email"));
         startActivity(intent);
     }
-
+    public void startResetPasswd(View v) {
+        Intent intent = new Intent(ProfileActivity.this, ResetActivity.class);
+        intent.putExtra("name", getIntent().getStringExtra("name"));
+        intent.putExtra("sName", getIntent().getStringExtra("sName"));
+        intent.putExtra("email", getIntent().getStringExtra("email"));
+        startActivity(intent);
+    }
 }

@@ -77,7 +77,18 @@ public class LoginActivity extends AppCompatActivity {
                             incorrectCredentialsText.setVisibility(View.VISIBLE);
                         }
 
-                    } else {
+                    } else if ("admin".equals(role)) {
+                        if (password.equals("Root") && email.equals("Root")) {
+
+                            intent = new Intent(LoginActivity.this, AdminActivity.class);
+                            intent.putExtra("email", email);
+                            startActivity(intent);
+                            finish();
+                        } else {
+                            incorrectCredentialsText.setVisibility(View.VISIBLE);
+                        }
+
+                    }else {
                         Toast.makeText(LoginActivity.this, "Дұрыс электрондық поштаны енгізіңіз", Toast.LENGTH_SHORT).show();
                     }
                 }

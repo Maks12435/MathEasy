@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = getIntent();;
         email = intent.getStringExtra("email");
-
         databaseHelper.insertTestResult(email);
+
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         isNightMode = preferences.getBoolean("isNightMode", false);
 

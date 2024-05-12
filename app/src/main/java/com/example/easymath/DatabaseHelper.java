@@ -8,10 +8,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    public static final String databaseName = "DB.db";
+    public static final String databaseName = "DB1.db";
 
     public DatabaseHelper(@Nullable Context context) {
-        super(context, "DB.db", null, 1);
+        super(context, "DB1.db", null, 1);
     }
 
     @Override
@@ -32,7 +32,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     private void createTableTestResults(SQLiteDatabase MyDatabase) {
-        MyDatabase.execSQL("create Table test_results(email TEXT primary key, correct_answers_count1 INTEGER DEFAULT 0, correct_answers_count2 INTEGER DEFAULT 0, correct_answers_count3 INTEGER DEFAULT 0, correct_answers_count4 INTEGER DEFAULT 0, correct_answers_count5 INTEGER DEFAULT 0, correct_answers_count6 INTEGER DEFAULT 0, correct_answers_count7 INTEGER DEFAULT 0, correct_answers_count8 INTEGER DEFAULT 0, correct_answers_count9 INTEGER DEFAULT 0)");
+        MyDatabase.execSQL("create Table test_results(email TEXT primary key DEFAULT 0, correct_answers_count1 INTEGER DEFAULT 0, correct_answers_count2 INTEGER DEFAULT 0, correct_answers_count3 INTEGER DEFAULT 0, correct_answers_count4 INTEGER DEFAULT 0, correct_answers_count5 INTEGER DEFAULT 0, correct_answers_count6 INTEGER DEFAULT 0, correct_answers_count7 INTEGER DEFAULT 0, correct_answers_count8 INTEGER DEFAULT 0, correct_answers_count9 INTEGER DEFAULT 0)");
     }
 
     public Boolean insertData(String name, String sName, String email, String password) {
@@ -90,6 +90,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String prefix = email.substring(0, 1);
         if ("T".equals(prefix)) {
             role = "teacher";
+        } else if ("Root".equals(email)) {
+            role = "admin";
         } else {
             role = "student";
         }
@@ -177,6 +179,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put("correct_answers_count9", correctAnswersCount9);
         int result = MyDatabase.update("test_results", contentValues, "email = ?", new String[]{email});
+        MyDatabase.close();
+        return result != -1;
+    }
+
+    public Boolean updatePassword(String email, String password) {
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("password", password);
+        int result = MyDatabase.update("users", contentValues, "email = ?", new String[]{email});
         MyDatabase.close();
         return result != -1;
     }

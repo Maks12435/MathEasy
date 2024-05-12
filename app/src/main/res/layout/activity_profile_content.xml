@@ -202,16 +202,16 @@
 
             <Button
                 android:id="@+id/btnDatePicker"
-                android:layout_width="120dp"
-                android:layout_height="32dp"
-                android:backgroundTint="@color/white"
-                android:text="Күнді таңдаңыз"
-                android:onClick="showDatePickerDialog"
-                android:fontFamily="sans-serif-medium"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="5dp"
-                android:textSize="10sp"
-                android:textColor="@color/black"/>
+                android:backgroundTint="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="showDatePickerDialog"
+                android:text="Күнді таңдаңыз"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
 
             <TextView
                 android:id="@+id/tvSelectedDate"
@@ -230,6 +230,19 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="5dp"
                 android:background="@color/border" />
+
+            <Button
+                android:id="@+id/PasswordReset"
+                android:layout_width="240dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="startResetPasswd"
+                android:text="Құпия сөзді қалпына келтіру"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
 
         </LinearLayout>
 
