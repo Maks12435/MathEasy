@@ -1,9 +1,11 @@
 package com.example.easymath;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -123,5 +125,10 @@ public class AdminActivity extends AppCompatActivity {
         cursor.close();
         cursor2.close();
         db.close();
+    }
+
+    public void startReset(View v) {
+        Intent intent = new Intent(AdminActivity.this, AdminResetActivity.class);
+        startActivity(intent);
     }
 }

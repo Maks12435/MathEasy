@@ -22,7 +22,7 @@ public class ResetActivity extends AppCompatActivity {
         setContentView(R.layout.activity_reset);
         databaseHelper = new DatabaseHelper(this);
 
-        Intent intent = getIntent();;
+        Intent intent = getIntent();
         email = intent.getStringExtra("email");
 
         editTextPassword = findViewById(R.id.newpsswd);

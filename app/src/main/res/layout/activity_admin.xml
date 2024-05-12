@@ -10,7 +10,7 @@
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="120dp"
         android:background="@drawable/gradient_background">
 
         <TextView
@@ -25,6 +25,19 @@
             android:textColor="@color/white"
             android:textSize="18dp"/>
 
+        <Button
+            android:id="@+id/PasswordReset"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="55dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="startReset"
+            android:text="пайдаланушы құпия сөзін қалпына келтіру"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
     </RelativeLayout>
 
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -38,6 +51,5 @@
         android:layout_marginTop="20dp">
 
     </TableLayout>
-
 
 </RelativeLayout>

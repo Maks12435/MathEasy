@@ -191,4 +191,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         MyDatabase.close();
         return result != -1;
     }
+
+    public Boolean resetPassword(String email) {
+        SQLiteDatabase MyDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("password", 1234);
+        int result = MyDatabase.update("users", contentValues, "email = ?", new String[]{email});
+        MyDatabase.close();
+        return result != -1;
+    }
 }

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminResetActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background"
+        tools:context=".LoginActivity">
+
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="351dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/close"
+            android:onClick="BackToMain"
+            android:padding="10dp"
+            android:src="@drawable/icons8_back_50"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:text="Құпия сөзді қалпына келтіргіңіз келетін пайдаланушының электрондық поштасын енгізіңіз"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/newpsswd"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginEnd="33dp"
+            android:background="@drawable/backgrounds"
+            android:hint="Email"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginEnd="31dp"
+            android:background="@drawable/regbutton"
+            android:onClick="register"
+            android:text="Қалпына келтіру" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="200dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="172dp"
+            android:gravity="center"
+            android:text="MathEasy"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
